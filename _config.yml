@@ -1,0 +1,6 @@
+title: cornelissen.me
+description: "Albert Cornelissen: Tinkers, takes pictures, writes occasionally." 
+baseurl: ""
+url: "http://cornelissen.me" # the subpath of your site, e.g. /blog
+markdown: kramdown
+
