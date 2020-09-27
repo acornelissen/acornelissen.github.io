@@ -3,7 +3,6 @@
  */
 .site-header {
   margin-top: 100px;
-  min-height: 100px;
 }
 
 .site-title {
@@ -110,6 +109,28 @@
     list-style: none;
     font-size: 0.9em;
   }
+}
+
+.images-list {
+
+  > ul {
+    margin-left: 0;
+    list-style: none;
+    font-size: 0.9em;
+
+    > li {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  > figure {
+    > figcaption {
+      font-size: 0.7em;
+      font-style: italic;
+    }
+  }
+
 }
 
 .post-list {

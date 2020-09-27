@@ -1,8 +1,5 @@
-title: cornelissen.me
+title: Albert makes pictures.
 description: "Albert Cornelissen: Tinkers, takes pictures, writes occasionally." 
 baseurl: ""
 url: "http://cornelissen.me" # the subpath of your site, e.g. /blog
 markdown: kramdown
-
-
-theme: jekyll-theme-minimal

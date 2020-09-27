@@ -3,3 +3,4 @@ Gemfile
 Gemfile.lock
 .DS_Store
 .sass-cache
+.jekyll-cache
