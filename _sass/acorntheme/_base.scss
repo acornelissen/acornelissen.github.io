@@ -52,12 +52,19 @@ img {
 /**
  * Figures
  */
+figure {
+  padding: 15px;
+  border: 1px solid #ccddcc;
+}
+
 figure > img {
   display: block;
 }
 
 figcaption {
+  margin-top: 10px;
   font-size: $small-font-size;
+  text-align: right;
 }
 
 
