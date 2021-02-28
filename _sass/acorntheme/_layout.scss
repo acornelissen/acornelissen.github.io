@@ -125,6 +125,7 @@
   }
 
   > figure {
+
     > figcaption {
       font-size: 0.7em;
       font-style: italic;
@@ -132,6 +133,7 @@
   }
 
 }
+
 
 .post-list {
   margin-left: 0;
@@ -162,9 +164,10 @@
 }
 
 .post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1;
+  font-size: 2em;
+  font-weight: 300;
+
+  border-bottom: 1px #ccc solid;
 
   @include media-query($on-laptop) {
     font-size: 36px;
@@ -195,6 +198,43 @@
 
     @include media-query($on-laptop) {
       font-size: 18px;
+    }
+  }
+
+  > ul {
+    font-size: 0.9em;
+  }
+
+  > ol {
+    font-size: 0.9em;
+  }
+
+  > figure {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    > img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    > figcaption {
+      font-size: 0.7em;
+      font-style: italic;
+    }
+  }
+
+  .image-inline {
+    width: 46%;
+    padding: 0.5em;
+    display: inline-block;
+    > img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    > figcaption {
+      font-size: 0.7em;
+      font-style: italic;
     }
   }
 }
