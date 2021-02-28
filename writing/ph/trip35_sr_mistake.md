@@ -8,7 +8,7 @@ I have big aspirations of trying to put into words the things that film photogra
 
 What can be easier than sharing the technical details and final results of a mistake that I'm sure many have made before me?
 
-I am known to buy impulse buy film, especially when that film is something interesting. If you have a look at my [Instagram profile](https://www.instagram.com/a.l.b.e.r.t.c) you'll see I am inclined towards process and experimenting, and with a bit of luck I get a good photo every now and then. I've been following the work of [Camera Rescue](https://camerarescue.org/) for quite some time, and one evening they posted about a new film stock being made in Finland, [Santa RAE 1000](https://santa1000.com/). And so I ordered a few rolls (as one does). 
+I am known to impulse buy film, especially when that film is something interesting. If you have a look at my [Instagram profile](https://www.instagram.com/a.l.b.e.r.t.c) you'll see I am inclined towards process and experimenting, and with a bit of luck I get a good photo every now and then. I've been following the work of [Camera Rescue](https://camerarescue.org/) for quite some time, and one evening they posted about a new film stock being made in Finland, [Santa RAE 1000](https://santa1000.com/). And so I ordered a few rolls (as one does). 
 
 The first roll of 120 was shot in my Mamiya C220. I exposed that at 800, because 1000 ISO isn't something you'll find on most meters, developed as normal in Ilfotec HC, and was quite happy with the results.
 
@@ -65,4 +65,4 @@ As you can see it's not perfect. It has _a lot_ of grain, and the greys tend to 
 
 That brings us back to the title of this post, and I guess the moral of the story. There are a few times I could've given up here. It would have been easy enough for me to rewind film into the canister and just retrieve the leader, using it again in a camera more suited to its specifications. I could have decided to toss the negatives after seeing them, not going through the effort of scanning and editing them. Being the stubborn person that I am I decided not to, and I ended up with photos that are just a little more special than I expected them to be.
 
-At the end of the day, what happened here was that I could draw from experience to help me realise that this time around, I could probably salvage some of the photos on that roll. However, you need to make mistakes to gain that experience. So go out and make mistakes. You may not end up with beautiful pictures, but at least you'll walk away a little wiser. 
+At the end of the day, what happened here was that I could draw from experience to help me realise that this time around, I could probably salvage some of the photos on that roll. However, you need to make mistakes to gain that experience. So go out and make mistakes. You may end up with some beautiful pictures, and if you don't, at least you'll walk away a little wiser. 
