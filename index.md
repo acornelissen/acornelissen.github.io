@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Albert _________.
 ---
 
 - [Photography](/ph.html)

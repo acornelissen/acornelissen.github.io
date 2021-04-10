@@ -1,5 +1,6 @@
 ---
 layout: gallery
+title: Albert makes pictures.
 gallery_name: "Instant / Supersense One Instant P7 Colour"
 ---
 

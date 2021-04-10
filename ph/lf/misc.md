@@ -1,5 +1,6 @@
 ---
 layout: gallery
+title: Albert makes pictures.
 gallery_name: "Large format / Random miscellany"
 ---
 
@@ -12,5 +13,8 @@ gallery_name: "Large format / Random miscellany"
 {% include image.html url="/assets/ph/lf/misc/7.jpg" description="Plane wreck [Shen Hao TZ45-11, Schneider Symmar-S 150mm - Fomapan 100]" %}
 {% include image.html url="/assets/ph/lf/misc/8.jpg" description="Lone tree in the cold [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Ilford HP5+]" %}
 {% include image.html url="/assets/ph/lf/misc/9.jpg" description="The frozen pond [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Ilford HP5+]" %}
-{% include image.html url="/assets/ph/lf/misc/10.jpg" description="Yet another tree [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Ilford HP5+]" %}
+{% include image.html url="/assets/ph/lf/misc/10.jpg" description="Yet another tree [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Fujifilm Velvia 50]" %}
+{% include image.html url="/assets/ph/lf/misc/11.jpg" description="Icy water hazard [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Fujifilm Velvia 50]" %}
+{% include image.html url="/assets/ph/lf/misc/12.jpg" description="Eynsford [Shen Hao TZ45-11, Schneider Symmar-S 180mm - Kodak Ektachrome E100]" %}
+{% include image.html url="/assets/ph/lf/misc/13.jpg" description="The Viaduct [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Kodak Ektachrome E100]" %}
 
