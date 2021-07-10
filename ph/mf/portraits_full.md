@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Albert makes pictures.
+title: Albert takes pictures.
 gallery_name: "Medium format / Full length portraits"
 ---
 

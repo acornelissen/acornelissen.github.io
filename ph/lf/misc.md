@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Albert makes pictures.
+title: Albert takes pictures.
 gallery_name: "Large format / Random miscellany"
 ---
 
@@ -17,4 +17,9 @@ gallery_name: "Large format / Random miscellany"
 {% include image.html url="/assets/ph/lf/misc/11.jpg" description="Icy water hazard [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Fujifilm Velvia 50]" %}
 {% include image.html url="/assets/ph/lf/misc/12.jpg" description="Eynsford [Shen Hao TZ45-11, Schneider Symmar-S 180mm - Kodak Ektachrome E100]" %}
 {% include image.html url="/assets/ph/lf/misc/13.jpg" description="The Viaduct [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Kodak Ektachrome E100]" %}
+{% include image.html url="/assets/ph/lf/misc/14.jpg" description="Hadlow Tower [Shen Hao TZ45-11, Schneider Symmar-S 210mm - Fomapan 400]" %}
+{% include image.html url="/assets/ph/lf/misc/15.jpg" description="Your typical footpath [Shen Hao TZ45-11, Nikkor SW 90mm f8- Fomapan 400]" %}
+{% include image.html url="/assets/ph/lf/misc/16.jpg" description="Under the bridge [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Adox CHS 100 II]" %}
+{% include image.html url="/assets/ph/lf/misc/17.jpg" description="Abandoned and forgotten [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Fompan 400]" %}
+{% include image.html url="/assets/ph/lf/misc/18.jpg" description="The Birdhouse [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Adox CHS 100 II]" %}
 

@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Albert makes pictures.
+title: Albert takes pictures.
 ---
 
 <h3><a href="/">Home</a> / Photography</h3>
