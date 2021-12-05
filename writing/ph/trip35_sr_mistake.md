@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Albert writes.
+title: "Albert writes: Pushing through that mistake might give you results you didn't know you wanted"
 post_title: Pushing through that mistake might give you results you didn't know you wanted
 ---
 

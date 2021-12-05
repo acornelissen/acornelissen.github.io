@@ -236,4 +236,37 @@
       font-style: italic;
     }
   }
+
+  .image-pano {
+    width: 94%;
+    padding: 0.5em;
+    display: inline-block;
+    > img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    > figcaption {
+      font-size: 0.7em;
+      font-style: italic;
+    }
+  }
+
+  .image-small {
+    width: 22%;
+    padding: 0.5em;
+    display: inline-block;
+    > img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    > figcaption {
+      font-size: 0.7em;
+      font-style: italic;
+    }
+  }
 }
+
+
+
