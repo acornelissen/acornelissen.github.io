@@ -6,6 +6,7 @@ title: Albert writes.
 <h3><a href="/">Home</a> / Writing</h3>
 
 - Thoughts on photography
+	- [The utter frustration and unexpected joy of finishing a project: building (and using) a Panomicron Oxygen](/writing/ph/oxygen_build.html)
 	- [The "lazy" way to make great images](/writing/ph/lazy_way.html)
 	- [Pushing through that mistake might give you results you didn't know you wanted](/writing/ph/trip35_sr_mistake.html)
 	

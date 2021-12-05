@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Albert writes: The "lazy" way to make great images'
+title: Albert writes.
 post_title: The "lazy" way to make great images
 ---
 

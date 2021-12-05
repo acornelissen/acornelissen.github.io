@@ -1,5 +1,7 @@
 ---
 layout: post
-title: 'Albert writes: The utter frustration and unexpected joy of finishing a project: building (and using) a Panomicron Oxygen'
+title: 'Albert writes.'
 post_title: 'The utter frustration and unexpected joy of finishing a project: building (and using) a Panomicron Oxygen'
 ---
+
+
