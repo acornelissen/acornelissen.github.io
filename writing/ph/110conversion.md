@@ -49,13 +49,13 @@ Before we get stuck in, there are a couple of things you should know:
 ### Step one: print your parts
 This one's optional, as you may opt to order these from a 3D printing company instead, but I think it's pretty important that I at least provide the settings used to get results that I was happy with (after many tries).
 
-[Click here to download the necessary files from Thingiverse](https://www.thingiverse.com/thing:5177231)
+[Click here to download the necessary files from Thingiverse](https://www.thingiverse.com/thing:5177231) or [download them directly](/assets/wr/110/stl/3dfiles.zip). 
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110/1.1.jpeg" %}
 </div>
 
-I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cura slicer](https://ultimaker.com/software/ultimaker-cura) was ised to, uh, slice my STL files to G-code. Your temperatures will vary depending on the material you choose to print with, but I think these settings will help you get some good results:
+I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cura slicer](https://ultimaker.com/software/ultimaker-cura) was used to slice my STL files to G-code. Your temperatures will vary depending on the material you choose to print with, but I think these settings will help you get some good results:
 * **Layer height**: 0.12mm
 * **Wall thickness**: 0.8mm
 * **Top/bottom thickness**: 1mm
@@ -67,7 +67,7 @@ I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cur
 I used a brand of filament from Amazon called "Eryone", and decided on the "Jet Black" colour. I set the hot-end to 200 degrees celsius, and my bed to 50 degrees celsius.
 
 ### Step two: remove the back door(s) and film holder
-Both the rear door and inner door are held in place with a thin rod threaded through the hinge. Getting it out is as easy as poking the smallest screwdriver (or even better, a pick) that fits into the topmost hole of the hinge. If you're lucky, you should just be able to push out the rod, grab it from the bottom with a pair of pliers, and pull it all the way out. If not, you'll need to gently tap the top of your screwdriver (or pick) until it peeks out. Do this with the rear door first, then the inner door, and set them aside (or toss them in the trash as you won't be needing them again).
+Both the rear door and inner door are held in place with a thin rod threaded through the hinge. Getting it out is as easy as poking the smallest screwdriver (or even better, a pick) that fits into the topmost hole of the hinge. If you're lucky, you should just be able to push out the rod, grab it from the bottom with a pair of pliers, and pull it all the way out. If not, you'll need to gently tap the top of your screwdriver (or pick) with a hammer until it peeks out. Do this with the rear door first, then the inner door, and set them aside (or toss them in the trash as you won't be needing them again).
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110/2.jpeg" description="First the back door" %}
@@ -101,7 +101,7 @@ Now it's time to get rid of the whole lip between these marks. Lucky for us it's
 {% include image.html url="/assets/wr/110/8.jpeg" %}
 </div>
 
-You'll notice that the Lomograflok doesn't sit flush yet. That's because the Graflok mount "standard" requires two ridges for alignment, and that means we need to add indentations to match these. There's a wide one (19.5mm) right on the left edge, a space (18.5mm), followed by a thin one (2mm). I marked them out and then (carefully) went at the body with a Dremel (a coarse metal file will do, but will take much longer), until the Lomograflok sat flush. Remember to use a the fine file to get the new indentations down smooth as well.
+You'll notice that the Lomograflok doesn't sit flush yet. That's because the Graflok mount "standard" requires two ridges for alignment, and that means we need to add indentations to match these. There's a wide one (19.5mm) right on the left edge, a space (18.5mm), followed by a thin one (2mm). I marked them out and then (carefully) went at the body with a Dremel (a coarse metal file will do, but will take much longer), until the Lomograflok sat flush. Remember to use a fine file to get the new indentations down smooth as well.
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110/9.jpeg" %}
