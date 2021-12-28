@@ -49,7 +49,7 @@ Before we get stuck in, there are a couple of things you should know:
 ### Step one: print your parts
 This one's optional, as you may opt to order these from a 3D printing company instead, but I think it's pretty important that I at least provide the settings used to get results that I was happy with (after many tries).
 
-Click here to download the necessary files from Thingiverse.
+[Click here to download the necessary files from Thingiverse](https://www.thingiverse.com/thing:5177231)
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110/1.1.jpeg" %}
