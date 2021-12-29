@@ -101,7 +101,7 @@ Now it's time to get rid of the whole lip between these marks. Lucky for us it's
 {% include image.html url="/assets/wr/110/8.jpeg" %}
 </div>
 
-You'll notice that the Lomograflok doesn't sit flush yet. That's because the Graflok mount "standard" requires two ridges for alignment, and that means we need to add indentations to match these. There's a wide one (19.5mm) right on the left edge, a space (18.5mm), followed by a thin one (2mm). I marked them out and then (carefully) went at the body with a Dremel (a coarse metal file will do, but will take much longer), until the Lomograflok sat flush. Remember to use a fine file to get the new indentations down smooth as well.
+You'll notice that the Lomograflok doesn't sit flush yet. That's because the Graflok mount "standard" requires two ridges for alignment, and that means we need to add indentations to match these. There's a wide one (19.5mm) on the left edge, then a space (18.5mm), followed by a thin one (2mm). I marked them out and then (carefully) went at the body with a Dremel (a coarse metal file will do, but will take much longer), until the Lomograflok sat flush. Remember to use a fine file to get the new indentations down smooth as well.
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110/9.jpeg" %}
@@ -168,7 +168,7 @@ This is where things start getting exciting, but slightly frustrating. Take the 
 {% include image.html url="/assets/wr/110/25.jpeg" %}
 </div>
 
-Expand the bellows and lock the lens into place, then focus to infinity. Use a cable release, put the shutter into bulb mode, and lock the release to keep it open. Aim the camera at something far away with contrast, like a telephone pole or tree with no leaves against a clear sky. With the rear door of the Lomograflok open, using the image projected on the ground glass, slide the infinity stop back and forth until you get a sharp image. This is your new infinity focus point. Screw that infinity stop down.
+Expand the bellows and lock the lens into place, then focus to infinity and aperture wide open at f4.7. Use a cable release, put the shutter into bulb mode, and lock the release to keep it open. Aim the camera at something far away with contrast, like a telephone pole or tree with no leaves against a clear sky. With the rear door of the Lomograflok open, using the image projected on the ground glass, slide the infinity stop back and forth until you get a sharp image. This is your new infinity focus point. Screw that infinity stop down.
 
 Now comes the frustrating part: close focus. We can't mount the camera on a tripod, because we're using all the tripod holes. This means it feels like you need three hands to get this done. I approached it with a lot of patience. Each person will probably do this part differently, but the concept stays the same.
 
@@ -223,7 +223,7 @@ You're good to go! Put in a pack of Instax wide, eject the pack's dark-slide, an
 _A final note on the Lomograflok dark-slide_: I've bent mine slightly upwards at around a 30 degree angle at the handle, and this allows me to continue using it even with the Lomograflok mounted on the 110B. Still a bit of effort to get it out, though.
 
 ### Conclusion
-I really hope you enjoy shooting your newly converted cameras [as much as I do](https://www.instagram.com/frankinstax/). It's a real head-turner and conversation starter, and the perfect way to disarm subjects for very natural portraits. Even though the conversion is straightforward, it took a lot of effort to get here. The infinity stop went through about 12 iterations, and the bracket through about 8 (all printed). At the end of the day, apart from really wanting a decent Instax wide camera, I did this to share it all for others to reproduce and improve on. 
+I really hope you enjoy shooting your newly converted camera [as much as I do](https://www.instagram.com/frankinstax/). It's a real head-turner and conversation starter, and the perfect way to disarm subjects for very natural portraits. Even though the conversion is straightforward, it took a lot of effort to get here. The infinity stop went through about 12 iterations, and the bracket through about 8 (all printed). At the end of the day, apart from really wanting a decent Instax wide camera, I did this to share it all for others to reproduce and improve on. 
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110/26.jpeg" description="Sorry about the messy desk, but it really is difficult to get this thing all in one picture" %}
