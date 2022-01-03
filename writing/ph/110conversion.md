@@ -235,4 +235,4 @@ I really hope you enjoy shooting your newly converted camera [as much as I do](h
 
 This has been a very fulfilling project that has come a long way, but it's not done yet. As tidy as it is, it's not very ergonomic, especially with the hinges sticking out like that.
 
-Next is a back cover with grips (and a place to mount a cable release) that will fit into the hinges, and after that I plan to make an adapter for the flash-shoe. So check back in a month or three...
+Next is a grip for the right-hand side (with a place to mount a cable release), and after that I plan to make an adapter for the flash-shoe. So check back as I will update this build guide as I add parts!
