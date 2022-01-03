@@ -38,6 +38,7 @@ Before we get stuck in, there are a couple of things you should know:
 * A Polaroid Pathfinder 110B (or 110A - I still have to check whether the design will fit and will update the instructions once I know)
 * A Lomofraflok Instax wide back
 * Lomograflok / 110B mounting bracket (3D printed)
+* Left-hand grip (3d printed, optional)
 * Modified infinity stop (3D printed)
 * A sheet of light-sealing foam to cut to size
 * 1/4" tripod screw with length 16mm (excluding head)
@@ -67,7 +68,7 @@ I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cur
 I used a brand of filament from Amazon called "Eryone", and decided on the "Jet Black" colour. I set the hot-end to 200 degrees celsius, and my bed to 50 degrees celsius.
 
 ### Step two: remove the back door(s) and film holder
-Both the rear door and inner door are held in place with a thin rod threaded through the hinge. Getting it out is as easy as poking the smallest screwdriver (or even better, a pick) that fits into the topmost hole of the hinge. If you're lucky, you should just be able to push out the rod, grab it from the bottom with a pair of pliers, and pull it all the way out. If not, you'll need to gently tap the top of your screwdriver (or pick) with a hammer until it peeks out. Do this with the rear door first, then the inner door, and set them aside (or toss them in the trash as you won't be needing them again).
+Both the rear door and inner door are held in place with a thin rod threaded through the hinge. Getting it out is as easy as poking the smallest screwdriver (or even better, a pick) that fits into the topmost hole of the hinge. If you're lucky, you should just be able to push out the rod, grab it from the bottom with a pair of pliers, and pull it all the way out. If not, you'll need to gently tap the top of your screwdriver (or pick) with a hammer until it peeks out. Do this with the rear door first, then the inner door, and set them aside (or toss them in the trash as you won't be needing them again). Keep the rods, you'll need at least one of them if you decide to use the grip. 
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110/2.jpeg" description="First the back door" %}
@@ -197,7 +198,10 @@ Now you'll need to take one extra thing into consideration when replacing the Lo
 
 Now continue mounting the Lomograflok and bracket as you did before, securing it with the tripod screw. 
 
-### Step nine: Get out there and shoot a test pack of film!
+### Step nine: Add a grip (optional)
+If you had the patience to print the very intricate grip, fitting it is quite straightforward. I'd recommend threading the rod through the grip's hinge first to clear out any debris. Then, simply slide the two tabs _under_ the Lomograflok. Next, press-fit the hinge into place. Finally, you'll need to thread the rod through the hinge. Start from the bottom. I've found it can be a little tight, so make sure that everything is aligned, and push forcefully, but carefully. I use the pliers to help get some grip on the rod, and gently tap the last bit into place. 
+
+### Finally, step ten: Get out there and shoot a test pack of film!
 You're good to go! Put in a pack of Instax wide, eject the pack's dark-slide, and take your first picture. You might find that you need to continue tweaking your rangefinder. It's all part of the fun. 
 
 **Here are a few sample photos...**
