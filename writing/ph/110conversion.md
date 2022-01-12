@@ -57,16 +57,19 @@ This one's optional, as you may opt to order these from a 3D printing company in
 {% include image.html url="/assets/wr/110/1.1.jpeg" %}
 </div>
 
-I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cura slicer](https://ultimaker.com/software/ultimaker-cura) was used to slice my STL files to G-code. Your temperatures will vary depending on the material you choose to print with, but I think these settings will help you get some good results:
+I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cura slicer](https://ultimaker.com/software/ultimaker-cura) was used to slice my STL files to G-code. Your temperatures will vary depending on the material you choose to print with, but I think these settings will help you get results that are both pretty and strong (but will take forever to print):
 * **Layer height**: 0.12mm
-* **Wall thickness**: 0.8mm
-* **Top/bottom thickness**: 1mm
+* **Wall thickness**: 1.2mm
+* **Wall line count**: 6
+* **Top/bottom thickness**: 0.84mm
 * **Infill density**: 35%
 * **Generate support**: Yes
 * **Support placement**: Everywhere
+* **Support type**: Line
+* **Support density**: 10%
 * **Build plate adhesion type**: Brim
 
-I used a brand of filament from Amazon called "Eryone", and decided on the "Jet Black" colour. I set the hot-end to 200 degrees celsius, and my bed to 50 degrees celsius.
+I used a brand of filament from Amazon called "Eryone", and decided on the "Jet Black" colour for the bracket, and red for the grips and inifinity stop. I set the hot-end to 200 degrees celsius, and my bed starts out at 60 for the initial layer, then eases down to 50 degrees celsius for the rest. The fan is disabled for the first 7 layers.
 
 ### Step two: remove the back door(s) and film holder
 Both the rear door and inner door are held in place with a thin rod threaded through the hinge. Getting it out is as easy as poking the smallest screwdriver (or even better, a pick) that fits into the topmost hole of the hinge. If you're lucky, you should just be able to push out the rod, grab it from the bottom with a pair of pliers, and pull it all the way out. If not, you'll need to gently tap the top of your screwdriver (or pick) with a hammer until it peeks out. Do this with the rear door first, then the inner door, and set them aside (or toss them in the trash as you won't be needing them again). Keep the rods, you'll need at least one of them if you decide to use the grip. 
@@ -191,6 +194,13 @@ If you had the patience to print the very intricate grips, fitting them is quite
 
 For both grips, press-fit the hinge into place. Then you'll need to thread the rod through the hinge. Start from the bottom. I've found it can be a little tight, so make sure that everything is aligned, and push forcefully, but carefully. I use the pliers to help get some grip on the rod, and gently tap the last bit into place.
 
+<div style="text-align:center">
+{% include image-inline.html url="/assets/wr/110/27.jpeg" description="This hole will help keep things in place" %}
+{% include image-inline.html url="/assets/wr/110/28.jpeg" description="Pretty obvious now that you look at it isn't it?" %}
+{% include image-inline.html url="/assets/wr/110/29.jpeg" description="This hole will help keep things in place" %}
+{% include image-inline.html url="/assets/wr/110/30.jpeg" description="Pretty obvious now that you look at it isn't it?" %}
+</div>
+
 You'll notice the right grip has a hole in it. This is to optionally fit a shutter release cable to move the shutter to a less awkward place. The trade-off here for the moment is that you'll need attach/remove the cable release from the lens every time you collapse or open the camera.
 
 Also note that, if you opt to use the grips, you won't be able to use the Lomograflok's darkslide, so remove that and put it somewhere safe.
@@ -237,7 +247,7 @@ _A final note on the Lomograflok darkslide_: If you're not using the left grip, 
 I really hope you enjoy shooting your newly converted camera [as much as I do](https://www.instagram.com/frankinstax/). It's a real head-turner and conversation starter, and the perfect way to disarm subjects for very natural portraits. Even though the conversion is straightforward, it took a lot of effort to get here. The infinity stop went through about 12 iterations, and the bracket through about 8 (all printed). At the end of the day, apart from really wanting a decent Instax wide camera, I did this to share it all for others to reproduce and improve on. 
 
 <div style="text-align:center">
-{% include image.html url="/assets/wr/110/26.jpeg" description="Sorry about the messy desk, but it really is difficult to get this thing all in one picture" %}
+{% include image.html url="/assets/wr/110/26.jpeg" description="It really is quite difficult to get this thing all in one picture" %}
 </div>
 
 This has been a very fulfilling project that has come a long way, but it's not done yet. As tidy as it is, it's not very ergonomic, especially with the hinges sticking out like that.
