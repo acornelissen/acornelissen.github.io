@@ -195,10 +195,10 @@ If you had the patience to print the very intricate grips, fitting them is quite
 For both grips, press-fit the hinge into place. Then you'll need to thread the rod through the hinge. Start from the bottom. I've found it can be a little tight, so make sure that everything is aligned, and push forcefully, but carefully. I use the pliers to help get some grip on the rod, and gently tap the last bit into place.
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110/27.jpeg" description="This hole will help keep things in place" %}
-{% include image-inline.html url="/assets/wr/110/28.jpeg" description="Pretty obvious now that you look at it isn't it?" %}
-{% include image-inline.html url="/assets/wr/110/29.jpeg" description="This hole will help keep things in place" %}
-{% include image-inline.html url="/assets/wr/110/30.jpeg" description="Pretty obvious now that you look at it isn't it?" %}
+{% include image-inline.html url="/assets/wr/110/27.jpeg" description="Thread the rod into the hinge" %}
+{% include image-inline.html url="/assets/wr/110/28.jpeg" description="This last little bit is easiest to tap in with a smaller hammer" %}
+{% include image-inline.html url="/assets/wr/110/29.jpeg" description="Left grip secured in place" %}
+{% include image-inline.html url="/assets/wr/110/30.jpeg" description="So ergonomic" %}
 </div>
 
 You'll notice the right grip has a hole in it. This is to optionally fit a shutter release cable to move the shutter to a less awkward place. The trade-off here for the moment is that you'll need attach/remove the cable release from the lens every time you collapse or open the camera.
