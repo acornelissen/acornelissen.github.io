@@ -57,7 +57,7 @@ This one's optional, as you may opt to order these from a 3D printing company in
 {% include image.html url="/assets/wr/110/1.1.jpeg" %}
 </div>
 
-I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cura slicer](https://ultimaker.com/software/ultimaker-cura) was used to slice my STL files to G-code. Your temperatures will vary depending on the material you choose to print with, but I think these settings will help you get results that are both pretty and strong (but will take forever to print):
+I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cura slicer](https://ultimaker.com/software/ultimaker-cura) was used to slice my STL files to G-code. Your temperatures will vary depending on the material you choose to print with, but I think these settings will help you get results that are both pretty and strong (it takes forever to print, though, so tweak until it suits your needs):
 * **Layer height**: 0.12mm
 * **Wall thickness**: 1.2mm
 * **Wall line count**: 6
@@ -250,6 +250,6 @@ I really hope you enjoy shooting your newly converted camera [as much as I do](h
 {% include image.html url="/assets/wr/110/26.jpeg" description="It really is quite difficult to get this thing all in one picture" %}
 </div>
 
-This has been a very fulfilling project that has come a long way, but it's not done yet. As tidy as it is, it's not very ergonomic, especially with the hinges sticking out like that.
+This has been a very fulfilling project that has come a long way, but it's not done yet.
 
-Next up is an adapter that will allow you to mount both an external light meter, light the Reveni Labs Meter, as well as a flash woth a proper hotshoe. So check back as I will update this build guide as I add parts!
+Next up is an adapter that will allow you to mount both an external light meter, like the Reveni Labs Meter, as well as a flash with a proper hot-shoe. I also plan to add an adapter that will allow you to use modern threaded ND filters. So check back as I will update this build guide as I add parts!
