@@ -38,8 +38,9 @@ Before we get stuck in, there are a couple of things you should know:
 * A Polaroid Pathfinder 110B (or 110A - I still have to check whether the design will fit and will update the instructions once I know)
 * A Lomofraflok Instax wide back
 * Lomograflok / 110B mounting bracket (3D printed)
-* Left-hand grip (3d printed, optional)
 * Modified infinity stop (3D printed)
+* Left-hand grip (3d printed, optional)
+* Right-hand grip (3d printed, optional)
 * A sheet of light-sealing foam to cut to size
 * 1/4" tripod screw with length 16mm (excluding head)
 * 1/4" tripod screw with length 11mm (excluding head)
@@ -185,8 +186,17 @@ Repeat this process for random distances between closest focus and infinity. Now
 
 You might be lucky and have everything bang on without need to touch the rangefinder, but be prepared to have close focus accurately aligned, and infinity slightly off, as the distance between the lens and film plane has changed. This is a good trade-off for me as even though the rangefinder doesn't agree, I know things are definitely in focus at infinity with a small enough aperture.
 
-### Step eight: Wrap it up
-Right, we're almost done. Remove the bottom tripod screw and set the Lomograflok with the bracket still attached aside. Replace the rangefinder top cover and all four screws. 
+### Step nine: Add the grips (optional)
+If you had the patience to print the very intricate grips, fitting them is quite straightforward. I'd recommend threading the rod through the freshly printed grip hinges first to clear out any debris. You'll need to fit the grips before the Lomograflok. 
+
+For both grips, press-fit the hinge into place. Then you'll need to thread the rod through the hinge. Start from the bottom. I've found it can be a little tight, so make sure that everything is aligned, and push forcefully, but carefully. I use the pliers to help get some grip on the rod, and gently tap the last bit into place.
+
+You'll notice the right grip has a hole in it. This is to optionally fit a shutter release cable to move the shutter to a less awkward place. The trade-off here for the moment is that you'll need attach/remove the cable release from the lens every time you collapse or open the camera.
+
+Also note that, if you opt to use the grips, you won't be able to use the Lomograflok's darkslide, so remove that and put it somewhere safe.
+
+### Step nine: Wrap it up
+Right, we're almost done. Remove the bottom tripod screw and set the Lomograflok with the bracket still attached aside. Replace the rangefinder top cover and all four screws. If you've attached the right-side grip, take card to make sure that the little bit on the top fits _into_ the top cover. You'll see what I mean when you're actually doing it. 
 
 Now you'll need to take one extra thing into consideration when replacing the Lomograflok and bracket. You'll notice there's a gap in the rangefinder cover on the right, and a matching extrusion on the bracket. Tilt the Lomograflok and bracket slightly so that this extrusion slots _into_ the hole _inside_ the cover. This is an extra measure to keep the bracket securely in place. 
 
@@ -197,9 +207,6 @@ Now you'll need to take one extra thing into consideration when replacing the Lo
 </div>
 
 Now continue mounting the Lomograflok and bracket as you did before, securing it with the tripod screw. 
-
-### Step nine: Add a grip (optional)
-If you had the patience to print the very intricate grip, fitting it is quite straightforward. I'd recommend threading the rod through the grip's hinge first to clear out any debris. Then, simply slide the two tabs _under_ the Lomograflok. Next, press-fit the hinge into place. Finally, you'll need to thread the rod through the hinge. Start from the bottom. I've found it can be a little tight, so make sure that everything is aligned, and push forcefully, but carefully. I use the pliers to help get some grip on the rod, and gently tap the last bit into place. 
 
 ### Finally, step ten: Get out there and shoot a test pack of film!
 You're good to go! Put in a pack of Instax wide, eject the pack's dark-slide, and take your first picture. You might find that you need to continue tweaking your rangefinder. It's all part of the fun. 
@@ -224,7 +231,7 @@ You're good to go! Put in a pack of Instax wide, eject the pack's dark-slide, an
 </div>
 
 
-_A final note on the Lomograflok dark-slide_: I've bent mine slightly upwards at around a 30 degree angle at the handle, and this allows me to continue using it even with the Lomograflok mounted on the 110B. Still a bit of effort to get it out, though.
+_A final note on the Lomograflok darkslide_: If you're not using the left grip, then you can still use the darkslide. I've bent mine slightly upwards at around a 30 degree angle at the handle, and this allows me to continue using it even with the Lomograflok mounted on the 110B. Still a bit of effort to get it out, though, so I've decided to leave it out and use the grip.
 
 ### Conclusion
 I really hope you enjoy shooting your newly converted camera [as much as I do](https://www.instagram.com/frankinstax/). It's a real head-turner and conversation starter, and the perfect way to disarm subjects for very natural portraits. Even though the conversion is straightforward, it took a lot of effort to get here. The infinity stop went through about 12 iterations, and the bracket through about 8 (all printed). At the end of the day, apart from really wanting a decent Instax wide camera, I did this to share it all for others to reproduce and improve on. 
