@@ -14,3 +14,4 @@ gallery_name: "Large format / Close-up portraits"
 {% include image.html url="/assets/ph/lf/portraits/close/8.jpg" description="James [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 400]" %}
 {% include image.html url="/assets/ph/lf/portraits/close/9.jpg" description="Sharné [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 400]" %}
 {% include image.html url="/assets/ph/lf/portraits/close/10.jpg" description="Self-portrait [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Adox CHS 100 II]" %}
+{% include image.html url="/assets/ph/lf/portraits/close/11.jpg" description="Dom [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford Ortho 80]" %}
