@@ -206,7 +206,7 @@ You'll notice the right grip has a hole in it. This is to optionally fit a shutt
 Also note that, if you opt to use the grips, you won't be able to use the Lomograflok's darkslide, so remove that and put it somewhere safe.
 
 ### Step nine: Wrap it up
-Right, we're almost done. Remove the bottom tripod screw and set the Lomograflok with the bracket still attached aside. Replace the rangefinder top cover and all four screws. If you've attached the right-side grip, take card to make sure that the little bit on the top fits _into_ the top cover. You'll see what I mean when you're actually doing it. 
+Right, we're almost done. Remove the bottom tripod screw and set the Lomograflok with the bracket still attached aside. Replace the rangefinder top cover and all four screws. If you've attached the right-side grip, take care to make sure that the little bit on the top fits _into_ the top cover. You'll see what I mean when you're actually doing it. 
 
 Now you'll need to take one extra thing into consideration when replacing the Lomograflok and bracket. You'll notice there's a gap in the rangefinder cover on the right, and a matching extrusion on the bracket. Tilt the Lomograflok and bracket slightly so that this extrusion slots _into_ the hole _inside_ the cover. This is an extra measure to keep the bracket securely in place. 
 
@@ -250,6 +250,5 @@ I really hope you enjoy shooting your newly converted camera [as much as I do](h
 {% include image.html url="/assets/wr/110/26.jpeg" description="It really is quite difficult to get this thing all in one picture" %}
 </div>
 
-This has been a very fulfilling project that has come a long way, but it's not done yet.
+This has been a very fulfilling project that has come a long way. Thanks for following along!
 
-Next up is an adapter that will allow you to mount both an external light meter, like the Reveni Labs Meter, as well as a flash with a proper hot-shoe. I also plan to add an adapter that will allow you to use modern threaded ND filters. So check back as I will update this build guide as I add parts!
