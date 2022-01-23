@@ -135,7 +135,7 @@ There are four screws that need to be removed (remember where each goes, they're
 * On the back, top left under the rangefinder, inside the camera body
 * On the back, top right under the rangefinder, inside a little hole in the camera body
 * On the top, right, the screw in the flash shoe (remember how it all fits together)
-* On the front, with the bellows collapsed, slightly off center to the right, right under the rangefinder overhang
+* On the front, with the bellows collapsed, slightly off center to the right, right under the rangefinder overhang (<em> For the 110A this screw is top right under the rangefinder</em>)
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110/12.jpeg" description="Back, top left" %}
@@ -204,6 +204,8 @@ For both grips, press-fit the hinge into place. Then you'll need to thread the r
 You'll notice the right grip has a hole in it. This is to optionally fit a shutter release cable to move the shutter to a less awkward place. The trade-off here for the moment is that you'll need attach/remove the cable release from the lens every time you collapse or open the camera.
 
 Also note that, if you opt to use the grips, you won't be able to use the Lomograflok's darkslide, so remove that and put it somewhere safe.
+
+<strong>These grips don't fit the 110A!</strong> Unfortunately the 110A's body is slightly different. My 110A is a previous conversion that does not have the right-side hinge. I might procure a complete 110A somewhere down the line to make grips specific to the 110A, but for now you're on your own.
 
 ### Step nine: Wrap it up
 Right, we're almost done. Remove the bottom tripod screw and set the Lomograflok with the bracket still attached aside. Replace the rangefinder top cover and all four screws. If you've attached the right-side grip, take care to make sure that the little bit on the top fits _into_ the top cover. You'll see what I mean when you're actually doing it. 
