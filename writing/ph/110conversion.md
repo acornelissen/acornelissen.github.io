@@ -22,6 +22,7 @@ Before we get stuck in, there are a couple of things you should know:
 
 * This is a destructive conversion, but relatively easy compared to the other, older methods out there (I find this acceptable as the film for this is long gone, and we're giving the camera a new lease on life)
 * Because of the 110B and Lomograflok's geometry, and how this conversion was designed, your pictures will be "upside down", with the wide part of the frame on the top (I quite like the different look it gives)
+* Framing is slightly off, but you get to know by how much quite quickly
 
 ### You will need
 
@@ -35,7 +36,7 @@ Before we get stuck in, there are a couple of things you should know:
 * 3D printer if you intend to print the bracket and new infinity stop yourself (optional)
 
 **Parts:**
-* A Polaroid Pathfinder 110B (or 110A - there are two small differences that are highlighted in the necessary steps)
+* A Polaroid Pathfinder 110B (or 110A - the bracket fits without issue, but there are two small differences that are highlighted in the necessary steps - the grips don't fit, unfortunately, so I'll look into desiging specific grips for the 110A soon)
 * A Lomofraflok Instax wide back
 * Lomograflok / 110B mounting bracket (3D printed)
 * Modified infinity stop (3D-printed)
@@ -150,7 +151,8 @@ There are four screws that need to be removed (remember where each goes, they're
 * On the back, top left under the rangefinder, inside the camera body
 * On the back, top right under the rangefinder, inside a little hole in the camera body
 * On the top, right, the screw in the flash shoe (remember how it all fits together)
-* On the front, with the bellows collapsed, slightly off center to the right, right under the rangefinder overhang (<em> For the 110A this screw is top right under the rangefinder</em>)
+* On the front, with the bellows collapsed, slightly off center to the right, right under the rangefinder overhang
+* <em>For the 110A</em> you need to remove the leather strap on the left-hand side as well
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110/12.jpeg" description="Back, top left" %}
