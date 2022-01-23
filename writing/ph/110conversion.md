@@ -8,7 +8,7 @@ post_title: 'Building a Frankinstax: a Polaroid Pathfinder 110B & Lomograflok co
 ## Introduction
 This is a project that started a quite while ago. I had found and purchased a Polaroid 110A with the original intention of converting it to shoot Instax wide. I ended up destroying three Instax Wide 300s before getting to a point where I successfully mounted a horribly fragile bodged back to the 110A, using some plywood and way too much Sugru. It was a difficult conversion that involved cutting away part of the 110A's body (going through who knows how many Dremel metal cutting discs). I ended up with something that really took surprisingly good photos. Sure it spat out skew horizons, it was difficult to frame photos accurately, and it wasn't pretty to look at, but it proved one thing: ***give Instax good glass and it sings***.
 
-And then Lomography surprised everyone with the [Lomograflok](https://shop.lomography.com/en/lomo-graflok-instant-back). Of course I preordered one right after it was announced. Although the original intention of the back was to bring Instax to 4x5 cameras (and it does this very well), even before release the usual makers (like [Ethan Moses](https://www.cameradactyl.com/) and [Steve LLoyd](https://chroma.camera/)) spotted the potential of this device to be paired with good lenses to create a serious portable solution with incredible results.
+And then Lomography surprised everyone with the [Lomograflok](https://shop.lomography.com/en/lomo-graflok-instant-back). Of course I preordered one right after it was announced. Although the original intention of the back was to bring Instax to 4x5 cameras (and it does this very well), even before release the usual makers (like [Ethan Moses](https://www.cameradactyl.com/) and [Steve Lloyd](https://chroma.camera/)) spotted the potential of this device to be paired with good lenses to create a serious portable solution with incredible results.
 
 So there I was, browsing new stock on the [West Yorkshire Cameras](https://wycameras.com/) website as one does, when I saw a Polaroid 110B kit for a _very good_ price. The idea had been brewing in my subconscious to redo my original "Frankinstax", removing the flimsy, hacked apart Instax camera and finding a reliable way to mount the Lomograflok, but a fresh start with the improved 110B would be even better. So I bought it. When it arrived I was surprised at how well the two fit together. And here begins our journey...
 
@@ -35,12 +35,13 @@ Before we get stuck in, there are a couple of things you should know:
 * 3D printer if you intend to print the bracket and new infinity stop yourself (optional)
 
 **Parts:**
-* A Polaroid Pathfinder 110B (or 110A - I still have to check whether the design will fit and will update the instructions once I know)
+* A Polaroid Pathfinder 110B (or 110A - there are two small differences that are highlighted in the necessary steps)
 * A Lomofraflok Instax wide back
 * Lomograflok / 110B mounting bracket (3D printed)
-* Modified infinity stop (3D printed)
-* Left-hand grip (3d printed, optional)
-* Right-hand grip (3d printed, optional)
+* Modified infinity stop (3D-printed)
+* Left-hand grip (3D-printed, optional)
+* Right-hand grip (3D-printed, optional)
+* Door pin and spring shim (3D-printed, only if you're converting a 110A)
 * A sheet of light-sealing foam to cut to size
 * 1/4" tripod screw with length 16mm (excluding head)
 * 1/4" tripod screw with length 11mm (excluding head)
@@ -86,12 +87,26 @@ Next, inside the camera on the left is a piece of plastic that was used to hold 
 {% include image-inline.html url="/assets/wr/110/5.jpeg" description="Plastic piece removed, screws replaced" %}
 </div>
 
+_For the 110A_ the lens door pin and spring sits behind this plastic piece. **Be careful** when removing it as the spring will shoot out and be lost to time. Once you've removed the plastic and collected the pin and spring, place them back into the hole carefully, and hold them in place by screwing the 3D-printed shim into the holes that were holding the plastic piece. 
+
+<div style="text-align:center">
+{% include image-inline.html url="/assets/wr/110/5.1.jpeg" description="110A: Spring and pin" %}
+{% include image-inline.html url="/assets/wr/110/5.2.jpeg" description="110A: Back in the hole, short end of the pin facing up" %}
+{% include image-inline.html url="/assets/wr/110/5.3.jpeg" description="110A: Screw the shim in place" %}
+</div>
+
 ### Step three: bend some tabs down, have at the bottom lip, and get out the Dremel
 All around the film gate you'll see thin metal tabs standing up. These will prevent the Lomograflok from sitting flush. I just bent them down, but if you wiggle them back and forth they'll just snap off quite cleanly. Cut some light-sealing foam to size, and align it along all four sides of the film gate. This gives you some extra light-tightness and gives the Lomograflok a bit of cushioning.
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110/6.jpeg" description="Bend down or snap off these tabs all around the film gate" %}
 {% include image-inline.html url="/assets/wr/110/7.jpeg" description="Apply light-seals around the film gate" %}
+</div>
+
+_For the 110A_ there is a continuous metal strip at the top and bottom edge of the film gate, but no tabs at the sides. Just bend these back and flat.
+
+<div style="text-align:center">
+{% include image-inline.html url="/assets/wr/110/6.1.jpeg" description="110A: tabs" %}
 </div>
 
 Next, you'll need to measure where the Lomograflok sits when the camera's film gate is aligned with the film plane. When you look at the top left of the camera you'll see a little indentation. When the Lomograflok lies just to the right of this (on the inside of the top lip), it should perfectly align. Now mark the left and right edges of the Lomograflok on the bottom lip and add 2mm on either side. For me this ended up being ~21mm from the left, and ~5mm from the right. 
