@@ -36,12 +36,12 @@ Before we get stuck in, there are a couple of things you should know:
 * 3D printer if you intend to print the bracket and new infinity stop yourself (optional)
 
 **Parts:**
-* A Polaroid Pathfinder 110B (or 110A - the bracket fits without issue, but there are two small differences that are highlighted in the necessary steps - the grips don't fit, unfortunately, so I'll look into desiging specific grips for the 110A soon)
+* A Polaroid Pathfinder 110B (or 110A - the bracket fits without issue, but there are two small differences that are highlighted in the necessary steps)
 * A Lomofraflok Instax wide back
 * Lomograflok / 110B mounting bracket (3D printed)
 * Modified infinity stop (3D-printed)
-* Left-hand grip (3D-printed, optional)
-* Right-hand grip (3D-printed, optional)
+* Left-hand grip (3D-printed, optional, make sure you print the right one for your specific model)
+* Right-hand grip (3D-printed, optional, there's no right grip for the 110A yet)
 * Door pin and spring shim (3D-printed, only if you're converting a 110A)
 * A sheet of light-sealing foam to cut to size
 * 1/4" tripod screw with length 16mm (excluding head)
@@ -222,7 +222,7 @@ You'll notice the right grip has a hole in it. This is to optionally fit a shutt
 
 Also note that, if you opt to use the grips, you won't be able to use the Lomograflok's darkslide, so remove that and put it somewhere safe.
 
-<strong>These grips don't fit the 110A!</strong> Unfortunately the 110A's body is slightly different. My 110A is a previous conversion that does not have the right-side hinge. I might procure a complete 110A somewhere down the line to make grips specific to the 110A, but for now you're on your own.
+<strong>There are specific grips for the 110B and 110A, so make sure you print the right ones.</strong> Unfortunately the bodies differ slightly. My 110A is a previous conversion that does not have the right-side hinge, so I've only been able to design the left. If you're in the UK and you have a complete 110A you'd like converted, get in touch [on Instagram](https://www.instagram.com/a.l.b.e.r.t.c/) and I'll do it for the price of postage so I can design a right-hand grip as well. 
 
 ### Step nine: Wrap it up
 Right, we're almost done. Remove the bottom tripod screw and set the Lomograflok with the bracket still attached aside. Replace the rangefinder top cover and all four screws. If you've attached the right-side grip, take care to make sure that the little bit on the top fits _into_ the top cover. You'll see what I mean when you're actually doing it. 
