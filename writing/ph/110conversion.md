@@ -59,19 +59,23 @@ This one's optional, as you may opt to order these from a 3D printing company in
 {% include image.html url="/assets/wr/110/1.1.jpeg" %}
 </div>
 
-I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cura slicer](https://ultimaker.com/software/ultimaker-cura) was used to slice my STL files to G-code. Your temperatures will vary depending on the material you choose to print with, but I think these settings will help you get results that are both pretty and strong (it takes forever to print, though, so tweak until it suits your needs):
-* **Layer height**: 0.12mm
+I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cura slicer](https://ultimaker.com/software/ultimaker-cura) was used to slice my STL files to G-code. All the models are in the recommended orientation for printing already. Your temperatures will vary depending on the material you choose to print with, but I think these settings will help you get results that are both pretty and strong (it takes forever to print, though, so tweak until it suits your needs):
+* **Layer height**: 0.16mm
 * **Wall thickness**: 1.2mm
-* **Wall line count**: 6
+* **Wall line count**: 3
 * **Top/bottom thickness**: 0.84mm
-* **Infill density**: 35%
+* **Infill density**: 20%
+* **Enable print cooling**: Yes
+* **Fan speed**: 100%
+* **Initial fan speed**: 0%
+* **Regular fan speed at height**: 0.8mm
 * **Generate support**: Yes
 * **Support placement**: Everywhere
 * **Support type**: Line
 * **Support density**: 10%
-* **Build plate adhesion type**: Brim
+* **Build plate adhesion type**: Raft
 
-I used a brand of filament from Amazon called "Eryone", and decided on the "Jet Black" colour for the bracket, and red for the grips and inifinity stop. I set the hot-end to 200 degrees celsius, and my bed starts out at 60 for the initial layer, then eases down to 50 degrees celsius for the rest. The fan is disabled for the first 7 layers.
+I used a brand of filament from Amazon called "Eryone", and decided on the "Jet Black" colour for the bracket, and red for the grips and inifinity stop. I set the hot-end to 200 degrees celsius, and my bed starts out at 60 for the initial layer, then eases down to 50 degrees celsius for the rest.
 
 ### Step two: remove the back door(s) and film holder
 Both the rear door and inner door are held in place with a thin rod threaded through the hinge. Getting it out is as easy as poking the smallest screwdriver (or even better, a pick) that fits into the topmost hole of the hinge. If you're lucky, you should just be able to push out the rod, grab it from the bottom with a pair of pliers, and pull it all the way out. If not, you'll need to gently tap the top of your screwdriver (or pick) with a hammer until it peeks out. Do this with the rear door first, then the inner door, and set them aside (or toss them in the trash as you won't be needing them again). Keep the rods, you'll need both of them if you decide to use the grips. 
