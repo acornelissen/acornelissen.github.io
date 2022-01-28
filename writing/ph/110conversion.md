@@ -42,6 +42,7 @@ Before we get stuck in, there are a couple of things you should know:
 * Modified infinity stop (3D-printed)
 * Left-hand grip (3D-printed, optional, make sure you print the right one for your specific model)
 * Right-hand grip (3D-printed, optional, there's no right grip for the 110A yet)
+* Double cold-shoe adapter (3D-printed, optional, just 110B for now)
 * Door pin and spring shim (3D-printed, only if you're converting a 110A)
 * A sheet of light-sealing foam to cut to size
 * 1/4" tripod screw with length 16mm (excluding head)
@@ -239,7 +240,7 @@ Now you'll need to take one extra thing into consideration when replacing the Lo
 {% include image-inline.html url="/assets/wr/110/22.jpeg" description="Pretty obvious now that you look at it isn't it?" %}
 </div>
 
-Now continue mounting the Lomograflok and bracket as you did before, securing it with the tripod screw. 
+Now continue mounting the Lomograflok and bracket as you did before, securing it with the tripod screw. If you would like to mount a flash (with sync cable to the lens) and/or a light-meter, you can also optionally mount the cold-shoe adapter. 
 
 ### Finally, step ten: Get out there and shoot a test pack of film!
 You're good to go! Put in a pack of Instax wide, eject the pack's dark-slide, and take your first picture. You might find that you need to continue tweaking your rangefinder. It's all part of the fun. 
