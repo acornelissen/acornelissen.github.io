@@ -47,7 +47,7 @@ Before we get stuck in, there are a couple of things you should know:
 * A sheet of light-sealing foam to cut to size
 * 1/4-20 tripod screw with length 16mm (excluding head)
 * 1/4-20 tripod screw with length 11mm (excluding head)
-* 3/8-16 male to 1/4-20 female adapter screw with length 10mm (optional, only if you print the adapter for use with a tripod)
+* 3/8-16 male to 1/4-20 thread apapter - Google for SmallRig 1610 (optional, only if you print the adapter for use with a tripod)
 * An empty Instax wide cartridge
 * Either ground glass, a perspex sheet, or just the lid off a takeaway curry container cut to size (I used the lid approach)
 
