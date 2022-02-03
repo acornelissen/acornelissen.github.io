@@ -38,15 +38,16 @@ Before we get stuck in, there are a couple of things you should know:
 **Parts:**
 * A Polaroid Pathfinder 110B (or 110A - the bracket fits without issue, but there are two small differences that are highlighted in the necessary steps)
 * A Lomofraflok Instax wide back
-* Lomograflok / 110B mounting bracket (3D printed)
+* Lomograflok / 110B mounting bracket (3D printed, there's a version for use with a tripod and without, print the one you prefer)
 * Modified infinity stop (3D-printed)
 * Left-hand grip (3D-printed, optional, make sure you print the right one for your specific model)
 * Right-hand grip (3D-printed, optional, there's no right grip for the 110A yet)
 * Double cold-shoe adapter (3D-printed, optional, just 110B for now)
 * Door pin and spring shim (3D-printed, only if you're converting a 110A)
 * A sheet of light-sealing foam to cut to size
-* 1/4" tripod screw with length 16mm (excluding head)
-* 1/4" tripod screw with length 11mm (excluding head)
+* 1/4-20 tripod screw with length 16mm (excluding head)
+* 1/4-20 tripod screw with length 11mm (excluding head)
+* 3/8-16 male to 1/4-20 female adapter screw with length 10mm (optional, only if you print the adapter for use with a tripod)
 * An empty Instax wide cartridge
 * Either ground glass, a perspex sheet, or just the lid off a takeaway curry container cut to size (I used the lid approach)
 
@@ -234,6 +235,7 @@ Right, we're almost done. Remove the bottom tripod screw and set the Lomograflok
 
 Now you'll need to take one extra thing into consideration when replacing the Lomograflok and bracket. You'll notice there's a gap in the rangefinder cover on the right, and a matching extrusion on the bracket. Tilt the Lomograflok and bracket slightly so that this extrusion slots _into_ the hole _inside_ the cover. This is an extra measure to keep the bracket securely in place. 
 
+<em>If you printed the adapter for use with a tripod</em> you'll need to screw the 3/8-16 male to 1/4-20 female adapter into the relevant hole. 
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110/21.jpeg" description="This hole will help keep things in place" %}
