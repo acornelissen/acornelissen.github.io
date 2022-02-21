@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Albert writes.
-post_title: 'Building a Frankinstax: a Polaroid Pathfinder 110B & Lomograflok conversion'
+post_title: 'Building a Frankinstax: a Polaroid Pathfinder 110a/110b & Lomograflok conversion'
 ---
 
 
 ## Introduction
-This is a project that started a quite while ago. I had found and purchased a Polaroid 110A with the original intention of converting it to shoot Instax wide. I ended up destroying three Instax Wide 300s before getting to a point where I successfully mounted a horribly fragile bodged back to the 110A, using some plywood and way too much Sugru. It was a difficult conversion that involved cutting away part of the 110A's body (going through who knows how many Dremel metal cutting discs). I ended up with something that really took surprisingly good photos. Sure it spat out skew horizons, it was difficult to frame photos accurately, and it wasn't pretty to look at, but it proved one thing: ***give Instax good glass and it sings***.
+This is a project that started a quite while ago. I had found and purchased a Polaroid 110a with the original intention of converting it to shoot Instax wide. I ended up destroying three Instax Wide 300s before getting to a point where I successfully mounted a horribly fragile bodged back to the 110a, using some plywood and way too much Sugru. It was a difficult conversion that involved cutting away part of the 110a's body (going through who knows how many Dremel metal cutting discs). I ended up with something that really took surprisingly good photos. Sure it spat out skew horizons, it was difficult to frame photos accurately, and it wasn't pretty to look at, but it proved one thing: ***give Instax good glass and it sings***.
 
 And then Lomography surprised everyone with the [Lomograflok](https://shop.lomography.com/en/lomo-graflok-instant-back). Of course I preordered one right after it was announced. Although the original intention of the back was to bring Instax to 4x5 cameras (and it does this very well), even before release the usual makers (like [Ethan Moses](https://www.cameradactyl.com/) and [Steve Lloyd](https://chroma.camera/)) spotted the potential of this device to be paired with good lenses to create a serious portable solution with incredible results.
 
-So there I was, browsing new stock on the [West Yorkshire Cameras](https://wycameras.com/) website as one does, when I saw a Polaroid 110B kit for a _very good_ price. The idea had been brewing in my subconscious to redo my original "Frankinstax", removing the flimsy, hacked apart Instax camera and finding a reliable way to mount the Lomograflok, but a fresh start with the improved 110B would be even better. So I bought it. When it arrived I was surprised at how well the two fit together. And here begins our journey...
+So there I was, browsing new stock on the [West Yorkshire Cameras](https://wycameras.com/) website as one does, when I saw a Polaroid 110b kit for a _very good_ price. The idea had been brewing in my subconscious to redo my original "Frankinstax", removing the flimsy, hacked apart Instax camera and finding a reliable way to mount the Lomograflok, but a fresh start with the improved 110b would be even better. So I bought it. When it arrived I was surprised at how well the two fit together. And here begins our journey...
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110/1.jpeg" %}
@@ -21,7 +21,7 @@ So there I was, browsing new stock on the [West Yorkshire Cameras](https://wycam
 Before we get stuck in, there are a couple of things you should know:
 
 * This is a destructive conversion, but relatively easy compared to the other, older methods out there (I find this acceptable as the film for this is long gone, and we're giving the camera a new lease on life)
-* Because of the 110B and Lomograflok's geometry, and how this conversion was designed, your pictures will be "upside down", with the wide part of the frame on the top (I quite like the different look it gives)
+* Because of the 110b and Lomograflok's geometry, and how this conversion was designed, your pictures will be "upside down", with the wide part of the frame on the top (I quite like the different look it gives)
 * Framing is slightly off, but you get to know by how much quite quickly
 
 ### You will need
@@ -36,14 +36,14 @@ Before we get stuck in, there are a couple of things you should know:
 * 3D printer if you intend to print the bracket and new infinity stop yourself (optional)
 
 **Parts:**
-* A Polaroid Pathfinder 110B (or 110A - the bracket fits without issue, but there are two small differences that are highlighted in the necessary steps)
+* A Polaroid Pathfinder 110b (or 110a - the bracket fits without issue, but there are two small differences that are highlighted in the necessary steps)
 * A Lomofraflok Instax wide back
-* Lomograflok / 110B mounting bracket (3D printed, there's a version for use with a tripod and without, print the one you prefer)
+* Lomograflok / 110b mounting bracket (3D printed, there's a version for use with a tripod and without, print the one you prefer)
 * Modified infinity stop (3D-printed)
 * Left-hand grip (3D-printed, optional, make sure you print the right one for your specific model)
-* Right-hand grip (3D-printed, optional, there's no right grip for the 110A yet)
-* Double cold-shoe adapter (3D-printed, optional, just 110B for now)
-* Door pin and spring shim (3D-printed, only if you're converting a 110A)
+* Right-hand grip (3D-printed, optional, make sure you print the right one for your specific model)
+* Double cold-shoe adapter (3D-printed, optional, just 110b for now)
+* Door pin and spring shim (3D-printed, only if you're converting a 110a)
 * A sheet of light-sealing foam to cut to size
 * 1/4-20 tripod screw with length 16mm (excluding head)
 * 1/4-20 tripod screw with length 11mm (excluding head)
@@ -94,12 +94,12 @@ Next, inside the camera on the left is a piece of plastic that was used to hold 
 {% include image-inline.html url="/assets/wr/110/5.jpeg" description="Plastic piece removed, screws replaced" %}
 </div>
 
-_For the 110A_ the lens door pin and spring sits behind this plastic piece. **Be careful** when removing it as the spring will shoot out and be lost to time. Once you've removed the plastic and collected the pin and spring, place them back into the hole carefully, and hold them in place by screwing the 3D-printed shim into the holes that were holding the plastic piece. 
+_For the 110a_ the lens door pin and spring sits behind this plastic piece. **Be careful** when removing it as the spring will shoot out and be lost to time. Once you've removed the plastic and collected the pin and spring, place them back into the hole carefully, and hold them in place by screwing the 3D-printed shim into the holes that were holding the plastic piece. 
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110/5.1.jpeg" description="110A: Spring and pin" %}
-{% include image-inline.html url="/assets/wr/110/5.2.jpeg" description="110A: Back in the hole, short end of the pin facing up" %}
-{% include image-inline.html url="/assets/wr/110/5.3.jpeg" description="110A: Screw the shim in place" %}
+{% include image-inline.html url="/assets/wr/110/5.1.jpeg" description="110a: Spring and pin" %}
+{% include image-inline.html url="/assets/wr/110/5.2.jpeg" description="110a: Back in the hole, short end of the pin facing up" %}
+{% include image-inline.html url="/assets/wr/110/5.3.jpeg" description="110a: Screw the shim in place" %}
 </div>
 
 ### Step three: bend some tabs down, have at the bottom lip, and get out the Dremel
@@ -110,10 +110,10 @@ All around the film gate you'll see thin metal tabs standing up. These will prev
 {% include image-inline.html url="/assets/wr/110/7.jpeg" description="Apply light-seals around the film gate" %}
 </div>
 
-_For the 110A_ there is a continuous metal strip at the top and bottom edge of the film gate, but no tabs at the sides. Just bend these back and flat.
+_For the 110a_ there is a continuous metal strip at the top and bottom edge of the film gate, but no tabs at the sides. Just bend these back and flat.
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110/6.1.jpeg" description="110A: tabs" %}
+{% include image-inline.html url="/assets/wr/110/6.1.jpeg" description="110a: tabs" %}
 </div>
 
 Next, you'll need to measure where the Lomograflok sits when the camera's film gate is aligned with the film plane. When you look at the top left of the camera you'll see a little indentation. When the Lomograflok lies just to the right of this (on the inside of the top lip), it should perfectly align. Now mark the left and right edges of the Lomograflok on the bottom lip and add 2mm on either side. For me this ended up being ~21mm from the left, and ~5mm from the right. 
@@ -158,7 +158,7 @@ There are four screws that need to be removed (remember where each goes, they're
 * On the back, top right under the rangefinder, inside a little hole in the camera body
 * On the top, right, the screw in the flash shoe (remember how it all fits together)
 * On the front, with the bellows collapsed, slightly off center to the right, right under the rangefinder overhang
-* <em>For the 110A</em> you need to remove the leather strap on the left-hand side as well
+* <em>For the 110a</em> you need to remove the leather strap on the left-hand side as well
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110/12.jpeg" description="Back, top left" %}
@@ -169,7 +169,7 @@ There are four screws that need to be removed (remember where each goes, they're
 
 Be extremely careful when you lift off the plastic rangefinder cover. Some of the glass inserts might be loose, and the flash shoe's wire is still attached. I cut the wire as it just gets in the way, the flash shoe is an unconventional size (and orientation), and I plan to design an adapter with new standard hot-shoe which will be soldered on later. I gave all glass surfaces a good clean with some residual oil remover, both those in the cover, and the rangefinder mechanism. It can make an incredible difference to the brightness of the viewfinder patch. Just be gentle as you don't want to throw the alignment out if you can help it. 
 
-### Step six: mount the Lomograflok to the Polaroid 110B for rangefinder adjustment
+### Step six: mount the Lomograflok to the Polaroid 110b for rangefinder adjustment
 This part is easy. Before you start, remove the dark-slide. Then carefully slide your Lomograflok into the 3D printed bracket, with the buttons towards the open side. The short arm of the bracket should be on the bottom of the Lomograflok, and the tripod hole should roughly align with the hole in the bracket. Don't worry if they don't 100% align, when you screw things together, everything will be pulled into the correct position, so go ahead and screw the bracket to the Lomograflok using the shorter 1/4" tripod screw (don't over-tighten).
 
 <div style="text-align:center">
@@ -228,7 +228,7 @@ You'll notice the right grip has a hole in it. This is to optionally fit a shutt
 
 Also note that, if you opt to use the grips, you won't be able to use the Lomograflok's darkslide, so remove that and put it somewhere safe.
 
-<strong>There are specific grips for the 110B and 110A, so make sure you print the right ones.</strong> Unfortunately the bodies differ slightly. My 110A is a previous conversion that does not have the right-side hinge, so I've only been able to design the left. If you're in the UK and you have a complete 110A you'd like converted, get in touch [on Instagram](https://www.instagram.com/a.l.b.e.r.t.c/) and I'll do it for the price of postage so I can design a right-hand grip as well. 
+<strong>There are specific grips for the 110b and 110a, so make sure you print the right ones.</strong> Unfortunately the bodies differ slightly.
 
 ### Step nine: Wrap it up
 Right, we're almost done. Remove the bottom tripod screw and set the Lomograflok with the bracket still attached aside. Replace the rangefinder top cover and all four screws. If you've attached the right-side grip, take care to make sure that the little bit on the top fits _into_ the top cover. You'll see what I mean when you're actually doing it. 
@@ -267,14 +267,14 @@ You're good to go! Put in a pack of Instax wide, eject the pack's dark-slide, an
 </div>
 
 
-_A final note on the Lomograflok darkslide_: If you're not using the left grip, then you can still use the darkslide. I've bent mine slightly upwards at around a 30 degree angle at the handle, and this allows me to continue using it even with the Lomograflok mounted on the 110B. Still a bit of effort to get it out, though, so I've decided to leave it out and use the grip.
+_A final note on the Lomograflok darkslide_: If you're not using the left grip, then you can still use the darkslide. I've bent mine slightly upwards at around a 30 degree angle at the handle, and this allows me to continue using it even with the Lomograflok mounted on the 110b. Still a bit of effort to get it out, though, so I've decided to leave it out and use the grip.
 
 ### Conclusion
 I really hope you enjoy shooting your newly converted camera [as much as I do](https://www.instagram.com/frankinstax/). It's a real head-turner and conversation starter, and the perfect way to disarm subjects for very natural portraits. Even though the conversion is straightforward, it took a lot of effort to get here. The infinity stop went through about 12 iterations, and the bracket through about 8 (all printed). At the end of the day, apart from really wanting a decent Instax wide camera, I did this to share it all for others to reproduce and improve on. 
 
 <div style="text-align:center; margin-bottom: 10px;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tt-sIBhyUkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border: 1px solid #cccc; padding: 5px;" allowfullscreen></iframe><br>
-<small><em><a href="https://www.youtube.com/c/DoingFilmThings/" target="_blank">Ribsy</a> did a great walkthrough of the bespoke 110A conversion I did for him.</em></small>
+<small><em><a href="https://www.youtube.com/c/DoingFilmThings/" target="_blank">Ribsy</a> did a great walkthrough of the bespoke 110a conversion I did for him.</em></small>
 </div>
 
 
