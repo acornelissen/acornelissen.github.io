@@ -4,9 +4,10 @@ title: Albert writes.
 post_title: 'Building a Frankinstax: a Polaroid Pathfinder 110a/110b & Lomograflok conversion'
 ---
 
-<strong>If you plan on doing this conversion, hold on a bit, because a better, easier, non-destructive, reversible version is on the way!</strong>
-
 ## Introduction
+
+<strong>👋 <em>Hello!</em> If you plan on doing this conversion, hold on a bit. A better, easier, non-destructive, reversible version is on the way!</strong>
+
 This is a project that started a quite while ago. I had found and purchased a Polaroid 110a with the original intention of converting it to shoot Instax wide. I ended up destroying three Instax Wide 300s before getting to a point where I successfully mounted a horribly fragile bodged back to the 110a, using some plywood and way too much Sugru. It was a difficult conversion that involved cutting away part of the 110a's body (going through who knows how many Dremel metal cutting discs). I ended up with something that really took surprisingly good photos. Sure it spat out skew horizons, it was difficult to frame photos accurately, and it wasn't pretty to look at, but it proved one thing: ***give Instax good glass and it sings***.
 
 And then Lomography surprised everyone with the [Lomograflok](https://shop.lomography.com/en/lomo-graflok-instant-back). Of course I preordered one right after it was announced. Although the original intention of the back was to bring Instax to 4x5 cameras (and it does this very well), even before release the usual makers (like [Ethan Moses](https://www.cameradactyl.com/) and [Steve Lloyd](https://chroma.camera/)) spotted the potential of this device to be paired with good lenses to create a serious portable solution with incredible results.
