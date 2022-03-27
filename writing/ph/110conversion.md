@@ -50,13 +50,13 @@ Before we get stuck in, there are a couple of things you should know:
 ### Step one: print your parts
 This one's optional, as you may opt to order these from a 3D printing company instead, but I think it's pretty important that I at least provide the settings used to get results that I was happy with (after many tries).
 
-[Click here to download the necessary files from Thingiverse](https://www.thingiverse.com/thing:5177231, [Prusa Prints](https://www.prusaprinters.org/prints/155580-polaroid-pathfinder-110a110b-lomograflok-conversio) or download them directly:
+Click here to download the necessary files from [Prusa Prints](https://www.prusaprinters.org/prints/155580-polaroid-pathfinder-110a110b-lomograflok-conversio), [Thingiverse](https://www.thingiverse.com/thing:5177231), or download them directly:
  * [110a](/assets/wr/110v2/stl/110a.zip) 
  * [110b](/assets/wr/110v2/stl/110b.zip)
  * [800](/assets/wr/110v2/stl/800.zip)
  * [800 with door spring and pin under the old film holder](/assets/wr/110v2/stl/800 (spring under film holder).zip)
 
-_Disclaimer:_ I'm very confident about the parts needed for the 110s, but there are many cameras that Polaroid released where they mixed and matched bits, so the conversion should theoretically work with the 120, 150, 160, and 800 as well, but you might need to print out both version of the grips and see which ones work for your camera. I've included the grouping of parts for the two versions of the 800 I've seen, but they might not work for your version.
+_Disclaimer:_ I'm very confident about the parts needed for the 110s, but there are many cameras that Polaroid released where they mixed and matched bits, so the conversion should theoretically work with the 120, 150, 160, and 800 as well, but you might need to print out both versions of the grips and see which ones work for your camera. I've included the grouping of parts for the two versions of the 800 I've seen, but they might not work for your version.
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110v2/1a.png" %}
@@ -158,14 +158,14 @@ This part is easy. Before you start, measure and cut some light-sealing foam and
 {% include image-inline.html url="/assets/wr/110v2/pre2.jpeg" description="Tripod adapter screwed in" %}
 </div>
 
-Next, remove the Lomograflok's dark-slide. Then carefully slide your Lomograflok into the 3D printed bracket, with the buttons towards the open side. The short arm of the bracket should be on the bottom of the Lomograflok, and the tripod hole should roughly align with the hole in the bracket. Don't worry if they don't 100% align, when you screw things together, everything will be pulled into the correct position, so go ahead and screw the bracket to the Lomograflok using the shorter 1/4" tripod screw (don't over-tighten).
+Next, remove the Lomograflok's dark-slide. Then carefully slide your Lomograflok into the 3D printed bracket, with the buttons towards the open side. The tripod hole on the bottom of the Lomograflok should roughly align with the hole on top of the bracket. Don't worry if they don't 100% align, when you screw things together, everything will be pulled into the correct position, so go ahead and screw the bracket to the Lomograflok using the shorter 1/4" tripod screw (don't over-tighten).
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110v2/16.jpeg" description="Remember to remove the darkslide, and then slide the Lomograflok into the holder" %}
 {% include image-inline.html url="/assets/wr/110v2/17.jpeg" description="Align the top holes" %}
 </div>
 
-Next, rest the Lomograflok and bracket on the lip around the camera. Now roughly align the hole in the bottom of the bracket with the camera's tripod hole and screw them together using the longer 1/4" screw. Once again, this should gently pull everything into the correct position. It should be secure, but still be careful with it as the top cover isn't in place and it plays quite a big part in keeping things where they should be.
+Next, rest the Lomograflok and bracket on the lip around the camera. Now roughly align the hole in the bottom of the bracket with the camera's tripod hole and screw them together using the longer 1/4" screw. Once again, this should gently pull everything into the correct position. It should be secure, but still be careful with it as the top cover and left grip isn't in place and they play quite a big part in keeping things where they should be.
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110v2/18.jpeg" description="Screw the bracket onto the camera" %}
@@ -189,6 +189,8 @@ Now comes the frustrating part: close focus. Mount the camera on a tripod using 
 
 To adjust, focus the lens to its closest distance: 3 feet. Then place something like a magazine with contrasty text roughly 3 feet away. Move the camera back and forth while looking through the rangefinder until the patch aligns. Check the ground glass. Not in focus? Time to adjust the rangefinder. There's a little screw (see image) on a slanted surface to the right of the rangefinder, on the back. If you're lucky it's a slotted screw. If you're not (like me) then it's a tiny hex bolt. Either way, extremely small movements of this screw will move your rangefinder patch left and right.
 
+_Tip_: I've found a good starting point is to set the lens's focus distance to the 50 foot mark, then align the rangefinder as if you're aligning for infinity. Eight out ten times I've found no further adjustment is necessary at closest focus.
+
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110v2/20.jpeg" %}
 </div>
@@ -199,7 +201,7 @@ Repeat this process for random distances between closest focus and infinity. Now
 
 You might be lucky and have everything bang on without need to touch the rangefinder, but be prepared to have close focus accurately aligned, and infinity slightly off, as the distance between the lens and film plane has changed. This is a good trade-off for me as even though the rangefinder doesn't agree, I know things are definitely in focus at infinity with a small enough aperture.
 
-### Step seven: Add the grips (optional)
+### Step seven: Add the grips (optional, but recommended)
 If you had the patience to print the very intricate grips, fitting them is quite straightforward. I'd recommend threading the rod through the freshly printed grip hinges first to clear out any debris. You'll need to fit the grips before the Lomograflok. 
 
 For both grips, press-fit the hinge into place. Then you'll need to thread the rod through the hinge. Start from the bottom. I've found it can be a little tight, so make sure that everything is aligned, and push forcefully, but carefully. I use the pliers to help get some grip on the rod, and gently tap the last bit into place.
@@ -212,8 +214,6 @@ For both grips, press-fit the hinge into place. Then you'll need to thread the r
 </div>
 
 You'll notice the right grip has a hole in it. This is to optionally fit a shutter release cable to move the shutter to a less awkward place. The trade-off here for the moment is that you'll need attach/remove the cable release from the lens every time you collapse or open the camera.
-
-Also note that, if you opt to use the grips, you won't be able to use the Lomograflok's darkslide, so remove that and put it somewhere safe.
 
 <strong>There are specific grips for the 110b and 110a, so make sure you print the right ones.</strong> Unfortunately the bodies differ slightly.
 
