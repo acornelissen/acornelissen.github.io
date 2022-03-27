@@ -50,7 +50,7 @@ Before we get stuck in, there are a couple of things you should know:
 ### Step one: print your parts
 This one's optional, as you may opt to order these from a 3D printing company instead, but I think it's pretty important that I at least provide the settings used to get results that I was happy with (after many tries).
 
-[Click here to download the necessary files from Thingiverse](https://www.thingiverse.com/thing:5177231) or download them directly:
+[Click here to download the necessary files from Thingiverse](https://www.thingiverse.com/thing:5177231, [Prusa Prints](https://www.prusaprinters.org/prints/155580-polaroid-pathfinder-110a110b-lomograflok-conversio) or download them directly:
  * [110a](/assets/wr/110v2/stl/110a.zip) 
  * [110b](/assets/wr/110v2/stl/110b.zip)
  * [800](/assets/wr/110v2/stl/800.zip)
