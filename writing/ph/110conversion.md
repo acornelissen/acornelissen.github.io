@@ -39,7 +39,7 @@ Before we get stuck in, there are a couple of things you should know:
 * Right-hand grip (3D-printed, optional, make sure you print the right one for your specific model)
 * Double cold-shoe adapter (3D-printed, optional)
 * Door pin and spring shim (3D-printed, only if you're converting a 110a)
-* A sheet of light-sealing foam to cut to size (I use 2.5mm thickness)
+* A sheet of light-sealing foam to cut to size (I use 1.5mm thickness)
 * 1/4-20 tripod screw with length 16mm (excluding head)
 * 1/4-20 tripod screw with length 11mm (excluding head)
 * 3/8-16 male to 1/4-20 thread apapter - Google for SmallRig 1610
@@ -215,7 +215,7 @@ For both grips, press-fit the hinge into place. Then you'll need to thread the r
 
 You'll notice the right grip has a hole in it. This is to optionally fit a shutter release cable to move the shutter to a less awkward place. The trade-off here for the moment is that you'll need attach/remove the cable release from the lens every time you collapse or open the camera.
 
-<strong>There are specific grips for the 110b and 110a, so make sure you print the right ones.</strong> Unfortunately the bodies differ slightly.
+<strong>There are specific grips for the 110b and 110a bodies I've worked on, but since then I've learned there's no set rules for which grips will fit.</strong> Polaroid/Yashica seem to have mixed and matched parts across the whole range, which means that if a grip you print doesn't fit, then you unfortunately need to print the other version and try that. What I can confidently say, however, is that one of the two versions on each side has worked with every single body I've converted (so far).
 
 ### Step eight: Wrap it up
 Right, we're almost done. Remove the bottom tripod screw and set the Lomograflok with the bracket still attached aside. Replace the rangefinder top cover and all four screws. If you've attached the right-side grip, take care to make sure that the little bit on the top fits _into_ the top cover, and the bracket is held into place on the left by the grip. Wait, let me explain...
