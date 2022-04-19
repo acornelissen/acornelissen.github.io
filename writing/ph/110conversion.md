@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Albert writes.
-post_title: 'A fully reversible Polaroid Pathfinder 110a/110b & Lomograflok conversion'
+post_title: 'A fully reversible Polaroid Pathfinder 110a / 110b/ 800 & Lomograflok conversion'
 ---
 
 ## Introduction
@@ -31,7 +31,7 @@ Before we get stuck in, there are a couple of things you should know:
 * A 3D printer if you intend to print the bracket, new infinity stop, grips, and the cold-shoe adapter yourself (optional)
 
 **Parts:**
-* A Polaroid Pathfinder 110b (or 110a - the bracket fits without issue on both models)
+* A Polaroid Pathfinder 110b, 110a, or 800 (the bracket fits all three model without issues)
 * A Lomofraflok Instax wide back
 * Lomograflok / 110 mounting bracket (3D printed)
 * Modified infinity stop (3D-printed)
@@ -54,9 +54,8 @@ Click here to download the necessary files from [Printables](https://www.printab
  * [110a](/assets/wr/110v2/stl/110a.zip) 
  * [110b](/assets/wr/110v2/stl/110b.zip)
  * [800](/assets/wr/110v2/stl/800.zip)
- * [800 with door spring and pin under the old film holder](/assets/wr/110v2/stl/800 (spring under film holder).zip)
 
-_Disclaimer:_ I'm very confident about the parts needed for the 110s, but there are many cameras that Polaroid released where they mixed and matched bits, so the conversion should theoretically work with the 120, 150, 160, and 800 as well, but you might need to print out both versions of the grips and see which ones work for your camera. I've included the grouping of parts for the two versions of the 800 I've seen, but they might not work for your version.
+_Disclaimer:_ I'm very confident about the parts needed for the 110s, but there are many cameras that Polaroid released where they mixed and matched bits, so the conversion should theoretically work with the 120, 150, 160, and 800 as well, but you might need to print out both versions of the grips and see which ones work for your camera.
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110v2/1a.png" %}
@@ -78,7 +77,7 @@ I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cur
 * **Support density**: 15%
 * **Build plate adhesion type**: Brim
 
-I used a brand of filament from Amazon called "eSun", and decided on the matte black for the bracket, and red for the grips and inifinity stop. I set the hot-end to 205 degrees celsius, and my bed starts out at 65 for the initial layer, then eases down to 60 degrees celsius for the rest.
+I used a brand of filament from Amazon called "Eryone", and decided on the matte black for the bracket, and red for the grips and inifinity stop. I set the hot-end to 205 degrees celsius, and my bed starts out at 65 for the initial layer, then eases down to 60 degrees celsius for the rest.
 
 ### Step two: remove the back door(s) and film holder
 Both the rear door and inner door are held in place with a thin rod threaded through the hinge. Getting it out is as easy as poking the smallest screwdriver (or even better, a pick) that fits into the topmost hole of the hinge. If you're lucky, you should just be able to push out the rod, grab it from the bottom with a pair of pliers, and pull it all the way out. If not, you'll need to gently tap the top of your screwdriver (or pick) with a hammer until it peeks out. Do this with the rear door first (left hinge), then the inner door (right hinge), and set them aside (keep them if you ever want to restore the camera to its original state). Keep the rods, you'll need both of them if you decide to use the grips. 
@@ -128,7 +127,7 @@ The existing infinity stop is unfortunately too short to do the job, so we need 
 </div>
 
 
-_For the 800_ there are some out there with an infinity stop that looks exactly like the 110s, but I've come across a version where the infinity stop is held in place with four rivets and no screws, and the holes that are present after removing this aren't threaded so you can't hold the new infinity stop in place with scews. You'll need to find infinity by locking the lens into the loose 3D-printed infinity stop, mark that, slide the lens back, and then **superglue** the infinity stop in place. My advice is have a close look before you buy an 800 and make sure it doesn't have this style of infinity stop.
+_For the 800_ there are some out there with an infinity stop that looks exactly like the 110s, but I've come across a version where the infinity stop is held in place with four rivets and no screws, and the holes that are present after removing this aren't threaded so you can't hold the new infinity stop in place with screws. You'll need to find infinity by locking the lens into the loose 3D-printed infinity stop, mark that, slide the lens back, and then **superglue** the infinity stop in place. My advice is have a close look before you buy an 800 and make sure it doesn't have this style of infinity stop.
 
 ### Step four: Get the rangefinder cover off, ready for alignment
 You'll need to remove the rangefinder cover before you mount the Lomograflok, as it will be in the way if you need to make adjustments. 
@@ -172,7 +171,7 @@ Next, rest the Lomograflok and bracket on the lip around the camera. Now roughly
 </div>
 
 ### Step six: infinity stop and rangefinder alignment
-This is where things start getting exciting, but slightly frustrating. Take the empty Instax wide cartridge and cut out the strip of plastic running along the back, also removing the innards. Then tape your ground glass (or plastic takeout lid) to the inside front of the cartridge, and load this into the Lomograflok.
+This is where things start getting exciting, but slightly frustrating. Take the empty Instax wide cartridge and cut out the strip of plastic running along the back, also removing the innards. Then tape your ground glass (or plastic takeout lid) to the inside front of the cartridge, and load this into the Lomograflok. Alternatively, there's a [printable cartridge](https://www.printables.com/model/172991-instax-wide-ground-glass-cartridge) I designed for this purpose that currently takes a Pentax 67 focus screen, but I've included a STEP file so you can modify it to your needs.
 
 <div style="text-align:center">
 {% include image-inline.html url="/assets/wr/110v2/23.jpeg" description="All you need is the cartridge shell" %}
@@ -185,21 +184,18 @@ This is where things start getting exciting, but slightly frustrating. Take the 
 
 Expand the bellows and lock the lens into place, then focus to infinity and aperture wide open at f4.7. Use a cable release, put the shutter into bulb mode, and lock the release to keep it open. Aim the camera at something far away with contrast, like a telephone pole or tree with no leaves against a clear sky. With the rear door of the Lomograflok open, using the image projected on the ground glass, slide the infinity stop back and forth until you get a sharp image. This is your new infinity focus point. Screw that infinity stop down.
 
-Now comes the frustrating part: close focus. Mount the camera on a tripod using the hole on the bottom of the bracket. This frees up at least one of your hands to make adjustment easier. 
+You'll notice that your rangefinder is now off when the lens is focused to infinity, so we need to adjust that. The first step is to look for the rangefinder cam on right side of the mechanism. It has a single screw keeping it in place. You'll also see a mark on top where the rangefinder arm meets the cam. That's infinity for the default configuration, but for this conversion it's slightly to the left of that mark. Loosen the screw just enough so the cam can be adjusted. While the camera is still set to infinity focus, adjust the cam little by little until the rangefinder images line up. Tighten the screw properly, taking care not to move the cam in the process.
 
-To adjust, focus the lens to its closest distance: 3 feet. Then place something like a magazine with contrasty text roughly 3 feet away. Move the camera back and forth while looking through the rangefinder until the patch aligns. Check the ground glass. Not in focus? Time to adjust the rangefinder. There's a little screw (see image) on a slanted surface to the right of the rangefinder, on the back. If you're lucky it's a slotted screw. If you're not (like me) then it's a tiny hex bolt. Either way, extremely small movements of this screw will move your rangefinder patch left and right.
+Next, set the camera to closest focus. Most of the time you'll be lucky, and the image on the ground glass and rangefinder should agree. 
 
-_Tip_: I've found a good starting point is to set the lens's focus distance to the 50 foot mark, then align the rangefinder as if you're aligning for infinity. Eight out ten times I've found no further adjustment is necessary at closest focus.
+If not, you'll need to dial in the horizontal alignment by adjusting the small screw on back of the mirror that is moved by the rangefinder arm. Once this is done, go back to infinity and make further adjustments. You might need to unscrew the infinity stop and reset infinity again. It's a bit of trial and error, but go back and forth and eventually everything should align.
+
+If you need to make vertical adjustments, you can do so by using the screw behind the beam-splitter. This process is much easier on the cameras where the viewfinder and rangefinder are separate.
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110v2/20.jpeg" %}
 </div>
 
-Now move your camera back and forth while looking at the ground glass until the image is in focus, and then check the rangefinder again. If it's not aligned, fiddle with the screw until it's close. Rinse and repeat until the image on your ground glass and rangefinder agree. 
-
-Repeat this process for random distances between closest focus and infinity. Now go back to closest focus, as you'll probably need to adjust it again, very slightly. 
-
-You might be lucky and have everything bang on without need to touch the rangefinder, but be prepared to have close focus accurately aligned, and infinity slightly off, as the distance between the lens and film plane has changed. This is a good trade-off for me as even though the rangefinder doesn't agree, I know things are definitely in focus at infinity with a small enough aperture.
 
 ### Step seven: Add the grips (optional, but recommended)
 If you had the patience to print the very intricate grips, fitting them is quite straightforward. I'd recommend threading the rod through the freshly printed grip hinges first to clear out any debris. You'll need to fit the grips before the Lomograflok. 
