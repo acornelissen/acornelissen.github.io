@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Albert writes.
-post_title: 'A fully reversible Polaroid Pathfinder 110a / 110b/ 800 & Lomograflok conversion'
+post_title: 'A fully reversible Polaroid Pathfinder 110a / 110b / 800 / 150 & Lomograflok conversion'
 ---
 
 ## Introduction
@@ -31,7 +31,7 @@ Before we get stuck in, there are a couple of things you should know:
 * A 3D printer if you intend to print the bracket, new infinity stop, grips, and the cold-shoe adapter yourself (optional)
 
 **Parts:**
-* A Polaroid Pathfinder 110b, 110a, or 800 (the bracket fits all three model without issues)
+* A Polaroid Pathfinder 110b, 110a, or 800/150 (the bracket fits all these model without issues)
 * A Lomofraflok Instax wide back
 * Lomograflok / 110 mounting bracket (3D printed)
 * Modified infinity stop (3D-printed)
@@ -53,9 +53,9 @@ This one's optional, as you may opt to order these from a 3D printing company in
 Click here to download the necessary files from [Printables](https://www.printables.com/model/155580-polaroid-pathfinder-110a110b-lomograflok-conversio), [Thingiverse](https://www.thingiverse.com/thing:5177231), or download them directly:
  * [110a](/assets/wr/110v2/stl/110a.zip) 
  * [110b](/assets/wr/110v2/stl/110b.zip)
- * [800](/assets/wr/110v2/stl/800.zip)
+ * [800/150](/assets/wr/110v2/stl/800.zip)
 
-_Disclaimer:_ I'm very confident about the parts needed for the 110s, but there are many cameras that Polaroid released where they mixed and matched bits, so the conversion should theoretically work with the 120, 150, 160, and 800 as well, but you might need to print out both versions of the grips and see which ones work for your camera.
+_Disclaimer:_ I'm very confident about the parts needed for the 110s, but there are many cameras that Polaroid released where they mixed and matched bits, so the conversion should theoretically work with the 120, 150, 160, and 800/150 as well, but you might need to print out both versions of the grips and see which ones work for your camera.
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110v2/1a.png" %}
@@ -107,9 +107,9 @@ _For the 110a_ the lens door pin and spring sits behind this plastic piece. **Be
 _For the 800_ I've seen two variants, one that looks like the 110b, where you can just remove the film holder with screws (and the door pin and spring are under a separate metal bar), and then there's the version that has the door pin and spring under the film holder, and this film holder is riveted to the camera body. Unfortunately you need some force to get both the rivets and film holder out and will probably end up destroying it. After it's out you can use the 110a 3D-printed shim and two screws to hold the pin and spring in place. It's a faff, so when buying an 800, look closely at the photos and try to avoid those with this style of film holder.
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/800_1.jpeg" description="800: Film holder attached by rivets" %}
-{% include image-inline.html url="/assets/wr/110v2/800_2.jpeg" description="800: Close-up of one these rivets" %}
-{% include image-inline.html url="/assets/wr/110v2/800_3.jpeg" description="800: Pin and spring after film holder removal" %}
+{% include image-inline.html url="/assets/wr/110v2/800_1.jpeg" description="800/150: Film holder attached by rivets" %}
+{% include image-inline.html url="/assets/wr/110v2/800_2.jpeg" description="800/150: Close-up of one these rivets" %}
+{% include image-inline.html url="/assets/wr/110v2/800_3.jpeg" description="800/150: Pin and spring after film holder removal" %}
 </div>
 
 ### Step three: mount the new infinity stop
@@ -127,7 +127,7 @@ The existing infinity stop is unfortunately too short to do the job, so we need 
 </div>
 
 
-_For the 800_ there are some out there with an infinity stop that looks exactly like the 110s, but I've come across a version where the infinity stop is held in place with four rivets and no screws, and the holes that are present after removing this aren't threaded so you can't hold the new infinity stop in place with screws. You'll need to find infinity by locking the lens into the loose 3D-printed infinity stop, mark that, slide the lens back, and then **superglue** the infinity stop in place. My advice is have a close look before you buy an 800 and make sure it doesn't have this style of infinity stop.
+_For the 800/150_ there are some out there with an infinity stop that looks exactly like the 110s, but I've come across a version where the infinity stop is held in place with four rivets and no screws, and the holes that are present after removing this aren't threaded so you can't hold the new infinity stop in place with screws. You'll need to find infinity by locking the lens into the loose 3D-printed infinity stop, mark that, slide the lens back, and then **superglue** the infinity stop in place. My advice is have a close look before you buy an 800 or 150 and make sure it doesn't have this style of infinity stop.
 
 ### Step four: Get the rangefinder cover off, ready for alignment
 You'll need to remove the rangefinder cover before you mount the Lomograflok, as it will be in the way if you need to make adjustments. 
