@@ -8,7 +8,7 @@ title: IDENTIDEM.design
 **Having a little company was a good experience for the year it lasted, but my volume of sales hasn't really warranted the effort and cost behind running a busines in my free time. So I've wound down the company.**
 
 ### This means:
-<ul>
+<ul style="list-style: circle; margin-left: 10px;">
 <li>I'll keep making stuff, and releasing them under the IDENTIDEM.design brand for free on printables.com</li>
 <li>If you want your Polaroid 110A/110B/800 converted to shoot Instax Wide, I still do that - shoot me a message on Instagram and we can talk specifics</li>
 <li>See one of my designs you like, but don't want to build it yourself? Get in touch as I might consider selling a complete build depending on how busy I am, and whether the price is right</li>
