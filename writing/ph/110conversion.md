@@ -6,18 +6,6 @@ post_title: 'A fully reversible Polaroid Pathfinder 110a / 110b / 800 / 150 & Lo
 
 ## Introduction
 
-
->**Oh hey!** 👋 
->
->I've soft launched a micro-company to offer conversion services in my spare time, so you don't need to do this yourself if you don't want to.
->
->There's also a new version that is less bulky, and ejects the film the right way up, but the files and build guide isn't quite ready yet. That being said, I'm already offering that version as a conversion service. [Head over to IDENTIDEM.design](https://identidem.design) where you can book a spot in the conversion queue.
->
->You can also book a conversion service for this first version if you prefer it, or "buy" the design files if you want to say thank you. :)
->
->_Keep an eye on [IDENTIDEM.design's website](https://identidem.design) as there are many exciting things coming._
-
-
 This is a project that started a quite while ago. I had found and purchased a Polaroid 110a with the original intention of converting it to shoot Instax wide. I ended up destroying three Instax Wide 300s before getting to a point where I successfully mounted a horribly fragile bodged back to the 110a, using some plywood and way too much Sugru. It was a difficult conversion that involved cutting away part of the 110a's body (going through who knows how many Dremel metal cutting discs). I ended up with something that really took surprisingly good photos. Sure it spat out skew horizons, it was difficult to frame photos accurately, and it wasn't pretty to look at, but it proved one thing: ***give Instax good glass and it sings***.
 
 And then Lomography surprised everyone with the [Lomograflok](https://shop.lomography.com/en/lomo-graflok-instant-back). Of course I preordered one right after it was announced. Although the original intention of the back was to bring Instax to 4x5 cameras (and it does this very well), even before release the usual makers (like [Ethan Moses](https://www.cameradactyl.com/) and [Max/SPRKPLG](https://sprkplg.com/)) spotted the potential of this device to be paired with good lenses to create a serious portable solution with incredible results.
