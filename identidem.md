@@ -3,8 +3,6 @@ layout: home
 title: IDENTIDEM.design
 ---
 
-<h3><a href="/">Home</a> / IDENTIDEM.design</h3>
-
 <div style="text-align:center; width:100%">
     <img src="/assets/logonotext.svg" style="width:300px;height:300px;">
 </div>
