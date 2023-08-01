@@ -5,9 +5,13 @@ title: IDENTIDEM.design
 
 <h3><a href="/">Home</a> / IDENTIDEM.design</h3>
 
+<div style="text-align:center; width:100%">
+    <img src="/assets/logonotext.svg" style="width:300px;height:300px;">
+</div>
+
 **Having a little company was a good experience for the year it lasted, but my volume of sales hasn't really warranted the effort and cost behind running a busines in my free time. So I've wound down the company.**
 
-### This means:
+#### This means:
 <ul style="list-style: circle; margin-left: 30px;">
 <li>I'll keep making stuff, and releasing them under the IDENTIDEM.design brand for free on printables.com</li>
 <li>If you want your Polaroid 110A/110B/800 converted to shoot Instax Wide, I still do that - shoot me a message on Instagram and we can talk specifics</li>
@@ -15,4 +19,5 @@ title: IDENTIDEM.design
 <li>I also do custom design work for camera-related stuff (both analogue and digital) - once again, get in touch on Instagram if you need help</li>
 </ul>
 
-### 💬 <a href="https://www.instagram.com/a.l.b.e.r.t.c/">Shoot me a DM</a> on Instagram or 🍺 <a href="https://paypal.me/albertcor">Buy me a beer</a> if you want to say thank you for any of my designs
+
+### 💬 <a href="https://www.instagram.com/a.l.b.e.r.t.c/">Send me a DM</a> on Instagram for any enquiries, or 🍺 <a href="https://paypal.me/albertcor">Buy me a beer</a> if you want to say thank you for any of my designs
