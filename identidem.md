@@ -1,21 +1,25 @@
 ---
-layout: home
-title: IDENTIDEM.design
+layout: id
 ---
 
-<div style="text-align:center; width:100%">
+<div style="text-align:center; width:100%;  padding-bottom: 10px; border-bottom: 0.4px solid black;">
     <img src="/assets/logonotext.svg" style="width:300px;height:300px;">
+    <h1 style="margin-top:-60px; margin-left: 20px; font-size: 24px; letter-spacing: 2px;">IDENTIDEM.design</h1>
 </div>
 
-**Having a little company was a good experience for the year it lasted, but my volume of sales hasn't really warranted the effort and cost behind running a busines in my free time. So I've wound down the company.**
+<div style="padding: 35px;">
+    <p>
+        Hello! If you're looking for any of the following services, you've come to the right place:
 
-#### This means:
-<ul style="list-style: circle; margin-left: 30px;">
-<li>I'll keep making stuff, and releasing them under the IDENTIDEM.design brand for free on printables.com</li>
-<li>If you want your Polaroid 110A/110B/800 converted to shoot Instax Wide, I still do that - shoot me a message on Instagram and we can talk specifics</li>
-<li>See one of my designs you like, but don't want to build it yourself? Get in touch as I might consider selling a complete build depending on how busy I am, and whether the price is right</li>
-<li>I also do custom design work for camera-related stuff (both analogue and digital) - once again, get in touch on Instagram if you need help</li>
-</ul>
+        <ul style="list-style: circle; margin-left: 30px; font-size:0.95em;">
+            <li>Files and instructions for some of my <strong>conversions and camera builds</strong> - they're all <a href="https://www.printables.com/@acornelissen_236484/models" target="_blank">free on Printables</a>!</li>
+            <li>If you want your <strong>Polaroid 110A/110B/800 converted to shoot Instax Wide</strong>, send me a message on Instagram and we can talk specifics - I offer both the original version, and a "deluxe" version where I replace the top plate with a custom designed 3D-print and transplant all the necessary optics</li>
+            <li>See one of my designs you like, but don't want to <strong>print or build</strong> it yourself? I do both. Once again, message me on Instagram and we can chat about what you need</li>
+            <li>If you have an idea or specific camera-related need (analogue or digital), I do <strong>bespoke designs, prototyping, and builds</strong>.</li>
+        </ul>
+    </p>
+</div>
 
-
-### 💬 <a href="https://www.instagram.com/a.l.b.e.r.t.c/">Send me a DM</a> on Instagram for any enquiries, or 🍺 <a href="https://paypal.me/albertcor">Buy me a beer</a> if you want to say thank you for any of my designs
+<div style="text-align:center; width:100%;  padding-top: 30px; border-top: 0.4px solid black;">
+   <h3> 💬 <strong><a href="https://www.instagram.com/a.l.b.e.r.t.c/">Send me a DM</a></strong> on Instagram for any enquiries, or 🍺 <strong><a href="https://paypal.me/albertcor">Buy me a beer</a></strong> if you want to say thank you for any of my designs.</h3>
+ </div>
