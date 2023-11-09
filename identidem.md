@@ -12,6 +12,7 @@ layout: id
         Hello! If you're looking for any of the following services, you've come to the right place:
 
         <ul style="list-style: circle; margin-left: 30px; font-size:0.95em;">
+            <li>From time to time I will have complete builds up for sale on eBay. <a href="https://www.ebay.co.uk/usr/albertcornelissen">Check here</a>.</li>
             <li>Files and instructions for some of my <strong>conversions and camera builds</strong> - they're all <a href="https://www.printables.com/@acornelissen_236484/models" target="_blank">free on Printables</a>!</li>
             <li>If you want your <strong>Polaroid 110A/110B/800 converted to shoot Instax Wide</strong>, send me a message on Instagram and we can talk specifics - I offer both the original version, and a "deluxe" version where I replace the top plate with a custom designed 3D-print and transplant all the necessary optics</li>
             <li>See one of my designs you like, but don't want to <strong>print or build</strong> it yourself? I do both. Once again, message me on Instagram and we can chat about what you need</li>
