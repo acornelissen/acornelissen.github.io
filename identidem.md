@@ -10,7 +10,8 @@ layout: id
 <div style="padding: 35px; text-align: center;">
     <p>
         <ul style="list-style: none; margin-left: 30px; font-size:1.3em;">
-            <li><a href="https://www.printables.com/model/718784-lrf45-a-large-format-4x5-rangefinder">LRF45</a>: A LiDAR-powered, lens-coupled 4x5 Rangefinder</li>
+            <li><a href="https://github.com/acornelissen/IDENTIDEM.design-MRF">MRF</a>: A LiDAR-powered, lens-coupled Multi-format (6x7, 6x6, 6x4.5 and 35mm Panoramic) Rangefinder for any of the Mamiya Universal Press lenses</li>
+            <li><a href="https://github.com/acornelissen/IDENTIDEM.design-LRF45/">LRF45</a>: A LiDAR-powered, lens-coupled 4x5 Rangefinder</li>
             <li><a href="https://www.printables.com/model/539989-polaslr1-polaroid-slr">POLA.SLR1</a>: A Polaroid i-Type SLR</li>
             <li>Polaroid <a href="https://www.printables.com/model/543390-polaroid-pathfinder-110a800150-lomograflok-convers">110A/110B/800</a> and <a href="https://www.printables.com/model/574213-polaroid-pathfinder-110b-lomograflok-conversion-de">110B</a> to Lomograflok Conversions</li>
         </ul>
