@@ -25,13 +25,11 @@ layout: id
         <ul style="list-style: circle; margin-left: 30px; font-size:0.95em;">
             <li>From time to time I will have complete builds up for sale on eBay. <a href="https://www.ebay.co.uk/usr/albertcornelissen">Check here</a>.</li>
             <li>Files and instructions for some of my <strong>conversions and camera builds</strong> - they're all <a href="https://www.printables.com/@acornelissen_236484/models" target="_blank">free on Printables</a>!</li>
-            <li>If you want your <strong>Polaroid 110A/110B/800 converted to shoot Instax Wide</strong>, send me a message on Instagram and we can talk specifics - I offer both the original version, and a "deluxe" version where I replace the top plate with a custom designed 3D-print and transplant all the necessary optics</li>
-            <li>See one of my designs you like, but don't want to <strong>print or build</strong> it yourself? I do both. Once again, message me on Instagram and we can chat about what you need</li>
-            <li>If you have an idea or specific camera-related need (analogue or digital), I do <strong>bespoke designs, prototyping, and builds</strong>.</li>
+            <li>I am unfortunately not taking build commissions at the moment. Check back later next year!</li>    
         </ul>
     </p>
 </div>
 
 <div style="text-align:center; width:100%;  padding-top: 30px; border-top: 0.4px solid black;">
-   <h3> 💬 <strong><a href="https://www.instagram.com/a.l.b.e.r.t.c/">Send me a DM</a></strong> on Instagram for any enquiries, or 🍺 <strong><a href="https://paypal.me/albertcor">Buy me a beer</a></strong> if you want to say thank you for any of my designs.</h3>
+   <h3> 💬 <strong><a href="https://www.instagram.com/a.l.b.e.r.t.c/">Send me a DM</a></strong> on Instagram if you have questions - I'm always happy to help or give advice, or 🍺 <strong><a href="https://paypal.me/albertcor">Buy me a beer</a></strong> if you want to say thank you for any of my designs.</h3>
  </div>
