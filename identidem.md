@@ -24,7 +24,7 @@ layout: id
 
         <ul style="list-style: circle; margin-left: 30px; font-size:0.95em;">
             <li>From time to time I will have complete builds up for sale on eBay. <a href="https://www.ebay.co.uk/usr/albertcornelissen">Check here</a>.</li>
-            <li>Files and instructions for some of my <strong>conversions and camera builds</strong> - they're all <a href="https://www.printables.com/@acornelissen_236484/models" target="_blank">free on Printables</a>!</li>
+            <li>Files and instructions for some of my <strong>conversions and camera builds</strong> - they're all <a href="https://www.printables.com/@albert" target="_blank">free on Printables</a>!</li>
             <li>I am unfortunately not taking build commissions at the moment. Check back later next year!</li>    
         </ul>
     </p>
