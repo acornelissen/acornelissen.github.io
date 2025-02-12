@@ -184,13 +184,16 @@ This is where things start getting exciting, but slightly frustrating. Take the 
 
 Expand the bellows and lock the lens into place, then focus to infinity and aperture wide open at f4.7. Use a cable release, put the shutter into bulb mode, and lock the release to keep it open. Aim the camera at something far away with contrast, like a telephone pole or tree with no leaves against a clear sky. With the rear door of the Lomograflok open, using the image projected on the ground glass, slide the infinity stop back and forth until you get a sharp image. This is your new infinity focus point. Screw that infinity stop down.
 
-You'll notice that your rangefinder is now off when the lens is focused to infinity, so we need to adjust that. The first step is to look for the rangefinder cam on right side of the mechanism. It has a single screw keeping it in place. You'll also see a mark on top where the rangefinder arm meets the cam. That's infinity for the default configuration, but for this conversion it's slightly to the right of that mark. Loosen the screw just enough so the cam can be adjusted. While the camera is still set to infinity focus, adjust the cam little by little until the rangefinder images line up. Tighten the screw properly, taking care not to move the cam in the process.
+You'll notice that your rangefinder is now off when the lens is focused to infinity, so we need to adjust that. The goal is to make the rangefinder "images" line up at infinity and close focus. 
 
-Next, set the camera to closest focus. Most of the time you'll be lucky, and the image on the ground glass and rangefinder should agree. 
+The first step is to dial in the horizontal alignment by adjusting the small screw on back of the mirror that is moved by the rangefinder arm. Turn it very slightly in both directions, until the rangefinder images line up. 
 
-If not, you'll need to dial in the horizontal alignment by adjusting the small screw on back of the mirror that is moved by the rangefinder arm. Once this is done, go back to infinity and make further adjustments. You might need to unscrew the infinity stop and reset infinity again. It's a bit of trial and error, but go back and forth and eventually everything should align.
+Next, set the camera to closest focus, and adjust again as needed. Once this is done, go back to infinity and make further adjustments. You might need to unscrew the infinity stop and reset infinity again. It's a bit of trial and error, but go back and forth and eventually everything should align.
 
 If you need to make vertical adjustments, you can do so by using the screw behind the beam-splitter. This process is much easier on the cameras where the viewfinder and rangefinder are separate.
+
+If you're having difficulty getting it to play nice at both infinity and close focus, you might need to slightly adjust the rangefinder cam. This is on the right side of the mechanism. It has a single screw keeping it in place. You'll also see a mark on top where the rangefinder arm meets the cam. The line on the cam is normally supposed to line up with the cam follower when it's set to infinity, as that "programs" the rangefinder curve for the 127mm lens. Loosen the screw just enough so the cam can be adjusted and do the whole dance again at infinity and close focus. Once dialed in, tighten the screw properly, taking care not to move the cam in the process.
+
 
 <div style="text-align:center">
 {% include image.html url="/assets/wr/110v2/20.jpeg" %}
