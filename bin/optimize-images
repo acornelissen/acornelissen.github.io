@@ -1,0 +1,112 @@
+#!/usr/bin/env bash
+# Optimize JPEGs for the web using sips (macOS).
+#
+# Usage:
+#   bin/optimize-images <file-or-directory> [...]
+#       Recompress JPEGs in place. Resizes to a 1600px long edge when larger,
+#       recompresses at quality 80, and keeps the original unless the result
+#       is at least 10% smaller. Files already at or below 0.35 bytes/pixel
+#       are skipped, so re-running is a no-op.
+#
+#   bin/optimize-images add <source-jpeg> <gallery-dir>
+#       Copy a new photo into a gallery as the next free zero-padded NN.jpg,
+#       optimized. Prints a caption line ready to paste into _data/galleries.yml.
+
+set -euo pipefail
+
+MAX_EDGE=1600
+QUALITY=80
+MAX_BYTES_PER_PIXEL="0.35"
+MIN_SAVING_PERCENT=10
+
+die() { echo "error: $*" >&2; exit 1; }
+
+command -v sips >/dev/null || die "sips not found (this script is macOS-only)"
+
+filesize() { stat -f%z "$1"; }
+
+human() {
+  awk -v b="$1" 'BEGIN { if (b > 1048576) printf "%.1fMB", b/1048576; else printf "%.0fKB", b/1024 }'
+}
+
+# Recompress one JPEG in place. Prints a one-line report.
+optimize_file() {
+  local src=$1
+  local before after width height long_edge bpp tmp
+
+  before=$(filesize "$src")
+  width=$(sips -g pixelWidth "$src" | awk '/pixelWidth/ {print $2}')
+  height=$(sips -g pixelHeight "$src" | awk '/pixelHeight/ {print $2}')
+  [[ -n $width && -n $height ]] || { echo "skip   $src (could not read dimensions)"; return; }
+
+  long_edge=$(( width > height ? width : height ))
+  bpp=$(awk -v b="$before" -v w="$width" -v h="$height" 'BEGIN { printf "%.3f", b / (w * h) }')
+
+  if awk -v bpp="$bpp" -v max="$MAX_BYTES_PER_PIXEL" 'BEGIN { exit !(bpp <= max) }'; then
+    echo "skip   $src (already optimized, ${bpp} bytes/pixel)"
+    return
+  fi
+
+  tmp=$(mktemp -t optimize-images).jpg
+  if (( long_edge > MAX_EDGE )); then
+    sips --resampleHeightWidthMax "$MAX_EDGE" -s format jpeg -s formatOptions "$QUALITY" "$src" --out "$tmp" >/dev/null
+  else
+    sips -s format jpeg -s formatOptions "$QUALITY" "$src" --out "$tmp" >/dev/null
+  fi
+
+  after=$(filesize "$tmp")
+  if (( after * 100 <= before * (100 - MIN_SAVING_PERCENT) )); then
+    mv "$tmp" "$src"
+    echo "opt    $src $(human "$before") -> $(human "$after")"
+  else
+    rm -f "$tmp"
+    echo "keep   $src (saving under ${MIN_SAVING_PERCENT}%)"
+  fi
+}
+
+# Walk arguments, optimizing every .jpg/.jpeg found.
+run_optimize() {
+  (( $# > 0 )) || die "no files or directories given"
+  local target
+  for target in "$@"; do
+    if [[ -d $target ]]; then
+      find "$target" -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -print0 |
+        sort -z | while IFS= read -r -d '' f; do optimize_file "$f"; done
+    elif [[ -f $target ]]; then
+      case $target in
+        *.jpg|*.jpeg|*.JPG|*.JPEG) optimize_file "$target" ;;
+        *) echo "skip   $target (not a JPEG)" ;;
+      esac
+    else
+      die "$target does not exist"
+    fi
+  done
+}
+
+# Add a new photo to a gallery directory as the next free NN.jpg.
+run_add() {
+  (( $# == 2 )) || die "usage: bin/optimize-images add <source-jpeg> <gallery-dir>"
+  local src=$1 dir=$2 n name dest
+  [[ -f $src ]] || die "$src does not exist"
+  [[ -d $dir ]] || die "$dir is not a directory"
+
+  for (( n = 1; n <= 99; n++ )); do
+    name=$(printf '%02d.jpg' "$n")
+    [[ -e $dir/$name ]] || break
+  done
+  (( n <= 99 )) || die "no free slot in $dir"
+
+  dest=$dir/$name
+  cp "$src" "$dest"
+  optimize_file "$dest"
+  echo
+  echo "Added $dest"
+  echo "Caption line for _data/galleries.yml:"
+  echo "    \"$name\": \"\""
+}
+
+case ${1:-} in
+  add) shift; run_add "$@" ;;
+  -h|--help|"") sed -n '2,13p' "$0"; exit 0 ;;
+  *) run_optimize "$@" ;;
+esac
