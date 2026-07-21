@@ -228,6 +228,45 @@
 
 
 /**
+ * Homepage highlights
+ */
+.home-highlights {
+  display: flex;
+  gap: 15px;
+  margin-top: $spacing-unit * 1.5;
+
+  a {
+    display: block;
+    line-height: 0;
+  }
+
+  img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    padding: 4px;
+    border: 1px solid $border-color;
+    background: $background-color;
+
+    @include media-query($on-palm) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  a:hover img {
+    opacity: 0.85;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    img {
+      transition: opacity 120ms ease;
+    }
+  }
+}
+
+
+/**
  * Projects
  */
 .projects-list {
