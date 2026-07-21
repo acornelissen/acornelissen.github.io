@@ -4,15 +4,15 @@ title: Albert takes pictures.
 gallery_name: "Medium format / Random miscellany"
 ---
 
-{% include figure.html url="/assets/ph/mf/misc/1.jpg" description="The couple and the tree [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]" %}
-{% include figure.html url="/assets/ph/mf/misc/2.jpg" description="Conwy Castle [Mamiya C220, Mamiya-Sekor 80mm - Kodak Ektar 100]" %}
-{% include figure.html url="/assets/ph/mf/misc/3.jpg" description="Coldrum Long Barrow [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]" %}
-{% include figure.html url="/assets/ph/mf/misc/4.jpg" description="Footpath [Mamiya C220, Mamiya-Sekor 80mm - Kodak Ektar 100]" %}
-{% include figure.html url="/assets/ph/mf/misc/5.jpg" description="Sunset on The Vine [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]" %}
-{% include figure.html url="/assets/ph/mf/misc/6.jpg" description="Waiting for the train [Pentax 67, Takumar 105mm f2.8 - Kodak Ektar 100]" %}
-{% include figure.html url="/assets/ph/mf/misc/7.jpg" description="Look down [Mamiya C220, Mamiya-Sekor 80mm - Velvia 100]" %}
-{% include figure.html url="/assets/ph/mf/misc/8.jpg" description="Car & cat [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Fomapan 400]" %}
-{% include figure.html url="/assets/ph/mf/misc/9.jpg" description="Torside Clough [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]" %}
+{% include figure.html url="/assets/ph/mf/misc/01.jpg" description="The couple and the tree [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]" %}
+{% include figure.html url="/assets/ph/mf/misc/02.jpg" description="Conwy Castle [Mamiya C220, Mamiya-Sekor 80mm - Kodak Ektar 100]" %}
+{% include figure.html url="/assets/ph/mf/misc/03.jpg" description="Coldrum Long Barrow [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]" %}
+{% include figure.html url="/assets/ph/mf/misc/04.jpg" description="Footpath [Mamiya C220, Mamiya-Sekor 80mm - Kodak Ektar 100]" %}
+{% include figure.html url="/assets/ph/mf/misc/05.jpg" description="Sunset on The Vine [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]" %}
+{% include figure.html url="/assets/ph/mf/misc/06.jpg" description="Waiting for the train [Pentax 67, Takumar 105mm f2.8 - Kodak Ektar 100]" %}
+{% include figure.html url="/assets/ph/mf/misc/07.jpg" description="Look down [Mamiya C220, Mamiya-Sekor 80mm - Velvia 100]" %}
+{% include figure.html url="/assets/ph/mf/misc/08.jpg" description="Car & cat [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Fomapan 400]" %}
+{% include figure.html url="/assets/ph/mf/misc/09.jpg" description="Torside Clough [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]" %}
 {% include figure.html url="/assets/ph/mf/misc/10.jpg" description="On the towpaths [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]" %}
 {% include figure.html url="/assets/ph/mf/misc/11.jpg" description="Conwy Castle [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]" %}
 {% include figure.html url="/assets/ph/mf/misc/12.jpg" description="Kinder Plateau [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]" %}
