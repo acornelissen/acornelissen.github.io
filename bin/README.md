@@ -4,12 +4,21 @@ Two scripts drive the photography section. The site reads galleries straight
 from [`_data/galleries.yml`](../_data/galleries.yml) and enumerates the JPEGs on
 disk, so you never touch layouts or CSS to add or remove images.
 
-- `optimize-images` — resize/recompress JPEGs, build thumbnails, add a photo to
-  a gallery. **macOS only** (uses `sips`).
+- `optimize-images` — resize/recompress JPEGs, build thumbnails, record image
+  dimensions, add a photo to a gallery. **macOS only** (uses `sips`).
 - `generate-photo-pages` — create/remove the per-photo page stubs so each photo
   gets its own URL. Safe to re-run.
 
 Run both from the repo root.
+
+Two generated data files back the templates and should be regenerated after you
+change any imagery:
+
+- `_data/image_dims.yml` — every image's natural pixel size, written by
+  `bin/optimize-images dims`. The single-photo page and the article figure rows
+  read it to set `width`/`height` (so images don't shift while loading) and to
+  justify multi-image rows to a shared height. Covers `assets/ph` and
+  `assets/wr` by default.
 
 ## Add a photo to an existing gallery
 
@@ -32,10 +41,11 @@ caption line to paste. Then:
    uppercase gear line shown under the photo (commas and ` - ` become ` · `).
    Leaving the whole value empty (`"20.jpg": ""`) is fine for no caption.
 
-2. Generate its page:
+2. Generate its page and record its dimensions:
 
    ```bash
    bin/generate-photo-pages
+   bin/optimize-images dims
    ```
 
 The hub grid, gallery grid, thumbnail, and prev/next links all update
@@ -48,6 +58,7 @@ Delete the image and its thumbnail, then regenerate:
 ```bash
 rm assets/ph/mf/misc/20.jpg assets/thumbs/ph/mf/misc/20.jpg
 bin/generate-photo-pages   # removes the orphaned page automatically
+bin/optimize-images dims   # drops the stale dimensions entry
 ```
 
 Also delete that photo's `"20.jpg":` line from the gallery's `captions:` block.
@@ -74,9 +85,25 @@ Also delete that photo's `"20.jpg":` line from the gallery's `captions:` block.
    bin/optimize-images assets/ph/mf/street   # optimize the batch in place
    bin/optimize-images thumbs                # build any missing thumbnails
    bin/generate-photo-pages
+   bin/optimize-images dims                  # record dimensions
    ```
 
 The gallery appears on the hub under its `section` automatically.
+
+## Images in a writing post
+
+Articles pull photos in with the `figure.html` include (see any file under
+`writing/`), pointing at images in `assets/wr/…`. After adding or replacing
+those images, record their sizes so the figure rows justify correctly:
+
+```bash
+bin/optimize-images assets/wr/my-post   # optional: recompress the batch
+bin/optimize-images dims                # record dimensions (covers assets/wr)
+```
+
+Single images sit as a centered plate; a `<div class="centered">` with several
+`figure.html` includes becomes a justified, equal-height row. Colour photos stay
+in colour.
 
 ## Ordering
 
@@ -90,6 +117,8 @@ The gallery appears on the hub under its `section` automatically.
 bin/optimize-images <file-or-dir> ...   # recompress in place (re-runnable no-op
                                         # once files are already optimized)
 bin/optimize-images thumbs [<dir>]      # build missing thumbnails (default: assets/ph)
+bin/optimize-images dims [<dir> ...]    # record dimensions -> _data/image_dims.yml
+                                        # (default: assets/ph assets/wr)
 bin/optimize-images --help              # full usage
 ```
 
