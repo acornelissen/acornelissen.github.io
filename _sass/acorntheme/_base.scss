@@ -54,7 +54,11 @@ img {
  */
 figure {
   padding: 15px;
-  border: 1px solid #ccddcc;
+  border: 1px solid $border-color;
+
+  @include media-query($on-palm) {
+    padding: 8px;
+  }
 }
 
 figure > img {
@@ -114,12 +118,29 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
-  text-decoration: none;
+  color: $text-color;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 
   &:hover {
-    color: lighten($brand-color, 35%);
+    color: $grey-color;
   }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a {
+    transition: color 120ms ease;
+  }
+
+  .gallery-index-cover {
+    transition: opacity 120ms ease;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid $text-color;
+  outline-offset: 2px;
 }
 
 

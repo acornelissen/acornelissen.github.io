@@ -8,5 +8,14 @@
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if page.post_title %}{{ page.post_title | escape }}{% elsif page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+  {%- if page.gallery_id %}
+  {%- assign og_gallery = site.data.galleries | where: "id", page.gallery_id | first %}
+  <meta property="og:image" content="{{ og_gallery.dir | append: og_gallery.cover | absolute_url }}">
+  {%- endif %}
   
 </head>

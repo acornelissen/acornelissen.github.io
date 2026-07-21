@@ -10,9 +10,11 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #ffffff !default;
-$brand-color:      #828282 !default;
+$brand-color:      #111 !default;
 
-$grey-color:       #828282 !default;
+// 7:1 contrast on white; the old #828282 failed WCAG AA.
+$grey-color:       #595959 !default;
+$border-color:     #e0e0e0 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 

@@ -3,6 +3,10 @@
  */
 .site-header {
   margin-top: 100px;
+
+  @include media-query($on-palm) {
+    margin-top: 40px;
+  }
 }
 
 .site-title {
@@ -11,11 +15,17 @@
   line-height: 56px;
   margin-bottom: 0;
   float: left;
+  text-decoration: none;
 
   &,
   &:visited {
     color: $grey-color-dark;
   }
+}
+
+.breadcrumbs > h3 {
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
 
 
@@ -158,6 +168,17 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    text-decoration: none;
+
+    &:hover .gallery-index-title {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    &:hover .gallery-index-cover {
+      opacity: 0.85;
+    }
   }
 }
 
@@ -166,7 +187,7 @@
   height: 90px;
   object-fit: cover;
   padding: 4px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid $border-color;
   flex-shrink: 0;
   background: $background-color;
 
@@ -216,7 +237,8 @@
   > li {
     margin-bottom: $spacing-unit / 2;
     padding: 15px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid $border-color;
+    max-width: 720px;
 
     > h4 {
       margin-bottom: 2px;
@@ -270,7 +292,7 @@
   font-size: 2em;
   font-weight: 300;
 
-  border-bottom: 1px #ccc solid;
+  border-bottom: 1px $border-color solid;
 
   @include media-query($on-laptop) {
     font-size: 36px;
