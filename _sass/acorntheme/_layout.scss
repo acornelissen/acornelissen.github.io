@@ -206,6 +206,38 @@
 }
 
 
+/**
+ * Projects
+ */
+.projects-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit / 2;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+
+    > h4 {
+      margin-bottom: 2px;
+    }
+  }
+
+  .project-meta {
+    font-size: 0.8em;
+    font-style: italic;
+    color: $grey-color;
+    margin-bottom: 5px;
+  }
+
+  .project-description {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    max-width: 640px;
+  }
+}
+
+
 .post-list {
   margin-left: 0;
   list-style: none;

@@ -1,0 +1,29 @@
+# Projects shown on /projects.html, in display order.
+- name: MRF2
+  description: >-
+    A LiDAR-powered, multi-format, lens coupled medium-format rangefinder
+    camera. The second generation of the IDENTIDEM.design MRF.
+  url: https://github.com/acornelissen/IDENTIDEM.design-MRF2
+  tech: C++ / ESP32 / 3D printing
+  stars: 150
+
+- name: TheUnduster
+  description: >-
+    Finds and removes dust and scratches from scanned film. A local macOS app
+    with on-device neural defect detection and LaMa inpainting.
+  url: https://github.com/acornelissen/TheUnduster
+  tech: Rust / Tauri / Svelte
+
+- name: ceralo
+  description: >-
+    A minimal, free, cross-platform desktop app to fill PDF forms, edit text,
+    and sign. No accounts, no cloud, no telemetry.
+  url: https://github.com/acornelissen/ceralo
+  tech: TypeScript / Rust / Tauri
+
+- name: HearthMage
+  description: >-
+    A LAN-only web app to control Farho Nexho and ELKAtherm electric heaters
+    over their UDP protocol, with an optional Home Assistant MQTT bridge.
+  url: https://github.com/acornelissen/hearthmage
+  tech: Python / FastAPI / htmx
