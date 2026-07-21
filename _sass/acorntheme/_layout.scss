@@ -370,8 +370,8 @@ figcaption {
  * comfortable long-form reading.  $measure is the text column; $plate is
  * the width figure rows are allowed to breathe out to.
  */
-$measure: 42rem;   // ~672px reading column
-$plate:   60rem;   // ~960px figure plate
+$measure: 52rem;   // ~832px reading column
+$plate:   72rem;   // ~1152px figure plate
 
 .post-head {
   max-width: $measure;
@@ -457,23 +457,29 @@ $plate:   60rem;   // ~960px figure plate
   em { font-style: italic; }
   strong { font-weight: 400; }
 
-  // Video embeds: responsive, centered at reading width.
+  // Video embeds: responsive, centered, tight to their caption. The
+  // !important overrides the inline border/padding on the pasted embeds.
   iframe {
     display: block;
     width: 100%;
-    max-width: $measure;
+    max-width: 40rem;
     aspect-ratio: 16 / 9;
     height: auto;
-    margin: 2em auto 0.5em;
+    margin: 0 auto 0.6em;
+    border: 0 !important;
+    padding: 0 !important;
   }
 
-  // Figure rows: colour photos stay in colour; real gaps; centered plates.
+  // Figure rows: justified into clean equal-height rows. Each figure's
+  // flex-grow / flex-basis is set inline from its real aspect ratio (see
+  // _includes/figure.html), so widths track orientation and every row
+  // fills the plate at a shared height. Colour photos stay in colour.
   .centered {
     max-width: $plate;
     margin: 3em auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 20px;
+    gap: 16px;
     justify-content: center;
     align-items: flex-start;
   }
@@ -481,6 +487,7 @@ $plate:   60rem;   // ~960px figure plate
   figure {
     margin: 0;
     padding: 0;
+    flex: 1 1 240px;   // fallback for images without known dimensions
 
     > img {
       display: block;
@@ -498,16 +505,8 @@ $plate:   60rem;   // ~960px figure plate
     }
   }
 
-  // A lone image sits at reading width; multi-image rows share the plate.
-  .image      { flex: 0 1 $measure; }
-  .image-pano { flex: 1 1 100%; }
-  .image-inline { flex: 1 1 200px; }
-  .image-small  { flex: 1 1 130px; }
-
-  @include media-query($on-palm) {
-    .image-inline,
-    .image-small { flex-basis: 140px; }
-  }
+  // A lone image is capped so it doesn't balloon to the full plate width.
+  .centered .image { max-width: 44rem; }
 }
 
 /**

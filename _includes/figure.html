@@ -1,2 +1,8 @@
 {%- assign _dim = site.data.image_dims[include.url] -%}
-<figure class="image{% if include.variant %}-{{ include.variant }}{% endif %}"><img src="{{ include.url }}" alt="{{ include.description }}"{% if _dim %} width="{{ _dim | split: 'x' | first }}" height="{{ _dim | split: 'x' | last }}"{% endif %}{% if include.lazy %} loading="lazy" decoding="async"{% endif %}>{% if include.description %}<figcaption>{{ include.description }}</figcaption>{% endif %}</figure>
+{%- if _dim -%}
+  {%- assign _w = _dim | split: 'x' | first -%}
+  {%- assign _h = _dim | split: 'x' | last -%}
+  {%- assign _ratio = _w | times: 1.0 | divided_by: _h -%}
+  {%- assign _basis = _ratio | times: 240 | round -%}
+{%- endif -%}
+<figure class="image{% if include.variant %}-{{ include.variant }}{% endif %}"{% if _dim %} style="flex-grow: {{ _ratio }}; flex-basis: {{ _basis }}px"{% endif %}><img src="{{ include.url }}" alt="{{ include.description }}"{% if _dim %} width="{{ _w }}" height="{{ _h }}"{% endif %}{% if include.lazy %} loading="lazy" decoding="async"{% endif %}>{% if include.description %}<figcaption>{{ include.description }}</figcaption>{% endif %}</figure>
