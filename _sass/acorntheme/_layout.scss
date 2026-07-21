@@ -465,35 +465,41 @@ $plate:   72rem;   // ~1152px figure plate
     max-width: 40rem;
     aspect-ratio: 16 / 9;
     height: auto;
-    margin: 0 auto 0.6em;
+    margin: 0 auto;
     border: 0 !important;
     padding: 0 !important;
   }
 
-  // Figure rows: justified into clean equal-height rows. Each figure's
+  // Multi-image rows: justified into clean equal-height rows. Each figure's
   // flex-grow / flex-basis is set inline from its real aspect ratio (see
-  // _includes/figure.html), so widths track orientation and every row
-  // fills the plate at a shared height. Colour photos stay in colour.
+  // _includes/figure.html), so widths track orientation and every row fills
+  // the plate at a shared height. Colour photos stay in colour.
   .centered {
     max-width: $plate;
-    margin: 3em auto;
+    margin: 3.5em auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 18px;
     justify-content: center;
     align-items: flex-start;
   }
 
-  figure {
-    margin: 0;
-    padding: 0;
-    flex: 1 1 240px;   // fallback for images without known dimensions
+  .centered figure {
+    flex: 1 1 260px;   // fallback for images without known dimensions
 
     > img {
       display: block;
       width: 100%;
       height: auto;
     }
+  }
+
+  // A lone image in its own row is capped so it doesn't fill the plate.
+  .centered .image { max-width: 46rem; }
+
+  figure {
+    margin: 0;
+    padding: 0;
 
     > figcaption {
       font-size: 12px;
@@ -502,11 +508,44 @@ $plate:   72rem;   // ~1152px figure plate
       color: $label;
       margin-top: 10px;
       line-height: 1.5;
+      text-align: left;
     }
   }
 
-  // A lone image is capped so it doesn't balloon to the full plate width.
-  .centered .image { max-width: 44rem; }
+  // Standalone single images between paragraphs: a generous centered plate
+  // with room to breathe; portraits are bounded by height so they don't
+  // tower over the reading column. Image and caption are centered.
+  > figure {
+    max-width: $plate;
+    margin: 3.5em auto;
+
+    > img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      max-height: 82vh;
+      margin: 0 auto;
+    }
+
+    > figcaption { text-align: center; }
+  }
+
+  // Video embeds, wrapped as <figure class="video"> in the posts: caption
+  // sits tight under the video, and the whole unit is spaced from the prose.
+  .video {
+    max-width: 40rem;
+    margin: 3em auto;
+
+    > figcaption {
+      text-transform: none;
+      letter-spacing: normal;
+      font-size: 14px;
+      font-style: italic;
+      color: $body-secondary;
+      text-align: center;
+      margin-top: 0.85em;
+    }
+  }
 }
 
 /**

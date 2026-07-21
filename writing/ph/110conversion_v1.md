@@ -274,10 +274,10 @@ _A final note on the Lomograflok darkslide_: If you're not using the left grip, 
 ### Conclusion
 I really hope you enjoy shooting your newly converted camera as much as I do. It's a real head-turner and conversation starter, and the perfect way to disarm subjects for very natural portraits. Even though the conversion is straightforward, it took a lot of effort to get here. The infinity stop went through about 12 iterations, and the bracket through about 8 (all printed). At the end of the day, apart from really wanting a decent Instax wide camera, I did this to share it all for others to reproduce and improve on. 
 
-<div style="text-align:center; margin-bottom: 10px;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tt-sIBhyUkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border: 1px solid #cccc; padding: 5px;" allowfullscreen></iframe><br>
-<small><em><a href="https://www.youtube.com/c/DoingFilmThings/" target="_blank">Ribsy</a> did a great walkthrough of the bespoke 110a conversion I did for him.</em></small>
-</div>
+<figure class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tt-sIBhyUkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figcaption><em><a href="https://www.youtube.com/c/DoingFilmThings/" target="_blank">Ribsy</a> did a great walkthrough of the bespoke 110a conversion I did for him.</em></figcaption>
+</figure>
 
 
 
