@@ -3,7 +3,7 @@ layout: home
 title: Albert writes.
 ---
 
-<h3><a href="/">Home</a> / Writing</h3>
+{% include breadcrumbs.html current="Writing" %}
 
 - Thoughts on photography
 

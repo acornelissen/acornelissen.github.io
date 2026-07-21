@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h3><a href="/">Home</a> / <a href="/writing.html">Writing</a> / {{ page.post_title }}</h3>
+{% include breadcrumbs.html parent="Writing" parent_url="/writing.html" current=page.post_title %}
 
 <div class="home">
   <div class="post">
