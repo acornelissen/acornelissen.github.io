@@ -13,7 +13,7 @@ And then Lomography surprised everyone with the [Lomograflok](https://shop.lomog
 So I got to work and ended up desiging a [3D-printable conversion](/writing/ph/110conversion_v1.html) that works really well, but unfortunately still requires that you cut into the camera body. Somewhere in the back of my mind I wasn't happy with this at all. So I started tinkering once again. I played around with the infinity focus distance, and found that moving the film plane back another 4mm or so still made conversion possible. And here we are again. A fully reversible conversion with the only "damage" to the camera being two small rivets that get removed. 
 
 <div style="text-align:center">
-{% include image.html url="/assets/wr/110v2/1.jpeg" %}
+{% include figure.html url="/assets/wr/110v2/1.jpeg" %}
 </div>
 
 ## Before we start 
@@ -58,7 +58,7 @@ Click here to download the necessary files from [Printables](https://www.printab
 _Disclaimer:_ I'm very confident about the parts needed for the 110s, but there are many cameras that Polaroid released where they mixed and matched bits, so the conversion should theoretically work with the 120, 150, 160, and 800/150 as well, but you might need to print out both versions of the grips and see which ones work for your camera.
 
 <div style="text-align:center">
-{% include image.html url="/assets/wr/110v2/1a.png" %}
+{% include figure.html url="/assets/wr/110v2/1a.png" %}
 </div>
 
 I used a Creality Ender 3 v2, which is an incredible machine for the price. [Cura slicer](https://ultimaker.com/software/ultimaker-cura) was used to slice my STL files to G-code. All the models are in the recommended orientation for printing already. Your temperatures will vary depending on the material you choose to print with, but I think these settings will help you get results that are both pretty and strong (it takes forever to print, though, so tweak until it suits your needs):
@@ -85,45 +85,45 @@ Both the rear door and inner door are held in place with a thin rod threaded thr
 If you have difficulty gettting to the pin on the right side hinger, it may be easier if you remove the top cover first, see instructions lower down.
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/2.jpeg" description="First the back door" %}
-{% include image-inline.html url="/assets/wr/110v2/3.jpeg" description="Then the inner door" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/2.jpeg" description="First the back door" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/3.jpeg" description="Then the inner door" %}
 </div>
 
 Next, inside the camera on the left is a piece of plastic that was used to hold the original Polaroid roll film. It has two small screws. Unscrew them, remove the plastic piece, and replace the screws for light-tightness (and aesthetics).
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/4.jpeg" description="Screws removed" %}
-{% include image-inline.html url="/assets/wr/110v2/5.jpeg" description="Plastic piece removed, screws replaced" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/4.jpeg" description="Screws removed" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/5.jpeg" description="Plastic piece removed, screws replaced" %}
 </div>
 
 _For the 110a_ the lens door pin and spring sits behind this plastic piece. **Be careful** when removing it as the spring will shoot out and be lost to time (if you do lose it, a ballpoint pen's spring does the job). Once you've removed the plastic and collected the pin and spring, place them back into the hole carefully, and hold them in place by screwing the 3D-printed shim into the holes that were holding the plastic piece. 
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/5.1.jpeg" description="110a: Spring and pin" %}
-{% include image-inline.html url="/assets/wr/110v2/5.2.jpeg" description="110a: Back in the hole, short end of the pin facing up" %}
-{% include image-inline.html url="/assets/wr/110v2/5.3.jpeg" description="110a: Screw the shim in place" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/5.1.jpeg" description="110a: Spring and pin" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/5.2.jpeg" description="110a: Back in the hole, short end of the pin facing up" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/5.3.jpeg" description="110a: Screw the shim in place" %}
 </div>
 
 _For the 800_ I've seen two variants, one that looks like the 110b, where you can just remove the film holder with screws (and the door pin and spring are under a separate metal bar), and then there's the version that has the door pin and spring under the film holder, and this film holder is riveted to the camera body. Unfortunately you need some force to get both the rivets and film holder out and will probably end up destroying it. After it's out you can use the 110a 3D-printed shim and two screws to hold the pin and spring in place. It's a faff, so when buying an 800, look closely at the photos and try to avoid those with this style of film holder.
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/800_1.jpeg" description="800/150: Film holder attached by rivets" %}
-{% include image-inline.html url="/assets/wr/110v2/800_2.jpeg" description="800/150: Close-up of one these rivets" %}
-{% include image-inline.html url="/assets/wr/110v2/800_3.jpeg" description="800/150: Pin and spring after film holder removal" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/800_1.jpeg" description="800/150: Film holder attached by rivets" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/800_2.jpeg" description="800/150: Close-up of one these rivets" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/800_3.jpeg" description="800/150: Pin and spring after film holder removal" %}
 </div>
 
 ### Step three: mount the new infinity stop
 This conversion moves the film plane back by quite a bit, so we need to reset infinity. The existing infinity stop is locked into position by two rivets. You'll need to drill these out from the back. 
 
 <div style="text-align:center">
-{% include image.html url="/assets/wr/110v2/10.jpeg" %}
+{% include figure.html url="/assets/wr/110v2/10.jpeg" %}
 </div>
 
 The existing infinity stop is unfortunately too short to do the job, so we need to replace it. Unscrew the infinity stop, keep both screws, and mount the new 3D printed infinity stop, screwing it in (but not too tightly yet).
 
 
 <div style="text-align:center">
-{% include image.html url="/assets/wr/110v2/11.jpeg" %}
+{% include figure.html url="/assets/wr/110v2/11.jpeg" %}
 </div>
 
 
@@ -140,10 +140,10 @@ There are four screws that need to be removed (remember where each goes, they're
 * <em>For the 110a</em> you need to remove the leather strap on the left-hand side as well
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/12.jpeg" description="Back, top left" %}
-{% include image-inline.html url="/assets/wr/110v2/13.jpeg" description="Back, top right, inside the hole" %}
-{% include image-inline.html url="/assets/wr/110v2/14.jpeg" description="On the top, right" %}
-{% include image-inline.html url="/assets/wr/110v2/15.jpeg" description="Front, under the rangefinder lip, off center to the right" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/12.jpeg" description="Back, top left" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/13.jpeg" description="Back, top right, inside the hole" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/14.jpeg" description="On the top, right" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/15.jpeg" description="Front, under the rangefinder lip, off center to the right" %}
 </div>
 
 Be extremely careful when you lift off the plastic rangefinder cover. Some of the glass inserts might be loose, and the flash shoe's wire is still attached. I cut the wire as it just gets in the way, the flash shoe is an unconventional size (and orientation), so I just use the cold-shoe adapter. I gave all glass surfaces a good clean with some residual oil remover, both those in the cover, and the rangefinder mechanism. It can make an incredible difference to the brightness of the viewfinder patch. Just be gentle as you don't want to throw the alignment out if you can help it. 
@@ -153,33 +153,33 @@ This part is easy. Before you start, measure and cut some light-sealing foam and
 
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/pre1.jpeg" description="Light-sealing foam applied" %}
-{% include image-inline.html url="/assets/wr/110v2/pre2.jpeg" description="Tripod adapter screwed in" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/pre1.jpeg" description="Light-sealing foam applied" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/pre2.jpeg" description="Tripod adapter screwed in" %}
 </div>
 
 Next, remove the Lomograflok's dark-slide. Then carefully slide your Lomograflok into the 3D printed bracket, with the buttons towards the open side. The tripod hole on the bottom of the Lomograflok should roughly align with the hole on top of the bracket. Don't worry if they don't 100% align, when you screw things together, everything will be pulled into the correct position, so go ahead and screw the bracket to the Lomograflok using the shorter 1/4" tripod screw (don't over-tighten).
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/16.jpeg" description="Remember to remove the darkslide, and then slide the Lomograflok into the holder" %}
-{% include image-inline.html url="/assets/wr/110v2/17.jpeg" description="Align the top holes" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/16.jpeg" description="Remember to remove the darkslide, and then slide the Lomograflok into the holder" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/17.jpeg" description="Align the top holes" %}
 </div>
 
 Next, rest the Lomograflok and bracket on the lip around the camera. Now roughly align the hole in the bottom of the bracket with the camera's tripod hole and screw them together using the longer 1/4" screw. Once again, this should gently pull everything into the correct position. It should be secure, but still be careful with it as the top cover and left grip isn't in place and they play quite a big part in keeping things where they should be.
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/18.jpeg" description="Screw the bracket onto the camera" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/18.jpeg" description="Screw the bracket onto the camera" %}
 </div>
 
 ### Step six: infinity stop and rangefinder alignment
 This is where things start getting exciting, but slightly frustrating. Take the empty Instax wide cartridge and cut out the strip of plastic running along the back, also removing the innards. Then tape your ground glass (or plastic takeout lid) to the inside front of the cartridge, and load this into the Lomograflok. Alternatively, there's a [printable cartridge](https://www.printables.com/model/172991-instax-wide-ground-glass-cartridge) I designed for this purpose that currently takes a Pentax 67 focus screen, but I've included a STEP file so you can modify it to your needs.
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/23.jpeg" description="All you need is the cartridge shell" %}
-{% include image-inline.html url="/assets/wr/110v2/24.jpeg" description="Listen, I wasn't kidding about that takeout lid" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/23.jpeg" description="All you need is the cartridge shell" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/24.jpeg" description="Listen, I wasn't kidding about that takeout lid" %}
 </div>
 
 <div style="text-align:center">
-{% include image.html url="/assets/wr/110v2/25.jpeg" %}
+{% include figure.html url="/assets/wr/110v2/25.jpeg" %}
 </div>
 
 Expand the bellows and lock the lens into place, then focus to infinity and aperture wide open at f4.7. Use a cable release, put the shutter into bulb mode, and lock the release to keep it open. Aim the camera at something far away with contrast, like a telephone pole or tree with no leaves against a clear sky. With the rear door of the Lomograflok open, using the image projected on the ground glass, slide the infinity stop back and forth until you get a sharp image. This is your new infinity focus point. Screw that infinity stop down.
@@ -196,7 +196,7 @@ If you're having difficulty getting it to play nice at both infinity and close f
 
 
 <div style="text-align:center">
-{% include image.html url="/assets/wr/110v2/20.jpeg" %}
+{% include figure.html url="/assets/wr/110v2/20.jpeg" %}
 </div>
 
 
@@ -206,10 +206,10 @@ If you had the patience to print the very intricate grips, fitting them is quite
 For both grips, press-fit the hinge into place. Then you'll need to thread the rod through the hinge. Start from the bottom. I've found it can be a little tight, so make sure that everything is aligned, and push forcefully, but carefully. I use the pliers to help get some grip on the rod, and gently tap the last bit into place.
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/27.jpeg" description="Thread the rod into the hinge" %}
-{% include image-inline.html url="/assets/wr/110v2/28.jpeg" description="This last little bit is easiest to tap in with a smaller hammer" %}
-{% include image-inline.html url="/assets/wr/110v2/29.jpeg" description="Left grip secured in place" %}
-{% include image-inline.html url="/assets/wr/110v2/30.jpeg" description="So ergonomic" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/27.jpeg" description="Thread the rod into the hinge" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/28.jpeg" description="This last little bit is easiest to tap in with a smaller hammer" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/29.jpeg" description="Left grip secured in place" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/30.jpeg" description="So ergonomic" %}
 </div>
 
 You'll notice the right grip has a hole in it. This is to optionally fit a shutter release cable to move the shutter to a less awkward place. The trade-off here for the moment is that you'll need attach/remove the cable release from the lens every time you collapse or open the camera.
@@ -223,9 +223,9 @@ You'll notice there's a gap in the rangefinder cover on the right, and a matchin
 
 
 <div style="text-align:center">
-{% include image-inline.html url="/assets/wr/110v2/21.jpeg" description="This hole will help keep things in place" %}
-{% include image-inline.html url="/assets/wr/110v2/22.jpeg" description="Pretty obvious now that you look at it isn't it?" %}
-{% include image-inline.html url="/assets/wr/110v2/31.jpeg" description="The finicky left part" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/21.jpeg" description="This hole will help keep things in place" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/22.jpeg" description="Pretty obvious now that you look at it isn't it?" %}
+{% include figure.html variant="inline" url="/assets/wr/110v2/31.jpeg" description="The finicky left part" %}
 </div>
 
 Now continue mounting the Lomograflok and bracket as you did before, securing it with the tripod screw. If you would like to use a flash (with sync cable to the lens) and/or a light-meter, you can also optionally mount the cold-shoe adapter. 
@@ -235,20 +235,20 @@ You're good to go! Put in a pack of Instax wide, eject the pack's dark-slide, an
 
 **Here are a few sample photos...**
 <div style="text-align:center">
-{% include image.html url="/assets/wr/110/samples/1.jpeg" %}
-{% include image.html url="/assets/wr/110/samples/2.jpeg" %}
+{% include figure.html url="/assets/wr/110/samples/1.jpeg" %}
+{% include figure.html url="/assets/wr/110/samples/2.jpeg" %}
 
-{% include image-inline.html url="/assets/wr/110/samples/3.jpeg" %}
-{% include image-inline.html url="/assets/wr/110/samples/5.jpeg" %}
-{% include image-inline.html url="/assets/wr/110/samples/4.jpeg" %}
-{% include image-inline.html url="/assets/wr/110/samples/6.jpeg" %}
-{% include image-inline.html url="/assets/wr/110/samples/10.jpeg" %}
-{% include image-inline.html url="/assets/wr/110/samples/11.jpeg" %}
-{% include image-inline.html url="/assets/wr/110/samples/7.jpeg" %}
-{% include image-inline.html url="/assets/wr/110/samples/8.jpeg" %}
+{% include figure.html variant="inline" url="/assets/wr/110/samples/3.jpeg" %}
+{% include figure.html variant="inline" url="/assets/wr/110/samples/5.jpeg" %}
+{% include figure.html variant="inline" url="/assets/wr/110/samples/4.jpeg" %}
+{% include figure.html variant="inline" url="/assets/wr/110/samples/6.jpeg" %}
+{% include figure.html variant="inline" url="/assets/wr/110/samples/10.jpeg" %}
+{% include figure.html variant="inline" url="/assets/wr/110/samples/11.jpeg" %}
+{% include figure.html variant="inline" url="/assets/wr/110/samples/7.jpeg" %}
+{% include figure.html variant="inline" url="/assets/wr/110/samples/8.jpeg" %}
 
-{% include image.html url="/assets/wr/110/samples/9.jpeg" %}
-{% include image.html url="/assets/wr/110/samples/12.jpeg" %}
+{% include figure.html url="/assets/wr/110/samples/9.jpeg" %}
+{% include figure.html url="/assets/wr/110/samples/12.jpeg" %}
 
 </div>
 

@@ -1,0 +1,1 @@
+<figure class="image{% if include.variant %}-{{ include.variant }}{% endif %}"><img src="{{ include.url }}" alt="{{ include.description }}"{% if include.lazy %} loading="lazy" decoding="async"{% endif %}>{% if include.description %}<figcaption>{{ include.description }}</figcaption>{% endif %}</figure>
