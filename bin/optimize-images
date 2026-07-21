@@ -10,7 +10,12 @@
 #
 #   bin/optimize-images add <source-jpeg> <gallery-dir>
 #       Copy a new photo into a gallery as the next free zero-padded NN.jpg,
-#       optimized. Prints a caption line ready to paste into _data/galleries.yml.
+#       optimized, and generate its grid thumbnail. Prints a caption line
+#       ready to paste into _data/galleries.yml.
+#
+#   bin/optimize-images thumbs [<dir>]
+#       Generate missing grid thumbnails (800px long edge) for every JPEG
+#       under <dir> (default assets/ph) into the mirrored assets/thumbs tree.
 
 set -euo pipefail
 
@@ -18,6 +23,8 @@ MAX_EDGE=1600
 QUALITY=80
 MAX_BYTES_PER_PIXEL="0.35"
 MIN_SAVING_PERCENT=10
+THUMB_EDGE=800
+THUMB_QUALITY=75
 
 die() { echo "error: $*" >&2; exit 1; }
 
@@ -83,6 +90,34 @@ run_optimize() {
   done
 }
 
+# Generate a grid thumbnail for one JPEG into the assets/thumbs mirror.
+# Paths must be relative to the repo root (assets/...).
+thumb_file() {
+  local src=$1
+  case $src in assets/*) ;; *) echo "skip   $src (thumbs need assets/-relative paths)"; return ;; esac
+  local out="assets/thumbs/${src#assets/}"
+  [[ -e $out ]] && return
+  mkdir -p "$(dirname "$out")"
+  local width height long_edge
+  width=$(sips -g pixelWidth "$src" | awk '/pixelWidth/ {print $2}')
+  height=$(sips -g pixelHeight "$src" | awk '/pixelHeight/ {print $2}')
+  long_edge=$(( width > height ? width : height ))
+  if (( long_edge > THUMB_EDGE )); then
+    sips --resampleHeightWidthMax "$THUMB_EDGE" -s format jpeg -s formatOptions "$THUMB_QUALITY" "$src" --out "$out" >/dev/null
+  else
+    sips -s format jpeg -s formatOptions "$THUMB_QUALITY" "$src" --out "$out" >/dev/null
+  fi
+  echo "thumb  $out $(human "$(filesize "$out")")"
+}
+
+# Generate missing thumbnails for every JPEG under a directory.
+run_thumbs() {
+  local root=${1:-assets/ph}
+  [[ -d $root ]] || die "$root is not a directory"
+  find "$root" -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) ! -path 'assets/thumbs/*' -print0 |
+    sort -z | while IFS= read -r -d '' f; do thumb_file "$f"; done
+}
+
 # Add a new photo to a gallery directory as the next free NN.jpg.
 run_add() {
   (( $# == 2 )) || die "usage: bin/optimize-images add <source-jpeg> <gallery-dir>"
@@ -99,6 +134,7 @@ run_add() {
   dest=$dir/$name
   cp "$src" "$dest"
   optimize_file "$dest"
+  thumb_file "$dest"
   echo
   echo "Added $dest"
   echo "Caption line for _data/galleries.yml:"
@@ -107,6 +143,7 @@ run_add() {
 
 case ${1:-} in
   add) shift; run_add "$@" ;;
-  -h|--help|"") sed -n '2,13p' "$0"; exit 0 ;;
+  thumbs) shift; run_thumbs "$@" ;;
+  -h|--help|"") sed -n '2,18p' "$0"; exit 0 ;;
   *) run_optimize "$@" ;;
 esac
