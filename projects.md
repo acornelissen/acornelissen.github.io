@@ -8,7 +8,7 @@ title: Albert tinkers.
 <ul class="projects-list">
   {% for project in site.data.projects %}
   <li>
-    <a href="{{ project.url }}">
+    <a href="{{ project.url }}" target="_blank" rel="noopener">
       <span>
         <span class="project-name">{{ project.name }}</span>
         <span class="project-tech">{{ project.tech }}</span>
