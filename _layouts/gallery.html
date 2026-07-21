@@ -2,12 +2,32 @@
 layout: default
 ---
 
+{% assign gallery = site.data.galleries | where: "id", page.gallery_id | first %}
+{% for g in site.data.galleries %}{% if g.id == page.gallery_id %}{% assign gallery_index = forloop.index0 %}{% endif %}{% endfor %}
+{% assign photos = site.static_files
+   | where_exp: "f", "f.path contains gallery.dir"
+   | where_exp: "f", "f.extname == '.jpg'" %}
+
 <div class="home">
-  
-  
+
   <div class="images-list">
-	<h3><a href="/">Home</a> / <a href="/ph.html">Photography</a> / {{ page.gallery_name }}</h3>
-  	{{ content }}
+    {% include breadcrumbs.html parent="Photography" parent_url="/ph.html" current_section=gallery.section current=gallery.title %}
+    <p class="gallery-meta">{{ photos | size }} photos</p>
+
+    {% include gallery-images.html gallery=gallery %}
+
+    <nav class="gallery-nav" aria-label="Gallery navigation">
+      {% if gallery_index > 0 %}
+        {% assign prev_index = gallery_index | minus: 1 %}
+        {% assign prev = site.data.galleries[prev_index] %}
+        <a class="gallery-nav-prev" href="{{ prev.url }}">&larr; {{ prev.section }} / {{ prev.title }}</a>
+      {% endif %}
+      {% assign next_index = gallery_index | plus: 1 %}
+      {% if next_index < site.data.galleries.size %}
+        {% assign next = site.data.galleries[next_index] %}
+        <a class="gallery-nav-next" href="{{ next.url }}">{{ next.section }} / {{ next.title }} &rarr;</a>
+      {% endif %}
+    </nav>
   </div>
 
 </div>

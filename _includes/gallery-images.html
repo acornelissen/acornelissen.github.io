@@ -1,0 +1,8 @@
+{% assign photos = site.static_files
+   | where_exp: "f", "f.path contains include.gallery.dir"
+   | where_exp: "f", "f.extname == '.jpg'"
+   | sort: "path" %}
+{% for photo in photos %}
+{% assign caption = include.gallery.captions[photo.name] %}
+<figure class="image"><img src="{{ photo.path | relative_url }}" alt="{{ caption | default: include.gallery.title | escape }}"{% unless forloop.first %} loading="lazy" decoding="async"{% endunless %}>{% if caption %}<figcaption>{{ caption | escape }}</figcaption>{% endif %}</figure>
+{% endfor %}

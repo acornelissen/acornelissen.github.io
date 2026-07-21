@@ -1,0 +1,185 @@
+# Photo galleries, in display order (hub order and prev/next order).
+# Add a photo: bin/optimize-images add <photo.jpg> <gallery dir>, then add
+# a caption line below (or leave it out for no caption).
+
+- id: mf-portraits-full
+  url: /ph/mf/portraits_full.html
+  title: Full length portraits
+  section: Medium format
+  dir: /assets/ph/mf/portraits/full/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "Chris [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
+    "02.jpg": "Sebastian [Pentax 67, Takumar 105mm f2.8 - Kodak Ektar 100]"
+    "03.jpg": "Brixton couple [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
+    "04.jpg": "Chloë [Pentax 67, Takumar 105mm f2.8 - Fujifilm Pro 400H]"
+    "05.jpg": "Put it to the people protester [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
+    "06.jpg": "Marion [Pentax 67, Takumar 105mm f2.8 - Kodak Ektar 100]"
+    "07.jpg": "Alberto [Pentax 67, Takumar 105mm f2.8 - Kodak Ektar 100]"
+
+- id: mf-portraits-close
+  url: /ph/mf/portraits_close.html
+  title: Close-up portraits
+  section: Medium format
+  dir: /assets/ph/mf/portraits/close/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "Sean [Mamiya C220, Mamiya-Sekor 80mm - Rollei RPX 400]"
+    "02.jpg": "Andrea with Joey [Pentax 67, Takumar 105mm f2.8 - Fujifilm Acros 100]"
+    "03.jpg": "Marvin [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
+    "04.jpg": "Ray [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
+    "05.jpg": "Daniel [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
+    "06.jpg": "Jaap [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
+    "07.jpg": "Notting Hill carnival spectator [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
+    "08.jpg": "Ribsy [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Kodak Portra 400]"
+    "09.jpg": "Dog Walker [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+
+- id: mf-misc
+  url: /ph/mf/misc.html
+  title: Random miscellany
+  section: Medium format
+  dir: /assets/ph/mf/misc/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "The couple and the tree [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
+    "02.jpg": "Conwy Castle [Mamiya C220, Mamiya-Sekor 80mm - Kodak Ektar 100]"
+    "03.jpg": "Coldrum Long Barrow [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
+    "04.jpg": "Footpath [Mamiya C220, Mamiya-Sekor 80mm - Kodak Ektar 100]"
+    "05.jpg": "Sunset on The Vine [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
+    "06.jpg": "Waiting for the train [Pentax 67, Takumar 105mm f2.8 - Kodak Ektar 100]"
+    "07.jpg": "Look down [Mamiya C220, Mamiya-Sekor 80mm - Velvia 100]"
+    "08.jpg": "Car & cat [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Fomapan 400]"
+    "09.jpg": "Torside Clough [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+    "10.jpg": "On the towpaths [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+    "11.jpg": "Conwy Castle [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+    "12.jpg": "Kinder Plateau [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+    "13.jpg": "Estuary [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+    "14.jpg": "Glossop Brook [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+    "15.jpg": "The Mall [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Kodak Portra 400]"
+    "16.jpg": "Lads in a row [Yashica Mat 124G, Fomapan 200 at 1600]"
+    "17.jpg": "Film photographer crack [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+    "18.jpg": "Looking out [Yashica Mat 124G - Ilford FP4 - Velvia 100]"
+    "19.jpg": "A work in progress [Yashica Mat 124G - Ilford FP4]"
+
+- id: lf-portraits-full
+  url: /ph/lf/portraits_full.html
+  title: Full length portraits
+  section: Large format
+  dir: /assets/ph/lf/portraits/full/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "Marion [Shen Hao TZ45-II, Schneider Symmar-S 180mm - Adox CHS 100 II]"
+    "02.jpg": "Tahmid [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 100]"
+    "03.jpg": "Dog walker 1 [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Ilford HP5]"
+    "04.jpg": "AB [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Ilford HP5]"
+    "05.jpg": "Alex [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
+    "06.jpg": "Mike [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 400]"
+    "07.jpg": "James [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 400]"
+    "08.jpg": "Rinus [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Adox CHS 100 II]"
+    "09.jpg": "Amanda [Chamonix 45F-2, Schneider Symmar-S 210mm - Kodak Ektachrome E100]"
+    "10.jpg": "Dave [Chamonix 45F-2, Schneider Symmar-S 210mm - Fomapan 400]"
+    "11.jpg": "Ribsy [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
+    "12.jpg": "Chloë & Adam [Chamonix 45F-2, Schneider Symmar-S 210mm - Kodak Ektachrome E100]"
+    "13.jpg": "Will [Chamonix 45F-2, Fujinon SW 150mm - Ilford HP5]"
+
+- id: lf-portraits-close
+  url: /ph/lf/portraits_close.html
+  title: Close-up portraits
+  section: Large format
+  dir: /assets/ph/lf/portraits/close/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "James [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 100]"
+    "02.jpg": "Sean [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 100]"
+    "03.jpg": "Dad & Mom [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Ilford HP5]"
+    "04.jpg": "Steven [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Ilford HP5]"
+    "05.jpg": "Werner [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Adox CHS 100 II]"
+    "06.jpg": "Self-portrait [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 100]"
+    "07.jpg": "Mike [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 400]"
+    "08.jpg": "James [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 400]"
+    "09.jpg": "Sharné [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 400]"
+    "10.jpg": "Rinus [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Adox CHS 100 II]"
+    "11.jpg": "Dom [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford Ortho 80]"
+    "12.jpg": "Alex [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
+    "13.jpg": "Dan [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
+
+- id: lf-misc
+  url: /ph/lf/misc.html
+  title: Random miscellany
+  section: Large format
+  dir: /assets/ph/lf/misc/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "A21 Overpass [Shen Hao TZ45-II, Nikkor SW 90mm f8 - Fomapan 100]"
+    "02.jpg": "Bluebells in Great Brittain's Wood [Shen Hao TZ45-II, Schneider Symmar-S 180mm - Kodak Ektar 100]"
+    "03.jpg": "Beachy Head lighthouse [Shen Hao, Nikkor SW 90mm f8 - Fomapan 10]"
+    "04.jpg": "Waterfalls in the Brecon Beacons [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fujifilm Velvia 50]"
+    "05.jpg": "Spa Valley Railway [Shen Hao TZ45-11, Schneider Symmar-S 180mm - Fomapan 100]"
+    "06.jpg": "Sunset at the nature reserve [Shen Hao TZ45-II, Nikkor SW 90mm f8 - Fujifilm Velvia 50]]"
+    "07.jpg": "Plane wreck [Shen Hao TZ45-11, Schneider Symmar-S 180mm - Fomapan 100]"
+    "08.jpg": "Lone tree in the cold [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Ilford HP5+]"
+    "09.jpg": "The frozen pond [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Ilford HP5+]"
+    "10.jpg": "Yet another tree [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Fujifilm Velvia 50]"
+    "11.jpg": "Icy water hazard [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Fujifilm Velvia 50]"
+    "12.jpg": "Eynsford [Shen Hao TZ45-11, Schneider Symmar-S 180mm - Kodak Ektachrome E100]"
+    "13.jpg": "The Viaduct [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Kodak Ektachrome E100]"
+    "14.jpg": "Hadlow Tower [Shen Hao TZ45-11, Schneider Symmar-S 210mm - Fomapan 400]"
+    "15.jpg": "Your typical footpath [Shen Hao TZ45-11, Nikkor SW 90mm f8- Fomapan 400]"
+    "16.jpg": "Under the bridge [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Adox CHS 100 II]"
+    "17.jpg": "Abandoned and forgotten [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Fompan 400]"
+    "18.jpg": "The Birdhouse [Shen Hao TZ45-11, Nikkor SW 90mm f8 - Adox CHS 100 II]"
+
+- id: instant-fp100c
+  url: /ph/instant/fp100c.html
+  title: FP-100c
+  section: Instant
+  dir: /assets/ph/instant/fp100c/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "Margate Lido [Polaroid Land Camera 350]"
+    "02.jpg": "Somewhere in Switzerland [Polaroid Land Camera 350]"
+    "03.jpg": "Alex R [Polaroid Land Camera 190]"
+    "04.jpg": "The sun sets over the Thames [Polaroid Land Camera 190]"
+    "05.jpg": "Margate Marina [Polaroid Land Camera 350]"
+
+- id: instant-fp3000b
+  url: /ph/instant/fp3000b.html
+  title: FP-3000b
+  section: Instant
+  dir: /assets/ph/instant/fp3000b/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "Magical streetlight [Polaroid Land Camera 190]"
+
+- id: instant-oip7
+  url: /ph/instant/oip7.html
+  title: Supersense One Instant P7 Colour
+  section: Instant
+  dir: /assets/ph/instant/oip7/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "Winter sun Marion [Polaroid Land Camera 190]"
+    "02.jpg": "The lake [Polaroid Land Camera 190]"
+    "03.jpg": "Self-portrait [Polaroid Land Camera 190]"
+    "04.jpg": "Winter sun Marion part 2 [Polaroid Land Camera 190]"
+    "05.jpg": "Icy Knole Park [Polaroid Land Camera 190]"
+
+- id: instant-instax
+  url: /ph/instant/instax.html
+  title: Instax
+  section: Instant
+  dir: /assets/ph/instant/instax/
+  cover: "01.jpg"
+  captions:
+    "01.jpg": "Sunset through the window [Custom Polaroid 110A Instax Wide Conversion - Instax Wide Colour]"
+    "02.jpg": "Joey [Custom Polaroid 110A Instax Wide Conversion - Instax Wide Colour]"
+    "03.jpg": "Badly framed, beautiful light (self-portrait) [Custom Polaroid 110A Instax Wide Conversion - Instax Wide Colour]"
+    "04.jpg": "Favourite from 1st field test [Custom Polaroid 110A Instax Wide Conversion - Instax Wide Colour]"
+    "05.jpg": "Churchyard last light [Custom Polaroid 110A Instax Wide Conversion - Instax Wide Colour]"
+    "06.jpg": "Blue hour pickup [Custom Polaroid 110A Instax Wide Conversion - Instax Wide Colour]"
+    "07.jpg": "Golden railway line [Custom Polaroid 110A Instax Wide Conversion - Instax Wide Colour]"
+    "08.jpg": "What's below the tarp, revealed [Custom Polaroid 110A Instax Wide Conversion - Instax Wide Colour]"
+    "09.jpg": "A train all to ourselves [Custom Polaroid 110B Instax Wide Conversion - Instax Wide Colour]"
+    "10.jpg": "Root detail, Knole Park [Custom Polaroid 110B Instax Wide Conversion - Instax Wide Colour]"
+    "11.jpg": "Waiting for the train home [Custom Polaroid 110B Instax Wide Conversion - Instax Wide Colour]"
+    "12.jpg": "Good times, good friends [Custom Polaroid 110B Instax Wide Conversion - Instax Wide Colour]"
