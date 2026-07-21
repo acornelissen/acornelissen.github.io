@@ -66,6 +66,23 @@ figcaption {
   text-align: right;
 }
 
+.centered {
+  text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: $background-color;
+  padding: 8px 16px;
+
+  &:focus {
+    left: 0;
+    z-index: 1;
+  }
+}
+
 
 
 /**

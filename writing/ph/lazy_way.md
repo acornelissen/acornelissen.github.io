@@ -24,25 +24,25 @@ Before I get to the results, the recipe I used for development for both rolls ar
 
 Very straightforward, and perfect for busy (read: lazy) film photographers like myself. The results? The results took me totally by surprise. Both rolls produced negatives with a density that is equally easy to scan as they are to work with in the darkroom. And there is a lot to work with. I could pull out much more detail than I had expected from both shadows and highlights.
 
-<div style="text-align:center">
+<div class="centered">
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/1.jpg" description="EZ400 exposed at 800 - Leica M6, Summicron 35" %}
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/2.jpg" description="EZ400 exposed at 800 - Leica M6, Summicron 35" %}
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/3.jpg" description="EZ400 exposed at 800 - Leica M6, Summicron 35" %}
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/4.jpg" description="EZ400 exposed at 800 - Leica M6, Summicron 35" %}
 </div>
 
-<div style="text-align:center">
+<div class="centered">
 {% include figure.html variant="pano" url="/assets/wr/lazy_way/5.jpg" description="EZ400 exposed at 800, stitched from 4 frames - Leica M6, Summicron 35" %}
 </div>
 
-<div style="text-align:center">
+<div class="centered">
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/6.jpg" description="EZ400 exposed at 800 - Leica M6, Summicron 35" %}
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/7.jpg" description="EZ400 exposed at 800 - Leica M6, Summicron 35" %}
 </div>
 
 The roll exposed at ISO 800 is, as expected, noticeably grainier than the one shot at 400, but nowhere near as harsh as I thought it would be. In fact, I find it quite pleasant and wouldn't hesitate to push EZ400 a stop (or two) next time I need to.  I'm pretty sure using semi-stand development had something to do with this. The characteristic bloom this film produces in the highlights also seems softer than what I've seen in photos from other photographers that have posted results from their first rolls. 
 
-<div style="text-align:center">
+<div class="centered">
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/9.jpg" description="EZ400 exposed at 400 - Leica M6, Summicron 35" %}
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/11.jpg" description="EZ400 exposed at 400 - Leica M6, Summicron 35" %}
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/10.jpg" description="EZ400 exposed at 400 - Leica M6, Summicron 35" %}
@@ -55,7 +55,7 @@ I know two rolls isn't an ideal sample size, but I personally think that EZ400 p
 
 Addendum: Since I originally wrote this, I accidentally shot a roll of EZ400 while exposing for 1600, because I thought my camera was loaded with some HP5. I developed it using the same method as the two rolls above. While there were some shots that were passable, this is not something I'll go out and do deliberately. The shadows are quite muddy and have little to no detail. Not my favourite look. See a few examples below.
 
-<div style="text-align:center">
+<div class="centered">
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/15.jpg" description="EZ400 exposed at 1600 - Leica M6, Summicron 35" %}
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/16.jpg" description="EZ400 exposed at 1600 - Leica M6, Summicron 35" %}
 {% include figure.html variant="inline" url="/assets/wr/lazy_way/17.jpg" description="EZ400 exposed at 1600 - Leica M6, Summicron 35" %}

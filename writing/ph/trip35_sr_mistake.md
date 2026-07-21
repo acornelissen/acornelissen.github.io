@@ -12,7 +12,7 @@ I am known to impulse buy film, especially when that film is something interesti
 
 The first roll of 120 was shot in my Mamiya C220. I exposed that at 800, because 1000 ISO isn't something you'll find on most meters, developed as normal in Ilfotec HC, and was quite happy with the results.
 
-<div style="text-align:center">
+<div class="centered">
 {% include figure.html variant="inline" url="/assets/wr/trip35_sr_mistake/1.jpg" description="Santa RAE 1000 - Mamiya C220" %}
 {% include figure.html variant="inline" url="/assets/wr/trip35_sr_mistake/2.jpg" description="Santa RAE 1000 - Mamiya C220" %}
 </div>
@@ -56,7 +56,7 @@ I imported the resulting positive into Lightroom and made a few final edits. In 
 
 As you can see it's not perfect. It has _a lot_ of grain, and the greys tend to run into one another, but there's something in the dreamlike, painterly imperfection of these photos that really appeals to me. There are more than a couple I'd like to have a go at printing in the darkroom, so let me share a few of them with you. 
 
-<div style="text-align:center">
+<div class="centered">
 {% include figure.html variant="inline" url="/assets/wr/trip35_sr_mistake/8.jpg" description="Santa RAE 1000 at ISO 400 - Olympus Trip 35" %}
 {% include figure.html variant="inline" url="/assets/wr/trip35_sr_mistake/9.jpg" description="Santa RAE 1000 at ISO 400 - Olympus Trip 35" %}
 {% include figure.html variant="inline" url="/assets/wr/trip35_sr_mistake/10.jpg" description="Santa RAE 1000 at ISO 400 - Olympus Trip 35" %}
