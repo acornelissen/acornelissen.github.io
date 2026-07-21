@@ -22,4 +22,4 @@ title: Albert tinkers.
   {% endfor %}
 </ul>
 
-<p class="projects-more">More on <a href="https://github.com/acornelissen">GitHub</a> and at <a href="https://identidem.design">IDENTIDEM.design</a>.</p>
+<p class="projects-more">More on <a href="https://github.com/acornelissen" target="_blank" rel="noopener">GitHub</a> and at <a href="https://identidem.design" target="_blank" rel="noopener">IDENTIDEM.design</a>.</p>
