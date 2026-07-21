@@ -134,6 +134,78 @@
 }
 
 
+/**
+ * Photography hub
+ */
+.gallery-section {
+  margin-bottom: $spacing-unit;
+
+  > h4 {
+    color: $grey-color;
+    margin-bottom: $spacing-unit / 2;
+  }
+}
+
+.gallery-index {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit / 2;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.gallery-index-cover {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  padding: 4px;
+  border: 1px solid #e0e0e0;
+  flex-shrink: 0;
+  background: $background-color;
+
+  @include media-query($on-palm) {
+    width: 90px;
+    height: 68px;
+  }
+}
+
+.gallery-index-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-index-count {
+  font-size: 0.8em;
+  font-style: italic;
+  color: $grey-color;
+}
+
+.gallery-meta {
+  font-size: 0.8em;
+  font-style: italic;
+  color: $grey-color;
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: $spacing-unit / 2;
+  font-size: 0.9em;
+
+  .gallery-nav-next {
+    margin-left: auto;
+  }
+}
+
+
 .post-list {
   margin-left: 0;
   list-style: none;

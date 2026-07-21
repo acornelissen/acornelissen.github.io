@@ -3,17 +3,25 @@ layout: home
 title: Albert takes pictures.
 ---
 
-<h3><a href="/">Home</a> / Photography</h3>
+{% include breadcrumbs.html current="Photography" %}
 
-
-- Full length portraits
-    - [Medium format](/ph/mf/portraits_full.html) / [Large format](/ph/lf/portraits_full.html)
-- Close-up portraits
-    - [Medium format](/ph/mf/portraits_close.html) / [Large format](/ph/lf/portraits_close.html)
-- Random miscellany
-    - [Medium format](/ph/mf/misc.html) / [Large format](/ph/lf/misc.html)
-- Instant
-    - [FP-100c](/ph/instant/fp100c.html)
-    - [FP-3000b](/ph/instant/fp3000b.html)
-    - [One Instant P7 Colour](/ph/instant/oip7.html)
-    - [Instax](/ph/instant/instax.html)
+{% assign sections = site.data.galleries | map: "section" | uniq %}
+{% for section in sections %}
+<section class="gallery-section">
+  <h4>{{ section }}</h4>
+  <ul class="gallery-index">
+    {% for gallery in site.data.galleries %}{% if gallery.section == section %}
+    {% assign photos = site.static_files | where_exp: "f", "f.path contains gallery.dir" | where_exp: "f", "f.extname == '.jpg'" %}
+    <li>
+      <a href="{{ gallery.url }}">
+        <img class="gallery-index-cover" src="{{ gallery.dir }}{{ gallery.cover }}" alt="" loading="lazy" decoding="async">
+        <span class="gallery-index-text">
+          <span class="gallery-index-title">{{ gallery.title }}</span>
+          <span class="gallery-index-count">{{ photos | size }} photos</span>
+        </span>
+      </a>
+    </li>
+    {% endif %}{% endfor %}
+  </ul>
+</section>
+{% endfor %}
