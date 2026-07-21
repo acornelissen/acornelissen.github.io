@@ -13,6 +13,12 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html {
+  // Guard against the photo page's viewport-width breakout nudging a
+  // horizontal scrollbar into existence on platforms with fixed scrollbars.
+  overflow-x: clip;
+}
+
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
@@ -68,6 +74,18 @@ figure > img {
 figcaption {
   margin-top: 10px;
   text-align: right;
+  font-size: 0.8em;
+}
+
+.cap-title {
+  font-style: normal;
+}
+
+.cap-gear {
+  display: block;
+  font-style: italic;
+  color: $grey-color;
+  font-size: 0.9em;
 }
 
 .centered {
@@ -124,6 +142,13 @@ a {
   &:hover {
     color: $text-color;
   }
+}
+
+// Prose links carry a second, non-colour cue (weight) so they meet
+// WCAG 1.4.1 without underlines. Navigation lists are exempt.
+.post-content a,
+.project-description a {
+  font-weight: 600;
 }
 
 @media (prefers-reduced-motion: no-preference) {

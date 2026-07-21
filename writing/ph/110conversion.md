@@ -2,6 +2,7 @@
 layout: post
 title: Albert writes.
 post_title: 'A fully reversible Polaroid Pathfinder 110a / 110b / 800 / 150 & Lomograflok conversion'
+date: 2021-12-01
 ---
 
 ## Introduction

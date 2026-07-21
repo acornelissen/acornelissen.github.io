@@ -2,6 +2,7 @@
 layout: post
 title: Albert writes.
 post_title: The "lazy" way to make great images
+date: 2021-12-01
 ---
 
 I did not intend to shoot my first roll of EZ400 pushed a stop on a bright and sunny day, but the previous weekend I was out in London with the intention of shooting a few frames, and it was pretty overcast. A proper ISO 800 day. 
@@ -16,11 +17,11 @@ The photos ended up being of a wider range of subjects than I planned for. The h
 
 Before I get to the results, the recipe I used for development for both rolls are as follows:
 
-	1. Ilfotec HC (or Kodak HC-110) diluted 1:119 at 20°C
-	2. 1 minute of agitation at the start
-	3. 10 seconds of agitation at 30 minutes
-	4. Stop bath (a thorough rinse with plain water will do just fine) at 60 minutes
-	5. Fix as usual
+1. Ilfotec HC (or Kodak HC-110) diluted 1:119 at 20°C
+2. 1 minute of agitation at the start
+3. 10 seconds of agitation at 30 minutes
+4. Stop bath (a thorough rinse with plain water will do just fine) at 60 minutes
+5. Fix as usual
 
 Very straightforward, and perfect for busy (read: lazy) film photographers like myself. The results? The results took me totally by surprise. Both rolls produced negatives with a density that is equally easy to scan as they are to work with in the darkroom. And there is a lot to work with. I could pull out much more detail than I had expected from both shadows and highlights.
 

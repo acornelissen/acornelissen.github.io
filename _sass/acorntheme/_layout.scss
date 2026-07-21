@@ -22,9 +22,22 @@
   }
 }
 
-.breadcrumbs > h3 {
+.breadcrumbs .crumbs {
   font-weight: 300;
   letter-spacing: 0.02em;
+  color: $grey-color;
+  margin-bottom: 4px;
+}
+
+.crumbs-sep {
+  color: $border-color;
+}
+
+.page-title {
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  margin-bottom: $spacing-unit / 2;
 }
 
 
@@ -34,67 +47,14 @@
  * Site footer
  */
 .site-footer {
+  margin-top: $spacing-unit * 2;
   padding: $spacing-unit 0;
+  border-top: 1px solid $border-color;
 }
 
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
-
-.footer-col-wrapper {
-  font-size: 15px;
+.footer-nav {
+  font-size: 0.8em;
   color: $grey-color;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
-}
-
-.footer-col {
-  float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
-  }
-}
-
-@include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
-  }
 }
 
 
@@ -117,6 +77,15 @@
     list-style: none;
     font-size: 1.1em;
     line-height: 2;
+  }
+
+  // A short rule echoing the blank in the "Albert _________." wordmark,
+  // used to separate the homepage link groups.
+  hr {
+    border: 0;
+    border-top: 1px solid $text-color;
+    width: 2.5em;
+    margin: 18px 0;
   }
 }
 
@@ -148,9 +117,13 @@
  * Photography hub
  */
 .gallery-section {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit * 1.5;
 
-  > h4 {
+  > h2 {
+    font-size: 0.85em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
     color: $grey-color;
     margin-bottom: $spacing-unit / 2;
   }
@@ -160,9 +133,16 @@
   margin-left: 0;
   list-style: none;
   font-size: 0.9em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $spacing-unit / 2 $spacing-unit;
+
+  @include media-query($on-laptop) {
+    grid-template-columns: 1fr;
+  }
 
   > li {
-    margin-bottom: $spacing-unit / 2;
+    margin: 0;
   }
 
   a {
@@ -191,6 +171,13 @@
   }
 }
 
+// Instant film already carries its own white frame; a second border
+// around it reads as a frame inside a frame, so drop it.
+.gallery-index-cover--bare {
+  padding: 0;
+  border: 0;
+}
+
 .gallery-index-text {
   display: flex;
   flex-direction: column;
@@ -200,6 +187,26 @@
   font-size: 0.8em;
   font-style: italic;
   color: $grey-color;
+}
+
+/**
+ * Writing hub
+ */
+.writing-index {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit / 2;
+  }
+}
+
+.entry-date {
+  display: block;
+  font-size: 0.75em;
+  font-style: italic;
+  color: $grey-color;
+  margin-top: 2px;
 }
 
 .gallery-meta {
@@ -251,6 +258,8 @@
 
   figure {
     margin: 0;
+    padding: 0;
+    border: 0;
 
     > img {
       display: block;
@@ -258,30 +267,41 @@
       aspect-ratio: 1;
       object-fit: contain;
     }
-
-    > figcaption {
-      font-size: 0.7em;
-      font-style: italic;
-    }
   }
 }
 
 
 /**
- * Single photo page: break out of the wrapper to 90% of the viewport.
+ * Single photo page: break out of the wrapper to 90% of the viewport,
+ * capped so the ~1600px image is never upscaled and softened.
  */
 .photo-page {
-  width: 90vw;
-  margin-left: calc(50% - 45vw);
+  width: min(90vw, 1600px);
+  margin-left: calc(50% - min(90vw, 1600px) / 2);
 
   > figure > img {
     display: block;
     width: 100%;
   }
 
-  > .gallery-nav {
+  > figure > figcaption {
     font-size: 0.9em;
   }
+}
+
+.photo-nav {
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: $spacing-unit;
+  font-size: 0.9em;
+
+  .gallery-nav-next {
+    margin-left: 0;
+  }
+}
+
+.photo-position {
+  color: $grey-color;
 }
 
 
@@ -305,14 +325,6 @@
     border: 1px solid $border-color;
     display: flex;
     flex-direction: column;
-
-    &:hover {
-      border-color: $grey-color;
-    }
-
-    @media (prefers-reduced-motion: no-preference) {
-      transition: border-color 120ms ease;
-    }
 
     > h4 {
       font-size: 1.6em;
@@ -361,14 +373,16 @@
  * Posts
  */
 .post-header {
+  max-width: 44em;
   margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit / 2;
+  border-bottom: 1px $border-color solid;
 }
 
 .post-title {
   font-size: 2em;
   font-weight: 300;
-
-  border-bottom: 1px $border-color solid;
+  margin-bottom: 4px;
 
   @include media-query($on-laptop) {
     font-size: 36px;
@@ -377,6 +391,19 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+
+  // Keep running prose to a readable measure; images and figure rows
+  // below stay full width for contrast.
+  > p,
+  > ul,
+  > ol,
+  > blockquote,
+  > pre,
+  > h2,
+  > h3,
+  > h4 {
+    max-width: 44em;
+  }
 
   h2 {
     font-size: 32px;

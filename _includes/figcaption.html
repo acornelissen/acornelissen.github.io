@@ -1,0 +1,14 @@
+{%- comment -%}
+Renders a two-voice figcaption from a caption string of the form
+"Subject [Camera, Lens - Film]". The subject is set upright; the gear
+list is set smaller, italic, and grey on its own line. A caption with
+no bracket is treated as subject only.
+{%- endcomment -%}
+{%- assign _cap = include.caption -%}
+{%- if _cap contains "[" -%}
+{%- assign _subject = _cap | split: "[" | first | strip -%}
+{%- assign _gear = _cap | split: "[" | last | replace: "]", "" | strip | replace: ", ", " · " | replace: " - ", " · " -%}
+<figcaption><span class="cap-title">{{ _subject | escape }}</span><span class="cap-gear">{{ _gear | escape }}</span></figcaption>
+{%- else -%}
+<figcaption><span class="cap-title">{{ _cap | escape }}</span></figcaption>
+{%- endif -%}

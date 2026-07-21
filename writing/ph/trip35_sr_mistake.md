@@ -2,6 +2,7 @@
 layout: post
 title: Albert writes.
 post_title: Pushing through that mistake might give you results you didn't know you wanted
+date: 2021-02-01
 ---
 
 I have big aspirations of trying to put into words the things that film photography makes me feel, but I haven't sat down and written a piece like this in ages, and so I thought: let's start with something easy.

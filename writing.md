@@ -5,9 +5,20 @@ title: Albert writes.
 
 {% include breadcrumbs.html current="Writing" %}
 
-- Thoughts on photography
-
-	- [Building a Polaroid Pathfinder 110a / 110b / 800 & Lomograflok conversion](/writing/ph/110conversion.html)
-	- [The "lazy" way to make great images](/writing/ph/lazy_way.html)
-	- [Pushing through that mistake might give you results you didn't know you wanted](/writing/ph/trip35_sr_mistake.html)
-	
+<section class="gallery-section">
+  <h2>Thoughts on photography</h2>
+  <ul class="writing-index">
+    <li>
+      <a href="/writing/ph/110conversion.html">Building a Polaroid Pathfinder 110a / 110b / 800 &amp; Lomograflok conversion</a>
+      <span class="entry-date">December 2021</span>
+    </li>
+    <li>
+      <a href="/writing/ph/lazy_way.html">The &ldquo;lazy&rdquo; way to make great images</a>
+      <span class="entry-date">December 2021</span>
+    </li>
+    <li>
+      <a href="/writing/ph/trip35_sr_mistake.html">Pushing through that mistake might give you results you didn&rsquo;t know you wanted</a>
+      <span class="entry-date">February 2021</span>
+    </li>
+  </ul>
+</section>

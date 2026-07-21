@@ -12,7 +12,7 @@ layout: default
 
   <div class="images-list">
     {% include breadcrumbs.html parent="Photography" parent_url="/ph.html" current_section=gallery.section current=gallery.title %}
-    <p class="gallery-meta">{{ photos | size }} photos</p>
+    <p class="gallery-meta">{% assign n = photos | size %}{{ n }} photo{% if n != 1 %}s{% endif %}</p>
 
     {% include gallery-images.html gallery=gallery %}
 

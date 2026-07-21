@@ -2,11 +2,15 @@
 layout: default
 ---
 
-{% include breadcrumbs.html parent="Writing" parent_url="/writing.html" current=page.post_title %}
+{% include breadcrumbs.html parent="Writing" parent_url="/writing.html" %}
 
 <div class="home">
   <div class="post">
-  	<div class="post-content">{{ content }}</div>
+    <header class="post-header">
+      <h1 class="post-title">{{ page.post_title }}</h1>
+      {% if page.date %}<p class="post-meta">{{ page.date | date: "%B %Y" }}</p>{% endif %}
+    </header>
+    <div class="post-content">{{ content }}</div>
   </div>
   <small>--&nbsp;<a href="#">Back to top</a></small>
 </div>
