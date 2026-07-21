@@ -6,6 +6,7 @@
 {% for photo in photos %}
 {% assign caption = include.gallery.captions[photo.name] %}
 {% assign thumb = photo.path | replace_first: "/assets/", "/assets/thumbs/" %}
-<figure class="image"><img src="{{ thumb | relative_url }}" alt="{{ caption | default: include.gallery.title | escape }}"{% unless forloop.first %} loading="lazy" decoding="async"{% endunless %}>{% if caption %}<figcaption>{{ caption | escape }}</figcaption>{% endif %}</figure>
+{% assign photo_url = include.gallery.url | replace: ".html", "/" | append: photo.name | replace: ".jpg", ".html" %}
+<a href="{{ photo_url }}"><figure class="image"><img src="{{ thumb | relative_url }}" alt="{{ caption | default: include.gallery.title | escape }}"{% unless forloop.first %} loading="lazy" decoding="async"{% endunless %}>{% if caption %}<figcaption>{{ caption | escape }}</figcaption>{% endif %}</figure></a>
 {% endfor %}
 </div>

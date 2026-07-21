@@ -15,7 +15,8 @@
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
   {%- if page.gallery_id %}
   {%- assign og_gallery = site.data.galleries | where: "id", page.gallery_id | first %}
-  <meta property="og:image" content="{{ og_gallery.dir | append: og_gallery.cover | absolute_url }}">
+  {%- assign og_image = page.photo | default: og_gallery.cover %}
+  <meta property="og:image" content="{{ og_gallery.dir | append: og_image | absolute_url }}">
   {%- endif %}
   
 </head>

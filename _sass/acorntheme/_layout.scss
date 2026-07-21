@@ -177,17 +177,17 @@
 }
 
 .gallery-index-cover {
-  width: 120px;
-  height: 90px;
-  object-fit: cover;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
   padding: 4px;
   border: 1px solid $border-color;
   flex-shrink: 0;
   background: $background-color;
 
   @include media-query($on-palm) {
-    width: 90px;
-    height: 68px;
+    width: 110px;
+    height: 110px;
   }
 }
 
@@ -228,25 +228,59 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  align-items: start;
 
   @include media-query($on-palm) {
     grid-template-columns: 1fr;
     gap: 10px;
   }
 
-  > figure {
+  a {
+    display: block;
+
+    &:hover img {
+      opacity: 0.9;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      img {
+        transition: opacity 120ms ease;
+      }
+    }
+  }
+
+  figure {
     margin: 0;
+    height: 100%;
 
     > img {
       display: block;
       width: 100%;
+      aspect-ratio: 1;
+      object-fit: contain;
     }
 
     > figcaption {
       font-size: 0.7em;
       font-style: italic;
     }
+  }
+}
+
+
+/**
+ * Single photo page: break out of the wrapper to 90% of the viewport.
+ */
+.photo-page {
+  width: 90vw;
+  margin-left: calc(50% - 45vw);
+
+  > figure > img {
+    display: block;
+    width: 100%;
+  }
+
+  > .gallery-nav {
+    font-size: 0.9em;
   }
 }
 

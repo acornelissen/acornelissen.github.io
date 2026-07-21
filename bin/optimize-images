@@ -139,6 +139,7 @@ run_add() {
   echo "Added $dest"
   echo "Caption line for _data/galleries.yml:"
   echo "    \"$name\": \"\""
+  echo "Now run bin/generate-photo-pages to create its page."
 }
 
 case ${1:-} in

@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+# Generate one stub page per gallery photo so each photo gets its own URL,
+# e.g. assets/ph/mf/misc/01.jpg -> ph/mf/misc/01.md -> /ph/mf/misc/01.html.
+# Safe to re-run: writes missing stubs, removes stubs for deleted photos.
+# Run after adding or removing photos (bin/optimize-images add ... reminds you).
+
+require "fileutils"
+require "yaml"
+
+galleries = YAML.load_file(File.expand_path("../_data/galleries.yml", __dir__))
+root = File.expand_path("..", __dir__)
+
+galleries.each do |gallery|
+  page_dir = File.join(root, gallery["url"].delete_prefix("/").delete_suffix(".html"))
+  asset_dir = File.join(root, gallery["dir"].delete_prefix("/"))
+  photos = Dir.glob(File.join(asset_dir, "*.jpg")).sort.map { |f| File.basename(f) }
+
+  FileUtils.mkdir_p(page_dir)
+  photos.each do |name|
+    stub = File.join(page_dir, name.sub(/\.jpg\z/, ".md"))
+    content = <<~FRONTMATTER
+      ---
+      layout: photo
+      gallery_id: #{gallery["id"]}
+      photo: "#{name}"
+      ---
+    FRONTMATTER
+    next if File.exist?(stub) && File.read(stub) == content
+
+    File.write(stub, content)
+    puts "wrote  #{stub.delete_prefix(root + "/")}"
+  end
+
+  Dir.glob(File.join(page_dir, "*.md")).each do |stub|
+    next if photos.include?(File.basename(stub).sub(/\.md\z/, ".jpg"))
+
+    File.delete(stub)
+    puts "removed #{stub.delete_prefix(root + "/")}"
+  end
+end
