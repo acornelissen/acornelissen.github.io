@@ -1,36 +1,30 @@
-// Define defaults for each variable.
+// Design tokens for the site redesign (see design handoff).
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
+$base-font-family: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
+$base-font-size:   17px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$base-line-height: 1.6 !default;
 
-$spacing-unit:     30px !default;
+// Palette
+$paper:            #f3f2f2 !default; // page background
+$ink:              #201e1d !default; // primary text
+$body-secondary:   #4a4643 !default; // body secondary text
+$label:            #595551 !default; // small labels / captions
+$accent:           #2d5877 !default; // dark baby blue
+$accent-600:       #1f4763 !default; // hover / pressed step
+$accent-700:       #123950 !default; // deep step (small accent text)
+$pale:             #b7cfe2 !default; // pale band (footer top border)
 
-$text-color:       #111 !default;
-$background-color: #ffffff !default;
-$brand-color:      #111 !default;
+$text-color:       $ink !default;
+$background-color: $paper !default;
 
-// 7:1 contrast on white; the old #828282 failed WCAG AA.
-$grey-color:       #595959 !default;
-$border-color:     #e0e0e0 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
-
-// Width of the content area
-$content-width:    1200px !default;
+// Layout
+$content-width:    1280px !default;
+$side-pad:         48px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;

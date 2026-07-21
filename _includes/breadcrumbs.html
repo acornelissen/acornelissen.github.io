@@ -1,4 +1,5 @@
-<nav class="breadcrumbs" aria-label="Breadcrumb"><p class="crumbs"><a href="/">Home</a>{% if include.parent %} <span class="crumbs-sep">/</span> <a href="{{ include.parent_url }}">{{ include.parent }}</a>{% endif %}{% if include.parent2 %} <span class="crumbs-sep">/</span> <a href="{{ include.parent2_url }}">{{ include.parent2 }}</a>{% endif %}{% if include.current_section %} <span class="crumbs-sep">/</span> <span>{{ include.current_section }}</span>{% endif %}</p></nav>
-{%- if include.current %}
-<h1 class="page-title" aria-current="page">{{ include.current }}</h1>
-{%- endif %}
+<p class="crumbs" aria-label="Breadcrumb">
+{%- if include.parent -%}<a href="{{ include.parent_url }}">{{ include.parent }}</a>{%- endif -%}
+{%- if include.parent2 -%}<span class="crumbs-sep"> / </span><a href="{{ include.parent2_url }}">{{ include.parent2 }}</a>{%- endif -%}
+{%- if include.current -%}<span class="crumbs-sep"> / </span><span>{{ include.current }}</span>{%- endif -%}
+</p>

@@ -1,9 +1,14 @@
-<header class="site-header" role="banner">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ "/" | relative_url}}" aria-label="Albert Cornelissen, home">{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</a>
-
+{%- assign u = page.url -%}
+{%- assign is_ph = false -%}{%- if u == '/ph.html' or u contains '/ph/' -%}{%- assign is_ph = true -%}{%- endif -%}
+{%- assign is_wr = false -%}{%- if u == '/writing.html' or u contains '/writing/' -%}{%- assign is_wr = true -%}{%- endif -%}
+{%- assign is_pr = false -%}{%- if u == '/projects.html' -%}{%- assign is_pr = true -%}{%- endif -%}
+<header class="site-nav" role="banner">
+  <div class="wrapper site-nav__inner">
+    <a class="site-nav__brand" href="{{ "/" | relative_url }}" aria-label="Albert Cornelissen, home">Albert <span class="blank">_________</span>.</a>
+    <nav class="site-nav__links" aria-label="Primary">
+      <a href="/ph.html"{% if is_ph %} class="is-current" aria-current="page"{% endif %}>Photography</a>
+      <a href="/writing.html"{% if is_wr %} class="is-current" aria-current="page"{% endif %}>Writing</a>
+      <a href="/projects.html"{% if is_pr %} class="is-current" aria-current="page"{% endif %}>Projects</a>
+    </nav>
   </div>
-
 </header>

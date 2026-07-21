@@ -1,18 +1,25 @@
 ---
-layout: home
+layout: default
 title: Albert tinkers.
 ---
 
-{% include breadcrumbs.html current="Projects" %}
+<h1 class="page-title">Albert tinkers.</h1>
 
 <ul class="projects-list">
   {% for project in site.data.projects %}
   <li>
-    <h4><a href="{{ project.url }}">{{ project.name }}</a></h4>
-    <p class="project-meta">{{ project.tech }}{% if project.stars %} &middot; {{ project.stars }} stars on GitHub{% endif %}</p>
-    <p class="project-description">{{ project.description | escape }}</p>
+    <a href="{{ project.url }}">
+      <span>
+        <span class="project-name">{{ project.name }}</span>
+        <span class="project-tech">{{ project.tech }}</span>
+      </span>
+      <span>
+        <span class="project-description">{{ project.description | escape }}</span>
+        {% if project.stars %}<span class="project-stars">&#9733; {{ project.stars }} on GitHub</span>{% endif %}
+      </span>
+    </a>
   </li>
   {% endfor %}
 </ul>
 
-More on [GitHub](https://github.com/acornelissen) and at [IDENTIDEM.design](https://identidem.design).
+<p class="projects-more">More on <a href="https://github.com/acornelissen">GitHub</a> and at <a href="https://identidem.design">IDENTIDEM.design</a>.</p>

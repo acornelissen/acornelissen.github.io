@@ -10,30 +10,31 @@ layout: default
 {% for p in photos %}{% if p.name == page.photo %}{% assign photo_index = forloop.index0 %}{% endif %}{% endfor %}
 {% assign caption = gallery.captions[page.photo] %}
 {% assign subject = caption | split: "[" | first | strip | default: gallery.title %}
-{% assign crumb = gallery.section | append: " / " | append: gallery.title %}
 {% assign position = photo_index | plus: 1 %}
 
-<div class="home">
-  {% include breadcrumbs.html parent="Photography" parent_url="/ph.html" parent2=crumb parent2_url=gallery.url current=subject %}
+{% include breadcrumbs.html parent="Photography" parent_url="/ph.html" parent2=gallery.title parent2_url=gallery.url %}
 
-  <div class="photo-page">
-    <figure class="image">
-      <img src="{{ gallery.dir }}{{ page.photo }}" alt="{{ subject | escape }}">
-      {% if caption %}{% include figcaption.html caption=caption %}{% endif %}
-    </figure>
+<div class="photo-page">
+  <figure class="image">
+    <img src="{{ gallery.dir }}{{ page.photo }}" alt="{{ subject | escape }}">
+    {% if caption %}{% include figcaption.html caption=caption %}{% endif %}
+  </figure>
 
-    <nav class="gallery-nav photo-nav" aria-label="Photo navigation">
-      {% if photo_index > 0 %}
-        {% assign prev_index = photo_index | minus: 1 %}
-        {% assign prev = photos[prev_index] %}
-        <a class="gallery-nav-prev" href="{{ gallery.url | replace: ".html", "/" }}{{ prev.name | replace: ".jpg", ".html" }}">&larr; previous</a>
-      {% endif %}
-      <span class="photo-position">{{ position }} / {{ photos.size }}</span>
-      {% assign next_index = photo_index | plus: 1 %}
-      {% if next_index < photos.size %}
-        {% assign next = photos[next_index] %}
-        <a class="gallery-nav-next" href="{{ gallery.url | replace: ".html", "/" }}{{ next.name | replace: ".jpg", ".html" }}">next &rarr;</a>
-      {% endif %}
-    </nav>
-  </div>
+  <nav class="gallery-nav photo-nav" aria-label="Photo navigation">
+    {% if photo_index > 0 %}
+      {% assign prev_index = photo_index | minus: 1 %}
+      {% assign prev = photos[prev_index] %}
+      <a class="gallery-nav-prev" href="{{ gallery.url | replace: ".html", "/" }}{{ prev.name | replace: ".jpg", ".html" }}">&larr; Previous</a>
+    {% else %}
+      <span></span>
+    {% endif %}
+    <a href="{{ gallery.url }}">All photos</a>
+    {% assign next_index = photo_index | plus: 1 %}
+    {% if next_index < photos.size %}
+      {% assign next = photos[next_index] %}
+      <a class="gallery-nav-next" href="{{ gallery.url | replace: ".html", "/" }}{{ next.name | replace: ".jpg", ".html" }}">Next &rarr;</a>
+    {% else %}
+      <span></span>
+    {% endif %}
+  </nav>
 </div>

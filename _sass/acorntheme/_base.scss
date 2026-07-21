@@ -1,5 +1,5 @@
 /**
- * Reset some basic elements
+ * Reset
  */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
@@ -8,11 +8,8 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+* { box-sizing: border-box; }
 
-
-/**
- * Basic styling
- */
 html {
   // Guard against the photo page's viewport-width breakout nudging a
   // horizontal scrollbar into existence on platforms with fixed scrollbars.
@@ -20,30 +17,30 @@ html {
 }
 
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
   font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+
+  // Sticky footer: content column grows, footer pinned to the bottom.
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * Headings — never heavier than 500 (the owner wants it light).
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
 }
-
-
 
 /**
  * Images
@@ -53,207 +50,88 @@ img {
   vertical-align: middle;
 }
 
-
+figure { margin: 0; }
 
 /**
- * Figures
+ * Links: ink by default, accent on hover. Zero underlines anywhere.
  */
-figure {
-  padding: 15px;
-  border: 1px solid $border-color;
+a {
+  color: inherit;
+  text-decoration: none;
 
-  @include media-query($on-palm) {
-    padding: 8px;
-  }
+  &:hover { color: $accent; }
 }
 
-figure > img {
-  display: block;
+@media (prefers-reduced-motion: no-preference) {
+  a { transition: color 120ms ease; }
+  .photo-grid a img,
+  .gallery-index a img { transition: opacity 120ms ease; }
 }
 
-figcaption {
-  margin-top: 10px;
-  text-align: right;
-  font-size: 0.8em;
-}
-
-.cap-title {
-  font-style: normal;
-}
-
-.cap-gear {
-  display: block;
-  font-style: italic;
-  color: $grey-color;
-  font-size: 0.9em;
-}
-
-.centered {
-  text-align: center;
+:focus-visible {
+  outline: 2px solid $accent;
+  outline-offset: 2px;
 }
 
 .skip-link {
   position: absolute;
   left: -9999px;
   top: 0;
-  background: $background-color;
+  background: $paper;
   padding: 8px 16px;
 
   &:focus {
     left: 0;
-    z-index: 1;
+    z-index: 2;
   }
 }
 
-
-
 /**
- * Lists
+ * Content column
  */
-ul, ol {
-  margin-left: $spacing-unit;
-}
+.wrapper {
+  max-width: $content-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $side-pad;
+  padding-left: $side-pad;
+  width: 100%;
 
-li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
+  @include media-query($on-palm) {
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }
-
-
 
 /**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
-}
-
-
-
-/**
- * Links
- */
-a {
-  color: $grey-color;
-  text-decoration: none;
-
-  &:hover {
-    color: $text-color;
-  }
-}
-
-// Prose links carry a second, non-colour cue (weight) so they meet
-// WCAG 1.4.1 without underlines. Navigation lists are exempt.
-.post-content a,
-.project-description a {
-  font-weight: 600;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a {
-    transition: color 120ms ease;
-  }
-
-  .gallery-index-cover {
-    transition: opacity 120ms ease;
-  }
-}
-
-:focus-visible {
-  outline: 2px solid $text-color;
-  outline-offset: 2px;
-}
-
-
-
-/**
- * Blockquotes
+ * Prose (article body) — code and quotes kept minimal.
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  font-size: 18px;
-  letter-spacing: -1px;
+  color: $body-secondary;
+  border-left: 3px solid $pale;
+  padding-left: 20px;
   font-style: italic;
 
-  > :last-child {
-    margin-bottom: 0;
-  }
+  > :last-child { margin-bottom: 0; }
 }
 
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-  font-size: 15px;
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
+pre, code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 14px;
 }
 
 code {
+  background: rgba(45, 88, 119, 0.08);
   padding: 1px 5px;
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 12px 16px;
   overflow-x: auto;
+  background: rgba(45, 88, 119, 0.06);
 
   > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/**
- * Icons
- */
-.icon > svg {
-  display: inline-block;
-  vertical-align: middle;
-
-  path {
-    fill: $grey-color;
+    background: none;
+    padding: 0;
   }
 }

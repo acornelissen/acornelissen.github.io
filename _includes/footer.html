@@ -1,9 +1,18 @@
 <footer class="site-footer">
-  <div class="wrapper">
-    <nav class="footer-nav" aria-label="Site">
-      <a href="/ph.html">Photography</a> <span class="crumbs-sep">/</span>
-      <a href="/writing.html">Writing</a> <span class="crumbs-sep">/</span>
-      <a href="/projects.html">Projects</a>
-    </nav>
+  <div class="site-footer__band"></div>
+  <div class="site-footer__field">
+    <div class="wrapper">
+      {%- if page.url == '/' -%}
+      <p class="site-footer__elsewhere">Albert is elsewhere.</p>
+      <nav class="site-footer__links" aria-label="Elsewhere">
+        <a href="https://instagram.com/a.l.b.e.r.t.c">Instagram</a>
+        <a href="https://github.com/acornelissen">GitHub</a>
+        <a href="https://www.linkedin.com/in/acornelissen/">LinkedIn</a>
+        <a href="https://identidem.design">IDENTIDEM.design</a>
+      </nav>
+      {%- else -%}
+      <span class="site-footer__copy">&copy; Albert Cornelissen</span>
+      {%- endif -%}
+    </div>
   </div>
 </footer>
