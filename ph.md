@@ -15,7 +15,7 @@ title: Albert takes pictures.
     {% assign cover_dir = gallery.dir | replace_first: "/assets/", "/assets/thumbs/" %}
     <li>
       <a href="{{ gallery.url }}">
-        <img class="gallery-index-cover{% if section == 'Instant' %} gallery-index-cover--bare{% endif %}" src="{{ cover_dir }}{{ gallery.cover }}" alt="" loading="lazy" decoding="async">
+        <img class="gallery-index-cover" src="{{ cover_dir }}{{ gallery.cover }}" alt="" loading="lazy" decoding="async">
         <span class="gallery-index-text">
           <span class="gallery-index-title">{{ gallery.title }}</span>
           <span class="gallery-index-count">{% assign n = photos | size %}{{ n }} photo{% if n != 1 %}s{% endif %}</span>

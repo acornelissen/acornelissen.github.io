@@ -2,7 +2,6 @@
 layout: post
 title: Albert writes.
 post_title: The "lazy" way to make great images
-date: 2021-12-01
 ---
 
 I did not intend to shoot my first roll of EZ400 pushed a stop on a bright and sunny day, but the previous weekend I was out in London with the intention of shooting a few frames, and it was pretty overcast. A proper ISO 800 day. 
