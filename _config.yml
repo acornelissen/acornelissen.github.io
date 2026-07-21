@@ -1,5 +1,23 @@
 title: Albert ________.
-description: "Albert Cornelissen: Tinkers, takes pictures, writes occasionally." 
+description: "Albert Cornelissen: Tinkers, takes pictures, writes occasionally."
 baseurl: ""
-url: "http://cornelissen.me" # the subpath of your site, e.g. /blog
+url: "https://cornelissen.me"
 markdown: kramdown
+
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+defaults:
+  - scope:
+      path: "ph"
+    values:
+      layout: gallery
+      title: Albert takes pictures.
+  - scope:
+      path: "writing"
+    values:
+      layout: post
+      title: Albert writes.
