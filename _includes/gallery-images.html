@@ -2,7 +2,14 @@
    | where_exp: "f", "f.path contains include.gallery.dir"
    | where_exp: "f", "f.extname == '.jpg'"
    | sort: "path" %}
+<ul class="photo-grid">
 {% for photo in photos %}
 {% assign caption = include.gallery.captions[photo.name] %}
-<figure class="image"><img src="{{ photo.path | relative_url }}" alt="{{ caption | default: include.gallery.title | escape }}"{% unless forloop.first %} loading="lazy" decoding="async"{% endunless %}>{% if caption %}<figcaption>{{ caption | escape }}</figcaption>{% endif %}</figure>
+{% assign thumb = photo.path | replace_first: "/assets/", "/assets/thumbs/" %}
+  <li>
+    <a class="photo-grid-item" href="{{ photo.path | relative_url }}" data-caption="{{ caption | escape }}">
+      <img src="{{ thumb | relative_url }}" alt="{{ caption | default: include.gallery.title | escape }}"{% unless forloop.first %} loading="lazy" decoding="async"{% endunless %}>
+    </a>
+  </li>
 {% endfor %}
+</ul>
