@@ -27,6 +27,22 @@
   .is-current { color: $accent; }
 }
 
+// On narrow screens the single row overflows; drop the links onto their
+// own line under the brand rather than running off-screen.
+@include media-query($on-palm) {
+  .site-nav__inner {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .site-nav__brand {
+    margin-right: 0;
+    flex: 1 0 100%;
+  }
+
+  .site-nav__links { gap: 20px; }
+}
+
 /**
  * Page content column
  */
@@ -51,12 +67,6 @@
 
   @include media-query($on-laptop) { font-size: 48px; }
   @include media-query($on-palm)   { font-size: 38px; }
-}
-
-.page-title--article {
-  font-size: 56px;
-  line-height: 1.06;
-  max-width: 18em;
 }
 
 /**
@@ -118,7 +128,6 @@
 
 .home-index {
   margin-top: 48px;
-  padding-bottom: 40px;
 }
 
 .home-index a {
@@ -246,8 +255,9 @@ figcaption {
  */
 .gallery-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 24px;
+  gap: 12px 24px;
   margin-top: 36px;
   padding: 24px 0;
   font-size: 14px;
