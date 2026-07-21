@@ -228,6 +228,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  align-items: start;
 
   @include media-query($on-palm) {
     grid-template-columns: 1fr;
@@ -250,7 +251,6 @@
 
   figure {
     margin: 0;
-    height: 100%;
 
     > img {
       display: block;
