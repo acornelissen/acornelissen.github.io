@@ -15,8 +15,10 @@ layout: default
 {% include breadcrumbs.html parent="Photography" parent_url="/ph.html" parent2=gallery.title parent2_url=gallery.url %}
 
 <div class="photo-page">
+  {%- assign photo_src = gallery.dir | append: page.photo -%}
+  {%- assign photo_dim = site.data.image_dims[photo_src] -%}
   <figure class="image">
-    <img src="{{ gallery.dir }}{{ page.photo }}" alt="{{ subject | escape }}">
+    <img src="{{ photo_src }}" alt="{{ subject | escape }}"{% if photo_dim %} width="{{ photo_dim | split: 'x' | first }}" height="{{ photo_dim | split: 'x' | last }}"{% endif %}>
     {% if caption %}{% include figcaption.html caption=caption %}{% endif %}
   </figure>
 

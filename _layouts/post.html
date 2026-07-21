@@ -4,16 +4,20 @@ layout: default
 
 {% for w in site.data.writing %}{% if w.url == page.url %}{% assign post_index = forloop.index0 %}{% endif %}{% endfor %}
 
-{% include breadcrumbs.html parent="Writing" parent_url="/writing.html" %}
-<h1 class="post-title">{{ page.post_title }}.</h1>
+<article class="post">
+  <header class="post-head">
+    {% include breadcrumbs.html parent="Writing" parent_url="/writing.html" %}
+    <h1 class="post-title">{{ page.post_title }}.</h1>
+  </header>
 
-<article class="post-content">{{ content }}</article>
+  <div class="post-content">{{ content }}</div>
 
-<nav class="gallery-nav" aria-label="Article navigation">
-  <a class="gallery-nav-prev" href="/writing.html">&larr; All writing</a>
-  {% if post_index != nil %}{% assign next_index = post_index | plus: 1 %}
-  {% if next_index < site.data.writing.size %}
-    {% assign next = site.data.writing[next_index] %}
-    <a class="gallery-nav-next" href="{{ next.url }}">{{ next.title }} &rarr;</a>
-  {% endif %}{% endif %}
-</nav>
+  <nav class="post-foot" aria-label="Article navigation">
+    <a class="gallery-nav-prev" href="/writing.html">&larr; All writing</a>
+    {% if post_index != nil %}{% assign next_index = post_index | plus: 1 %}
+    {% if next_index < site.data.writing.size %}
+      {% assign next = site.data.writing[next_index] %}
+      <a class="gallery-nav-next" href="{{ next.url }}">{{ next.title }} &rarr;</a>
+    {% endif %}{% endif %}
+  </nav>
+</article>

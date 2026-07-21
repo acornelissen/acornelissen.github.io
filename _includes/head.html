@@ -3,8 +3,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.url == '/' %}Albert Cornelissen{% elsif page.post_title %}{{ page.post_title | escape }} / Albert Cornelissen{% elsif page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  {%- comment -%} Page title, description and share image, resolved once and reused. {%- endcomment -%}
+  {%- if page.url == '/' -%}
+    {%- assign page_title = "Albert Cornelissen" -%}
+  {%- elsif page.post_title -%}
+    {%- assign page_title = page.post_title | append: " / Albert Cornelissen" -%}
+  {%- elsif page.title -%}
+    {%- assign page_title = page.title -%}
+  {%- else -%}
+    {%- assign page_title = site.title -%}
+  {%- endif -%}
+  {%- assign og_title = page.post_title | default: page.title | default: site.title -%}
+  {%- if page.url == '/' -%}{%- assign og_title = "Albert Cornelissen" -%}{%- endif -%}
+  {%- assign page_desc = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 -%}
+  {%- if page.gallery_id -%}
+    {%- assign og_gallery = site.data.galleries | where: "id", page.gallery_id | first -%}
+    {%- assign og_img = page.photo | default: og_gallery.cover -%}
+    {%- assign share_image = og_gallery.dir | append: og_img | absolute_url -%}
+  {%- else -%}
+    {%- assign share_image = "/assets/og.png" | absolute_url -%}
+  {%- endif -%}
+
+  <title>{{ page_title | escape }}</title>
+  <meta name="description" content="{{ page_desc | escape }}">
+
+  <link rel="icon" href="{{ "/assets/logonotext.svg" | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ "/assets/logonotext.svg" | relative_url }}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +37,15 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M' }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{% if page.url == '/' %}Albert Cornelissen{% elsif page.post_title %}{{ page.post_title | escape }}{% elsif page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:type" content="{% if page.post_title %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="Albert Cornelissen">
+  <meta property="og:title" content="{{ og_title | escape }}">
+  <meta property="og:description" content="{{ page_desc | escape }}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
-  {%- if page.gallery_id %}
-  {%- assign og_gallery = site.data.galleries | where: "id", page.gallery_id | first %}
-  {%- assign og_image = page.photo | default: og_gallery.cover %}
-  <meta property="og:image" content="{{ og_gallery.dir | append: og_image | absolute_url }}">
-  {%- endif %}
-  
+  <meta property="og:image" content="{{ share_image }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ og_title | escape }}">
+  <meta name="twitter:description" content="{{ page_desc | escape }}">
+  <meta name="twitter:image" content="{{ share_image }}">
 </head>

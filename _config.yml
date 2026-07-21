@@ -4,6 +4,9 @@ baseurl: ""
 url: "https://cornelissen.me"
 markdown: kramdown
 
+plugins:
+  - jekyll-sitemap
+
 exclude:
   - bin
   - Gemfile
