@@ -1,18 +1,15 @@
 <footer class="site-footer">
-  <div class="site-footer__band"></div>
-  <div class="site-footer__field">
-    <div class="wrapper">
-      {%- if page.url == '/' -%}
-      <p class="site-footer__elsewhere">Albert is elsewhere.</p>
-      <nav class="site-footer__links" aria-label="Elsewhere">
-        <a href="https://instagram.com/a.l.b.e.r.t.c">Instagram</a>
-        <a href="https://github.com/acornelissen">GitHub</a>
-        <a href="https://www.linkedin.com/in/acornelissen/">LinkedIn</a>
-        <a href="https://identidem.design">IDENTIDEM.design</a>
-      </nav>
-      {%- else -%}
-      <span class="site-footer__copy">&copy; Albert Cornelissen</span>
-      {%- endif -%}
-    </div>
+  <div class="wrapper">
+    <div class="site-footer__rule" aria-hidden="true"></div>
+    {%- if page.url == '/' -%}
+    <nav class="site-footer__links" aria-label="Elsewhere">
+      <a href="https://instagram.com/a.l.b.e.r.t.c">Instagram</a>
+      <a href="https://github.com/acornelissen">GitHub</a>
+      <a href="https://www.linkedin.com/in/acornelissen/">LinkedIn</a>
+      <a href="https://identidem.design">IDENTIDEM.design</a>
+    </nav>
+    {%- else -%}
+    <span class="site-footer__copy">&copy; Albert Cornelissen</span>
+    {%- endif -%}
   </div>
 </footer>

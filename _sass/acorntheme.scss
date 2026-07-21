@@ -2,18 +2,18 @@
 
 $base-font-family: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
 $base-font-size:   17px !default;
-$base-font-weight: 400 !default;
-$base-line-height: 1.6 !default;
+$base-font-weight: 300 !default;   // "Airy" direction: light by default, nothing above 400
+$base-line-height: 1.7 !default;
 
 // Palette
 $paper:            #f3f2f2 !default; // page background
 $ink:              #201e1d !default; // primary text
 $body-secondary:   #4a4643 !default; // body secondary text
-$label:            #595551 !default; // small labels / captions
+$label:            #595551 !default; // muted labels / captions / chrome
 $accent:           #2d5877 !default; // dark baby blue
 $accent-600:       #1f4763 !default; // hover / pressed step
 $accent-700:       #123950 !default; // deep step (small accent text)
-$pale:             #b7cfe2 !default; // pale band (footer top border)
+$hairline:         #c7d4de !default; // 1px separators in header/footer chrome
 
 $text-color:       $ink !default;
 $background-color: $paper !default;

@@ -35,10 +35,10 @@ body {
 }
 
 /**
- * Headings — never heavier than 500 (the owner wants it light).
+ * Headings — never heavier than 400 (the "Airy" direction is thin throughout).
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.1;
 }
 
@@ -108,7 +108,7 @@ a {
  */
 blockquote {
   color: $body-secondary;
-  border-left: 3px solid $pale;
+  border-left: 1px solid $hairline;
   padding-left: 20px;
   font-style: italic;
 

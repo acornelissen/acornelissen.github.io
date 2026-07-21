@@ -1,46 +1,26 @@
 /**
- * Site navigation (all pages except home)
+ * Site navigation (all pages except home) — a quiet right-aligned text row
+ * over a hairline, inside the content column.
  */
-.site-nav__inner {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-.site-nav__brand {
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-  margin-right: auto;
-  white-space: nowrap;
-
-  .blank { color: $accent; }
+.site-nav .wrapper {
+  padding-top: 28px;
 }
 
 .site-nav__links {
   display: flex;
-  gap: 24px;
-  font-size: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 28px;
+  font-size: 13px;
+  color: $label;
 
   .is-current { color: $accent; }
 }
 
-// On narrow screens the single row overflows; drop the links onto their
-// own line under the brand rather than running off-screen.
-@include media-query($on-palm) {
-  .site-nav__inner {
-    flex-wrap: wrap;
-    row-gap: 10px;
-  }
-
-  .site-nav__brand {
-    margin-right: 0;
-    flex: 1 0 100%;
-  }
-
-  .site-nav__links { gap: 20px; }
+.site-nav__rule {
+  height: 1px;
+  background: $hairline;
+  margin-top: 28px;
 }
 
 /**
@@ -49,24 +29,26 @@
 .page-content {
   flex: 1 0 auto;
   width: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 56px;
 
-  &.home-page { padding-top: 72px; }
+  &.home-page {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
 
 /**
  * Headings
  */
 .page-title {
-  font-size: 64px;
-  font-weight: 500;
+  font-size: 76px;
+  font-weight: 100;
   line-height: 1.04;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin: 0 0 0 -0.058em;
 
-  @include media-query($on-laptop) { font-size: 48px; }
-  @include media-query($on-palm)   { font-size: 38px; }
+  @include media-query($on-laptop) { font-size: 52px; }
+  @include media-query($on-palm)   { font-size: 40px; }
 }
 
 /**
@@ -86,57 +68,58 @@
  * Home
  */
 .home-wordmark {
-  font-weight: 500;
-  font-size: 96px;
-  line-height: 1.02;
-  letter-spacing: -0.02em;
-  margin: 0 0 0 -0.058em;
+  font-weight: 100;
+  font-size: 76px;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  margin: 0;
   display: flex;
   align-items: baseline;
-  gap: 24px;
+  gap: 22px;
 
   .bar {
     display: inline-block;
-    width: 300px;
+    width: 220px;
     max-width: 40vw;
-    height: 12px;
+    height: 2px;
     background: $accent;
     transform: translateY(-8px);
   }
 
-  .dot { margin-left: -18px; }
+  .dot { margin-left: -16px; }
 
   @include media-query($on-laptop) {
-    font-size: 68px;
-    .bar { height: 10px; }
+    font-size: 56px;
+    gap: 18px;
   }
 
   @include media-query($on-palm) {
-    font-size: 46px;
-    gap: 16px;
-    .bar { height: 8px; }
+    font-size: 42px;
+    gap: 14px;
   }
 }
 
 .home-intro {
   font-size: 17px;
-  line-height: 28px;
-  margin-top: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 32px;
   max-width: 48ch;
   color: $body-secondary;
 }
 
 .home-index {
-  margin-top: 48px;
+  margin-top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .home-index a {
-  display: block;
-  padding: 20px 0;
-  font-weight: 500;
-  font-size: 34px;
-  letter-spacing: -0.015em;
-  line-height: 1.1;
+  font-weight: 200;
+  font-size: 32px;
+  letter-spacing: 0.01em;
+  line-height: 1;
 
   @include media-query($on-palm) { font-size: 28px; }
 }
@@ -144,30 +127,20 @@
 /**
  * Photography hub
  */
-.gallery-section {
-  padding: 20px 0 28px 0;
+.hub-sections {
+  margin-top: 88px;
 }
 
-.gallery-section__head {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
-  margin-bottom: 28px;
+.gallery-section {
+  padding: 0 0 72px 0;
 
-  .square {
-    width: 10px;
-    height: 10px;
-    background: $accent;
-    flex-shrink: 0;
-    transform: translateY(-1px);
-  }
-
-  h2 {
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: 0.08em;
+  > h2 {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    margin: 0;
+    color: $label;
+    margin: 0 0 36px 0;
   }
 }
 
@@ -177,10 +150,10 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 48px;
 
   @include media-query($on-laptop) { grid-template-columns: repeat(2, 1fr); }
-  @include media-query($on-palm)   { grid-template-columns: 1fr; }
+  @include media-query($on-palm)   { grid-template-columns: 1fr; gap: 40px; }
 
   > li { margin: 0; }
 
@@ -201,10 +174,10 @@
 
 .gallery-index-title {
   display: block;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-  margin-top: 12px;
+  font-weight: 300;
+  font-size: 19px;
+  letter-spacing: 0.01em;
+  margin-top: 16px;
 }
 
 /**
@@ -251,7 +224,7 @@ figcaption {
 }
 
 /**
- * Gallery / photo bottom navigation
+ * Gallery / photo / article bottom navigation
  */
 .gallery-nav {
   display: flex;
@@ -262,7 +235,7 @@ figcaption {
   padding: 24px 0;
   font-size: 14px;
 
-  .gallery-nav-next { font-weight: 500; margin-left: auto; }
+  .gallery-nav-next { margin-left: auto; }
 }
 
 /**
@@ -301,9 +274,9 @@ figcaption {
   a {
     display: block;
     padding: 20px 0;
-    font-weight: 500;
+    font-weight: 200;
     font-size: 28px;
-    letter-spacing: -0.015em;
+    letter-spacing: 0.01em;
     line-height: 1.2;
     max-width: 26em;
 
@@ -339,9 +312,9 @@ figcaption {
 
 .project-name {
   display: block;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 28px;
-  letter-spacing: -0.015em;
+  letter-spacing: 0.01em;
   line-height: 1.15;
 }
 
@@ -376,7 +349,7 @@ figcaption {
   color: $body-secondary;
   margin: 24px 0 0 0;
 
-  a { font-weight: 600; color: $accent-700; }
+  a { color: $accent-700; }
   a:hover { color: $accent; }
 }
 
@@ -384,14 +357,14 @@ figcaption {
  * Article
  */
 .post-title {
-  font-size: 56px;
-  font-weight: 500;
+  font-size: 64px;
+  font-weight: 100;
   line-height: 1.06;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin: 0 0 0 -0.058em;
   max-width: 18em;
 
-  @include media-query($on-laptop) { font-size: 42px; }
+  @include media-query($on-laptop) { font-size: 46px; }
   @include media-query($on-palm)   { font-size: 34px; }
 }
 
@@ -425,8 +398,7 @@ figcaption {
   h3 { font-size: 24px; margin: 36px 0 14px; }
   h4 { font-size: 20px; margin: 32px 0 12px; }
 
-  // Prose links carry weight as a second, non-colour cue (WCAG 1.4.1).
-  a { font-weight: 600; color: $accent-700; }
+  a { color: $accent-700; }
   a:hover { color: $accent; }
 
   // Figure rows: writing imagery prints black and white.
@@ -477,43 +449,31 @@ figcaption {
 }
 
 /**
- * Footer (all pages), full-bleed accent field.
+ * Footer (all pages) — a hairline and one quiet line, inside the column.
  */
 .site-footer {
   flex-shrink: 0;
+  margin-top: 24px;
+
+  .wrapper { padding-bottom: 40px; }
 }
 
-.site-footer__band {
-  height: 2px;
-  background: $pale;
+.site-footer__rule {
+  height: 1px;
+  background: $hairline;
+  margin-bottom: 28px;
 }
 
-.site-footer__field {
-  background: $accent;
-  color: $paper;
-
-  .wrapper {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  a { color: $paper; }
-  a:hover { color: $pale; }
-}
-
-.site-footer__copy { font-size: 13px; }
-
-.site-footer__elsewhere {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.01em;
-  margin: 0;
+.site-footer__copy,
+.site-footer__links {
+  font-size: 13px;
+  color: $label;
 }
 
 .site-footer__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  margin-top: 10px;
-  font-size: 13px;
+  gap: 28px;
 }
+
+.site-footer__links a:hover { color: $accent; }
