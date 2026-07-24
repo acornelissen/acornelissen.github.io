@@ -15,6 +15,13 @@ $accent-600:       #1f4763 !default; // hover / pressed step
 $accent-700:       #123950 !default; // deep step (small accent text)
 $hairline:         #c7d4de !default; // 1px separators in header/footer chrome
 
+// Gallery thumbnails are matted: a white card behind the image, with a fine
+// neutral line around the card. Every thumb is the same square regardless of
+// the picture's own aspect ratio.
+$mat:              #ffffff !default; // the white surround
+$mat-edge:         #d7d3d0 !default; // hairline around the mat
+$mat-edge-hover:   #a8a29d !default; // same line, one step darker on hover
+
 $text-color:       $ink !default;
 $background-color: $paper !default;
 

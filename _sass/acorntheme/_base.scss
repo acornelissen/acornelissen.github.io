@@ -65,7 +65,7 @@ a {
 @media (prefers-reduced-motion: no-preference) {
   a { transition: color 120ms ease; }
   .photo-grid a img,
-  .gallery-index a img { transition: opacity 120ms ease; }
+  .gallery-index a img { transition: border-color 120ms ease; }
 }
 
 :focus-visible {

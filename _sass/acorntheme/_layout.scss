@@ -156,6 +156,24 @@
   }
 }
 
+/**
+ * Matted thumbnail. The image is centred inside a square white card and
+ * scaled to fit, so portrait, landscape and square pictures all occupy the
+ * same footprint in a grid. Padding is the mat; the border is the fine line
+ * around it. `object-fit: contain` works against the padding box, so the mat
+ * grows on whichever axis the picture is short.
+ */
+%thumb-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  background: $mat;
+  padding: clamp(10px, 3.5%, 20px);
+  border: 1px solid $mat-edge;
+}
+
 .gallery-index {
   list-style: none;
   margin: 0;
@@ -172,16 +190,12 @@
   a {
     display: block;
 
-    &:hover img { opacity: 0.9; }
+    &:hover img { border-color: $mat-edge-hover; }
   }
 }
 
 .gallery-index-cover {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: contain;
-  object-position: left bottom;
+  @extend %thumb-frame;
 }
 
 .gallery-index-title {
@@ -207,14 +221,10 @@
 
   a { display: block; }
 
-  a:hover img { opacity: 0.9; }
+  a:hover img { border-color: $mat-edge-hover; }
 
   figure > img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: contain;
-    object-position: left bottom;
+    @extend %thumb-frame;
   }
 }
 
