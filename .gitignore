@@ -2,3 +2,7 @@ _site
 .DS_Store
 .sass-cache
 .jekyll-cache
+
+# Local tool state
+.claude/*.local.json
+.claude/*.local.md

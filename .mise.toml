@@ -1,2 +1,22 @@
 [tools]
 ruby = "3.3"
+
+[tasks."galleries:deps"]
+description = "Install the gallery manager's gems"
+dir = "{{config_root}}"
+env = { BUNDLE_GEMFILE = "bin/gallery-manager/Gemfile" }
+run = "bundle check || bundle install"
+
+[tasks.galleries]
+description = "Run the local gallery manager"
+depends = ["galleries:deps"]
+dir = "{{config_root}}"
+env = { BUNDLE_GEMFILE = "bin/gallery-manager/Gemfile" }
+run = "bundle exec ruby bin/gallery-manager/server.rb"
+
+[tasks.test]
+description = "Run the gallery manager test suite"
+depends = ["galleries:deps"]
+dir = "{{config_root}}"
+env = { BUNDLE_GEMFILE = "bin/gallery-manager/Gemfile" }
+run = "bundle exec ruby bin/gallery-manager/test/all.rb"
