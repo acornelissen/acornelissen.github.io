@@ -251,10 +251,17 @@ module GalleryManager
       moved
     end
 
+    # Renaming keeps the timestamp, which would leave a photo holding entirely
+    # different content while looking untouched to Jekyll's incremental build
+    # and to every cache in the chain. Whatever moved is stamped as changed.
     def rename_files(gallery, from, to)
-      [[repo.image_dir(gallery), from, to], [repo.thumb_dir(gallery), from, to]].each do |dir, a, b|
-        source = dir.join(a)
-        FileUtils.mv(source, dir.join(b)) if source.exist?
+      [repo.image_dir(gallery), repo.thumb_dir(gallery)].each do |dir|
+        source = dir.join(from)
+        next unless source.exist?
+
+        destination = dir.join(to)
+        FileUtils.mv(source, destination)
+        FileUtils.touch(destination)
       end
     end
 

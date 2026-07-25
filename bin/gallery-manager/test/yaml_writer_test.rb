@@ -16,12 +16,18 @@ class YamlWriterTest < Minitest::Test
     assert_equal original, document.to_yaml
   end
 
+  # Counts and titles are Albert's to change, so this checks the parser against
+  # whatever the file happens to say rather than against a snapshot of it.
   def test_parses_every_gallery_in_the_real_file
-    document = GalleryManager::GalleryDocument.parse(REAL_REPO.join("_data/galleries.yml").read)
+    text = REAL_REPO.join("_data/galleries.yml").read
 
-    assert_equal 10, document.galleries.length
-    assert_equal %w[Medium\ format Large\ format Instant], document.sections
-    assert_equal "mf-portraits-full", document.galleries.first.id
+    document = GalleryManager::GalleryDocument.parse(text)
+
+    refute_empty document.galleries
+    assert_equal text.scan(/^- id:/).length, document.galleries.length
+    assert_equal document.galleries.map(&:section).uniq, document.sections
+    assert(document.galleries.all? { |gallery| gallery.id && gallery.url && gallery.dir })
+    assert(document.galleries.all? { |gallery| gallery.captions.is_a?(Hash) })
   end
 
   def test_keeps_the_header_comment

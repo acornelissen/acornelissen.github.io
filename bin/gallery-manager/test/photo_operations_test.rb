@@ -69,6 +69,43 @@ class ReorderTest < Minitest::Test
     assert_equal "jpeg 01.jpg", @fixture.root.join(dir_of("mf-misc"), "03.jpg").read
   end
 
+  # Renaming a file keeps its timestamp, so a photo can take on completely
+  # different content while looking untouched to Jekyll's incremental build,
+  # to a browser cache, or to anything else watching mtimes. Whatever moved
+  # has to look moved.
+  def test_a_renamed_photo_looks_changed_to_anything_watching_timestamps
+    subject = store
+    yesterday = Time.now - 86_400
+    age_everything(yesterday)
+
+    subject.reorder_photos("mf-misc", %w[01.jpg 03.jpg 02.jpg])
+
+    assert_operator File.mtime(photo_path("02.jpg")), :>, yesterday + 1
+    assert_operator File.mtime(thumb_path("02.jpg")), :>, yesterday + 1
+  end
+
+  def test_a_photo_that_stayed_put_keeps_its_timestamp
+    subject = store
+    yesterday = Time.now - 86_400
+    age_everything(yesterday)
+
+    subject.reorder_photos("mf-misc", %w[01.jpg 03.jpg 02.jpg])
+
+    # 01.jpg never moved, so nothing downstream should rebuild it.
+    assert_in_delta yesterday.to_i, File.mtime(photo_path("01.jpg")).to_i, 1
+  end
+
+  def photo_path(name) = @fixture.root.join(dir_of("mf-misc"), name)
+
+  def thumb_path(name)
+    @fixture.root.join(dir_of("mf-misc").sub("assets/", "assets/thumbs/"), name)
+  end
+
+  def age_everything(when_)
+    files = Dir.glob(photo_path("*.jpg").to_s) + Dir.glob(thumb_path("*.jpg").to_s)
+    FileUtils.touch(files, mtime: when_)
+  end
+
   def test_rejects_an_order_that_is_not_a_permutation_of_the_directory
     subject = store
 
