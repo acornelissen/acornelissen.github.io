@@ -2,10 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Galleries</title>
     <meta name="gallery-token" content="__TOKEN__">
+    <link rel="stylesheet" href="/app.css">
+    <script src="/app.js" defer></script>
   </head>
   <body>
-    <noscript>This tool needs JavaScript.</noscript>
+    <a class="skip" href="#gallery">Skip to the photos</a>
+
+    <header class="bar">
+      <h1 class="bar__title">Galleries</h1>
+      <p class="bar__note">Edits are written straight to the repo. Git is the undo.</p>
+      <button class="chip" id="health-toggle" type="button" aria-expanded="false" aria-controls="health" hidden></button>
+    </header>
+
+    <section class="health" id="health" hidden>
+      <h2 class="health__title">Out of step</h2>
+      <ul class="health__list" id="health-list"></ul>
+      <button class="button" id="repair" type="button">Fix what can be fixed</button>
+      <p class="health__note">
+        Rebuilds thumbnails and photo pages, closes gaps in the numbering, and records image sizes.
+        Captions and covers are left for you.
+      </p>
+    </section>
+
+    <div class="workbench">
+      <nav class="rail" aria-label="Galleries">
+        <div class="rail__scroll">
+          <ul class="rail__list" id="rail"></ul>
+        </div>
+        <div class="rail__foot">
+          <button class="button" id="new-gallery" type="button" aria-expanded="false" aria-controls="new-gallery-form">
+            New gallery
+          </button>
+          <form class="form" id="new-gallery-form" hidden>
+            <label class="form__row">
+              <span>Title</span>
+              <input name="title" required autocomplete="off">
+            </label>
+            <label class="form__row">
+              <span>Section</span>
+              <input name="section" list="sections" required autocomplete="off">
+            </label>
+            <datalist id="sections"></datalist>
+            <label class="form__row">
+              <span>Path</span>
+              <input name="slug" required autocomplete="off" placeholder="mf/street"
+                     pattern="[a-z0-9]+([-_][a-z0-9]+)*(/[a-z0-9]+([-_][a-z0-9]+)*)*">
+            </label>
+            <p class="form__hint" id="new-gallery-preview"></p>
+            <div class="form__actions">
+              <button class="button button--go" type="submit">Create</button>
+              <button class="button" type="button" data-cancel>Cancel</button>
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <main class="stage" id="gallery">
+        <div class="stage__head">
+          <div class="stage__naming">
+            <label class="visually-hidden" for="gallery-title">Gallery title</label>
+            <input class="stage__title" id="gallery-title" autocomplete="off">
+            <label class="visually-hidden" for="gallery-section">Section</label>
+            <input class="stage__section" id="gallery-section" list="sections" autocomplete="off">
+          </div>
+          <div class="stage__tools">
+            <span class="count" id="photo-count"></span>
+            <a class="link" id="site-link" href="#">View on the site</a>
+            <button class="button" id="add-photos" type="button">Add photos</button>
+            <button class="button button--danger" id="delete-gallery" type="button">Delete gallery</button>
+            <input class="visually-hidden" id="file-input" type="file" accept="image/jpeg,image/jpg" multiple>
+          </div>
+        </div>
+
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+
+        <ul class="sheet" id="sheet"></ul>
+
+        <p class="empty" id="empty" hidden>Nothing here yet. Drop photos onto the sheet to start it off.</p>
+        <p class="sheet__hint">
+          Drag a photo to reorder it, or onto a gallery on the left to move it there.
+          With one focused, hold <kbd>Ctrl</kbd> and press <kbd>&larr;</kbd> or <kbd>&rarr;</kbd>.
+        </p>
+      </main>
+    </div>
+
+    <div class="curtain" id="curtain" hidden><span>Working…</span></div>
   </body>
 </html>

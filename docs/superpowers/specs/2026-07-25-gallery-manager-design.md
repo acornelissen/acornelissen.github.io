@@ -37,9 +37,9 @@ after the insertion point.
 the working tree and the UI re-reads the result. Git is the undo.
 
 **Ruby and Sinatra.** The repo already pins Ruby 3.3 and `generate-photo-pages`
-is Ruby. Sinatra and puma go in a `:development` group of the `Gemfile`; the
-GitHub Pages build supplies its own gems and ignores ours, so the published site
-is unaffected. The frontend is one HTML, one CSS and one JS file — no bundler,
+is Ruby. Sinatra and puma live in their own `Gemfile` under the tool rather than
+a `:development` group of the site's, so running the manager can never touch the
+Jekyll lockfile. The frontend is one HTML, one CSS and one JS file — no bundler,
 no npm.
 
 **The existing scripts stay the single source of truth** for resizing,

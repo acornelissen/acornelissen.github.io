@@ -1,5 +1,14 @@
 # Managing photos
 
+```bash
+mise run galleries
+```
+
+opens the gallery manager in a browser: drag photos to reorder them, drop new
+ones in from Finder, write captions, pick covers, and move photos between
+galleries. It runs everything below for you and writes straight to the working
+tree, so git stays the undo. The rest of this file is the same work by hand.
+
 Two scripts drive the photography section. The site reads galleries straight
 from [`_data/galleries.yml`](../_data/galleries.yml) and enumerates the JPEGs on
 disk, so you never touch layouts or CSS to add or remove images.
