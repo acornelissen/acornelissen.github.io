@@ -384,9 +384,11 @@ function draggable({ container, handle, onDrop, onOver }) {
     };
 
     const end = () => {
-      container.removeEventListener('pointermove', move);
-      container.removeEventListener('pointerup', end);
-      container.removeEventListener('pointercancel', end);
+      // On the window rather than the container: a pointer released outside
+      // the list still has to clean up after itself.
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', end);
+      window.removeEventListener('pointercancel', end);
       if (!flying) return;
       flying.remove();
       held.classList.remove('is-lifted');
@@ -396,9 +398,9 @@ function draggable({ container, handle, onDrop, onOver }) {
       onDrop(held, hovered);
     };
 
-    container.addEventListener('pointermove', move);
-    container.addEventListener('pointerup', end);
-    container.addEventListener('pointercancel', end);
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', end);
+    window.addEventListener('pointercancel', end);
   });
 }
 

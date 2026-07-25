@@ -24,6 +24,10 @@
 
 * { box-sizing: border-box; }
 
+/* Several things here are shown and hidden through the hidden attribute while
+   also setting display, which would otherwise win. */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -309,6 +313,8 @@ button, input { font: inherit; color: inherit; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 26px 22px;
+  /* An empty gallery still needs something to drop photos onto. */
+  min-height: 140px;
 }
 
 .sheet.is-receiving { outline: 2px dashed var(--accent); outline-offset: 14px; }
