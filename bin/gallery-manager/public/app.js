@@ -54,7 +54,9 @@ function upload(galleryId, files) {
 }
 
 async function request(path, options) {
-  curtain.hidden = false;
+  // Most changes come back before anyone could read a progress message, so the
+  // overlay only appears if one is actually taking a while.
+  const slow = setTimeout(() => { curtain.hidden = false; }, 250);
   try {
     const response = await fetch(path, options);
     const data = await response.json();
@@ -68,6 +70,7 @@ async function request(path, options) {
     await load({ quiet: true }).catch(() => {});
     throw error;
   } finally {
+    clearTimeout(slow);
     curtain.hidden = true;
     render();
   }
@@ -93,11 +96,50 @@ function render() {
   if (!state.galleries.length) return;
   if (!galleryById(currentId)) currentId = state.galleries[0].id;
   localStorage.setItem('gallery', currentId);
+  const held = whatHasFocus();
   drawRail();
   drawSectionNames();
   drawStage();
   drawSheet();
   drawHealth();
+  giveFocusBack(held);
+}
+
+// Saving a caption redraws the sheet, which would otherwise throw away the
+// field you just tabbed into. Writing captions down a gallery is the most
+// common thing anyone does here, so focus has to survive a redraw.
+function whatHasFocus() {
+  const active = document.activeElement;
+  if (!active || active === document.body) return null;
+
+  const caret = typeof active.selectionStart === 'number'
+    ? { start: active.selectionStart, end: active.selectionEnd }
+    : null;
+  // Whatever is being typed right now wins over what came back from the
+  // server, so a redraw landing mid-sentence does not eat the sentence.
+  const typing = typeof active.value === 'string' ? active.value : null;
+  const cell = active.closest('.cell');
+  if (cell) {
+    const part = active.classList.contains('caption') ? '.caption' : '.frame';
+    return { photo: cell.dataset.photo, part, caret, typing };
+  }
+  return active.id ? { id: active.id, caret, typing } : null;
+}
+
+function giveFocusBack(held) {
+  if (!held) return;
+  const target = held.id
+    ? el(held.id)
+    : sheet.querySelector(`[data-photo="${held.photo}"] ${held.part}`);
+  if (!target) return;
+
+  if (held.typing !== null && held.typing !== undefined && target.value !== held.typing) {
+    target.value = held.typing;
+  }
+  target.focus({ preventScroll: true });
+  if (held.caret && typeof target.setSelectionRange === 'function') {
+    target.setSelectionRange(held.caret.start, held.caret.end);
+  }
 }
 
 // One flat list, headings included, so a gallery can be dragged from one

@@ -1,3 +1,4 @@
+require "date"
 require "yaml"
 
 module GalleryManager
@@ -58,7 +59,9 @@ module GalleryManager
     def self.load_file(path) = parse(File.read(path))
 
     def self.parse(text)
-      records = YAML.safe_load(text) || []
+      # A title like 2024-01-05 parses as a date unless dates are allowed
+      # through; the writer turns it back into quoted text on the way out.
+      records = YAML.safe_load(text, permitted_classes: [Date], aliases: false) || []
       blanks = blank_line_flags(text)
 
       galleries = records.each_with_index.map do |record, index|

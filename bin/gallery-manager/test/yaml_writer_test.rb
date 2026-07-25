@@ -116,6 +116,27 @@ class YamlWriterTest < Minitest::Test
     assert_equal "Portraits: close up", reparsed.gallery("mf-misc").title
   end
 
+  # A gallery titled for the day it was shot reads as a date to YAML, which
+  # refuses to build one unless asked. Losing the file over a title is not on.
+  def test_reads_a_date_shaped_title_and_writes_it_back_as_text
+    source = <<~YAML
+      - id: one
+        url: /ph/one.html
+        title: 2024-01-05
+        section: Section
+        dir: /assets/ph/one/
+        cover: "01.jpg"
+        captions:
+          "01.jpg": "Caption"
+    YAML
+
+    document = GalleryManager::GalleryDocument.parse(source)
+
+    assert_includes document.to_yaml, 'title: "2024-01-05"'
+    assert_equal "2024-01-05",
+                 GalleryManager::GalleryDocument.parse(document.to_yaml).gallery!("one").title
+  end
+
   def test_writes_a_gallery_with_no_photos_as_an_empty_map
     document = GalleryManager::GalleryDocument.parse(fixture.yaml_text)
     document.gallery("mf-misc").captions.clear
