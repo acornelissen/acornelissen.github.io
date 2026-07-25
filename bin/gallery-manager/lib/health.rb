@@ -31,24 +31,46 @@ module GalleryManager
       end.compact
     end
 
-    # Runs the scripts that resolve the fixable problems, then closes any gaps
-    # in the numbering. Captions and covers are left alone: what belongs in
-    # them is a judgement call, not something a script can guess.
+    # Runs the scripts that resolve the fixable problems, closes any gaps in
+    # the numbering, and gives every photo a caption entry to fill in. What the
+    # caption should say, and which photo makes the best cover, are left alone:
+    # those are judgement calls, not something a repair pass can guess.
     def repair
-      scripts = store.scripts
-      scripts.build_thumbs
+      store.scripts.build_thumbs
+      close_numbering_gaps
+      align_caption_entries
+      store.scripts.generate_photo_pages
+      store.scripts.record_dimensions
+      store.state
+    end
+
+    private
+
+    def close_numbering_gaps
       repo.document.galleries.each do |gallery|
         photos = repo.photos_on_disk(gallery)
         next if photos == sequential(photos.length)
 
         store.reorder_photos(gallery.id, photos)
       end
-      scripts.generate_photo_pages
-      scripts.record_dimensions
-      store.state
     end
 
-    private
+    # Puts the caption keys back in step with the files: one entry per photo,
+    # in display order, empty where there is nothing to say. A caption whose
+    # photo has gone is kept at the end while its name is still free; once
+    # closing a gap hands that name to another photo the text goes, because
+    # leaving it would caption the wrong picture. The orphan is reported before
+    # any of this runs, so there is a chance to rescue the words first.
+    def align_caption_entries
+      document = repo.document
+      document.galleries.each do |gallery|
+        photos = repo.photos_on_disk(gallery)
+        known = gallery.captions
+        aligned = photos.to_h { |name| [name, known.fetch(name, "")] }
+        gallery.captions = aligned.merge(known.reject { |name, _| photos.include?(name) })
+      end
+      repo.write_document(document)
+    end
 
     attr_reader :repo, :store
 
