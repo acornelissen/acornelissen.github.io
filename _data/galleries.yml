@@ -17,23 +17,25 @@
     "06.jpg": "Marion [Pentax 67, Takumar 105mm f2.8 - Kodak Ektar 100]"
     "07.jpg": "Alberto [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
     "08.jpg": "Chris [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+    "09.jpg": "Engine Anorak [Hasselblad 501CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
 - id: mf-portraits-close
   url: /ph/mf/portraits_close.html
   title: Close-up portraits
   section: Medium format
   dir: /assets/ph/mf/portraits/close/
-  cover: "01.jpg"
+  cover: "05.jpg"
   captions:
     "01.jpg": "Sean [Mamiya C220, Mamiya-Sekor 80mm - Rollei RPX 400]"
-    "02.jpg": "Andrea with Joey [Pentax 67, Takumar 105mm f2.8 - Fujifilm Acros 100]"
-    "03.jpg": "Marvin [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
-    "04.jpg": "Ray [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
-    "05.jpg": "Daniel [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
-    "06.jpg": "Jaap [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
-    "07.jpg": "Notting Hill carnival spectator [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
-    "08.jpg": "Ribsy [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Kodak Portra 400]"
-    "09.jpg": "Dog Walker [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
-    "10.jpg": "Cathy [Hasselblad 500CM, 150mm Sonnar f4 CF T* - Ilford HP5]"
+    "02.jpg": "Marvin [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
+    "03.jpg": "Ray [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
+    "04.jpg": "Daniel [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
+    "05.jpg": "Jaap [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
+    "06.jpg": "Notting Hill carnival spectator [Mamiya C220, Mamiya-Sekor 80mm - Ilford HP5]"
+    "07.jpg": "Ribsy [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Kodak Portra 400]"
+    "08.jpg": "Dog Walker [Hasselblad 500CM, Zeiss Planar 80mm f2.8 T* - Ilford HP5]"
+    "09.jpg": "Cathy [Hasselblad 500CM, 150mm Sonnar f4 CF T* - Ilford HP5]"
+    "10.jpg": "Alex [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
+    "11.jpg": "Fishmonger [Pentax 67, Takumar 105mm f2.8 - Ilford HP5]"
 - id: mf-misc
   url: /ph/mf/misc.html
   title: Random miscellany
@@ -88,7 +90,7 @@
   title: Close-up portraits
   section: Large format
   dir: /assets/ph/lf/portraits/close/
-  cover: "01.jpg"
+  cover: "11.jpg"
   captions:
     "01.jpg": "James [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 100]"
     "02.jpg": "Sean [Shen Hao TZ45-II, Schneider Symmar-S 210mm - Fomapan 100]"
@@ -103,9 +105,8 @@
     "11.jpg": "Dom [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford Ortho 80]"
     "12.jpg": "Alex [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
     "13.jpg": "Dan [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
-    "14.jpg": "Yohance [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
-    "15.jpg": "Dave [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
-    "16.jpg": "Gerrit [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
+    "14.jpg": "Dave [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
+    "15.jpg": "Gerrit [Chamonix 45F-2, Schneider Symmar-S 210mm - Ilford HP5]"
 - id: lf-misc
   url: /ph/lf/misc.html
   title: Random miscellany
@@ -144,15 +145,6 @@
     "03.jpg": "Alex R [Polaroid Land Camera 190]"
     "04.jpg": "The sun sets over the Thames [Polaroid Land Camera 190]"
     "05.jpg": "Margate Marina [Polaroid Land Camera 350]"
-
-- id: instant-fp3000b
-  url: /ph/instant/fp3000b.html
-  title: FP-3000b
-  section: Instant
-  dir: /assets/ph/instant/fp3000b/
-  cover: "01.jpg"
-  captions:
-    "01.jpg": "Magical streetlight [Polaroid Land Camera 190]"
 
 - id: instant-oip7
   url: /ph/instant/oip7.html
