@@ -40,6 +40,7 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "acorntheme/fonts",
   "acorntheme/base",
   "acorntheme/layout",
   "acorntheme/syntax-highlighting"
