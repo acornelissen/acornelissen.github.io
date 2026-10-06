@@ -179,10 +179,11 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 48px;
 
-  @include media-query($on-laptop) { grid-template-columns: repeat(2, 1fr); }
+  @include media-query(1000px)     { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  @include media-query($on-laptop) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   @include media-query($on-palm)   { grid-template-columns: 1fr; gap: 40px; }
 
   > li { margin: 0; }
@@ -211,12 +212,13 @@
  */
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 32px 24px;
   align-items: start;
   margin-top: 36px;
 
-  @include media-query($on-laptop) { grid-template-columns: repeat(2, 1fr); }
+  @include media-query(1000px)     { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  @include media-query($on-laptop) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   @include media-query($on-palm)   { grid-template-columns: 1fr; gap: 24px; }
 
   a { display: block; }
