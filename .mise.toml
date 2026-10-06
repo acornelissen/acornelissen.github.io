@@ -1,6 +1,11 @@
 [tools]
 ruby = "3.3"
 
+[env]
+# Sass reads source as the locale encoding; without UTF-8 it fails on non-ASCII in _base.scss.
+LANG = "en_US.UTF-8"
+LC_ALL = "en_US.UTF-8"
+
 [tasks."galleries:deps"]
 description = "Install the gallery manager's gems"
 dir = "{{config_root}}"
