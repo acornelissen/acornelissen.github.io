@@ -14,12 +14,13 @@
   url: https://github.com/acornelissen/TheUnduster
   tech: Rust / Tauri / Svelte
 
-- name: ceralo
+- name: Two Bells
   description: >-
-    A minimal, free, cross-platform desktop app to fill PDF forms, edit text,
-    and sign. No accounts, no cloud, no telemetry.
-  url: https://github.com/acornelissen/ceralo
-  tech: TypeScript / Rust / Tauri
+    Know when to leave. Live trains, buses and trams for your stops in Great
+    Britain, with the walk worked out, on an e-paper board by the door and a
+    dashboard you run at home.
+  url: https://github.com/acornelissen/twobells
+  tech: Python / Raspberry Pi / e-paper
 
 - name: HearthMage
   description: >-
